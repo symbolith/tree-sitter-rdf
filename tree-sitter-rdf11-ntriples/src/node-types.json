@@ -1,0 +1,165 @@
+[
+  {
+    "type": "object",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BLANK_NODE_LABEL",
+        "named": true
+      },
+      {
+        "type": "IRIREF",
+        "named": true
+      },
+      {
+        "type": "literal",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "predicate",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "IRIREF",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "subject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BLANK_NODE_LABEL",
+        "named": true
+      },
+      {
+        "type": "IRIREF",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "fields": {
+      "datatype_iri": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "IRIREF",
+            "named": true
+          }
+        ]
+      },
+      "language_tag": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "LANGTAG",
+            "named": true
+          }
+        ]
+      },
+      "string": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "STRING_LITERAL_QUOTE",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "ntriplesDoc",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "triple",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "triple",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "object",
+            "named": true
+          }
+        ]
+      },
+      "predicate": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "predicate",
+            "named": true
+          }
+        ]
+      },
+      "subject": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "subject",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "BLANK_NODE_LABEL",
+    "named": true
+  },
+  {
+    "type": "IRIREF",
+    "named": true
+  },
+  {
+    "type": "LANGTAG",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_QUOTE",
+    "named": true
+  },
+  {
+    "type": "^^",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  }
+]

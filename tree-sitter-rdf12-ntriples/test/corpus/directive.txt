@@ -1,0 +1,25 @@
+===============
+directive
+===============
+
+VERSION "1.2"
+
+<http://example/s> <http://example/p> <http://example/o> .
+
+---
+
+(ntriplesDoc
+  (versionDirective
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
+===============
+two lines of comments
+===============
+#
+#
+<a> <b> <c> .
+---

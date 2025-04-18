@@ -1,0 +1,15 @@
+===============
+TT-nquads12-bnode-1
+===============
+
+<A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <V> <http://example/p> _:a )>> .
+---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (BLANK_NODE_LABEL))))

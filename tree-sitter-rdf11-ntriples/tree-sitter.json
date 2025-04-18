@@ -1,0 +1,39 @@
+{
+  "grammars": [
+    {
+      "name": "rdf11_ntriples",
+      "camelcase": "Rdf11Ntriples",
+      "title": "RDF 1.1 N-Triples",
+      "scope": "source.ntriples",
+      "file-types": [
+        "nt"
+      ],
+      "injection-regex": "(n-triples|n_triples|ntriples|nt)",
+      "highlights": "queries/highlights.scm",
+      "tags": "queries/tags.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.2.0",
+    "license": "MIT",
+    "description": "RDF 1.1 N-Triples grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Gordian Dziwis"
+      }
+    ],
+    "links": {
+      "repository": "git+https://github.com/GordianDziwis/tree-sitter-rdf.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": true,
+    "kotlin": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}

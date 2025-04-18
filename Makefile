@@ -1,26 +1,40 @@
-generate:
-	make -C n-triples generate
+SUBDIRS := tree-sitter-rdf11-ntriples \
+	   tree-sitter-rdf12-ntriples \
+           tree-sitter-rdf11-nquads \
+           tree-sitter-rdf12-nquads \
+           tree-sitter-rdf11-turtle \
+           tree-sitter-rdf12-turtle \
+           tree-sitter-rdf11-trig \
+           tree-sitter-rdf12-trig
 
-develop: generate
-	tree-sitter test
+test: build
+	@for dir in $(SUBDIRS); do \
+		(cd $$dir && $(MAKE) test) \
+	done
 
-update-tests:
-	cd ./test/corpus/rdf11-testcases && ./script.sh
+build: clean
+	@for dir in $(SUBDIRS); do \
+		(cd $$dir && \
+		 tree-sitter init && \
+		 tree-sitter generate && \
+		 tree-sitter build --wasm) \
+	done
 
 clean:
-	rm -fr ./bindings
-	rm -fr ./target
-	rm -fr ./trig/src
-	rm -fr ./turtle/src
-	rm -f ./binding.gyp
-	rm -f ./Cargo.toml
-	rm -f ./Cargo.lock
-	rm -f ./CMakeLists.txt
-	rm -f ./go.mod
-	rm -f ./package.json
-	rm -f ./Package.swift
-	rm -f ./pyproject.toml
-	rm -f ./setup.py
-	rm -f ./turtle.so
+	@for dir in $(SUBDIRS); do \
+		(cd $$dir && \
+		 rm -fr ./bindings ./src && \
+		 rm -f ./binding.gyp \
+		       ./Cargo.toml \
+		       ./Cargo.lock \
+		       ./CMakeLists.txt \
+		       ./go.mod \
+		       ./package.json \
+		       ./Package.swift \
+		       ./pyproject.toml \
+		       ./log.html \
+		       ./*.wasm \
+		       ./setup.py) \
+	done
 
-.PHONY: build develop
+.PHONY: build test clean

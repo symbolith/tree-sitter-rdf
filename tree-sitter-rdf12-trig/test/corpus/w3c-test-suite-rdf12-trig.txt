@@ -1,0 +1,1009 @@
+===============
+trig12-annotation-1
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o {| :r :z |} }
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (annotationBlock
+              (predicateObjectList
+                predicate: (PrefixedName)
+                (objectList
+                  object: (PrefixedName))))))))))
+
+===============
+trig12-annotation-2
+===============
+PREFIX :       <http://example/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+:G {
+  :s :p :o {| :source [ :graph <http://host1/> ;
+                        :date "2020-01-20"^^xsd:date
+                      ] ;
+              :source [ :graph <http://host2/> ;
+                        :date "2020-12-31"^^xsd:date
+                      ]
+            |} .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (annotationBlock
+              (predicateObjectList
+                predicate: (PrefixedName)
+                (objectList
+                  object: (blankNodePropertyList
+                    (predicateObjectList
+                      predicate: (PrefixedName)
+                      (objectList
+                        object: (IRIREF))
+                      predicate: (PrefixedName)
+                      (objectList
+                        object: (RDFLiteral
+                          string: (STRING_LITERAL_QUOTE)
+                          datatype_iri: (PrefixedName))))))
+                predicate: (PrefixedName)
+                (objectList
+                  object: (blankNodePropertyList
+                    (predicateObjectList
+                      predicate: (PrefixedName)
+                      (objectList
+                        object: (IRIREF))
+                      predicate: (PrefixedName)
+                      (objectList
+                        object: (RDFLiteral
+                          string: (STRING_LITERAL_QUOTE)
+                          datatype_iri: (PrefixedName))))))))))))))
+
+===============
+trig12-annotation-3
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o {| :q1 :r1 ; :q2 :r2 ; |} .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (annotationBlock
+              (predicateObjectList
+                predicate: (PrefixedName)
+                (objectList
+                  object: (PrefixedName))
+                predicate: (PrefixedName)
+                (objectList
+                  object: (PrefixedName))))))))))
+
+===============
+trig12-annotation-4
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o {| :x :y |} ; :q :r .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (annotationBlock
+              (predicateObjectList
+                predicate: (PrefixedName)
+                (objectList
+                  object: (PrefixedName)))))
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)))))))
+
+===============
+trig12-annotation-5
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o ~:e .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (reifier
+              (PrefixedName))))))))
+
+===============
+trig12-annotation-6
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o ~ .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (reifier)))))))
+
+===============
+trig12-annotation-7
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o ~:e {| :q :r |} .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (reifier
+              (PrefixedName))
+            annotation: (annotationBlock
+              (predicateObjectList
+                predicate: (PrefixedName)
+                (objectList
+                  object: (PrefixedName))))))))))
+
+===============
+trig12-annotation-8
+===============
+PREFIX : <http://example/>
+
+:G {:s :p :o ~ {| :q :r |} .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            annotation: (reifier)
+            annotation: (annotationBlock
+              (predicateObjectList
+                predicate: (PrefixedName)
+                (objectList
+                  object: (PrefixedName))))))))))
+
+===============
+trig12-base-1
+===============
+PREFIX : <http://example/>
+
+:G { :a :b "Hello"@en--ltr }
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (RDFLiteral
+              string: (STRING_LITERAL_QUOTE)
+              language_tag: (LANGTAG)
+              base_direction: (BASE_DIRECTION))))))))
+
+===============
+trig12-base-2
+===============
+PREFIX : <http://example/>
+
+:G { :a :b "Hello"@en--rtl }
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (RDFLiteral
+              string: (STRING_LITERAL_QUOTE)
+              language_tag: (LANGTAG)
+              base_direction: (BASE_DIRECTION))))))))
+
+===============
+trig12-base-bad-1
+:error
+===============
+PREFIX : <http://example/>
+
+:G { :a :b "Hello"@en--unk }
+---
+
+
+
+===============
+trig12-base-bad-2
+:error
+===============
+PREFIX : <http://example/>
+
+:G { :a :b "Hello"@en--LTR }
+---
+
+
+
+===============
+trig12-syntax-bad-01
+:error
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  :x <<:s :p :o>> 123 .
+}
+---
+
+
+
+===============
+trig12-syntax-bad-02
+:error
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  <<3 :p :o >> :q :z .
+}
+---
+
+
+
+===============
+trig12-syntax-bad-03
+:error
+===============
+PREFIX : <http://example/>
+
+:G {
+  <<:s [] :o>> :q 123 .
+}
+---
+
+
+
+===============
+trig12-syntax-bad-04
+:error
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p << :p :r >> .
+}
+---
+
+
+
+===============
+trig12-syntax-bad-05
+:error
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p << :g :s :p :o >> .
+}
+---
+
+
+
+===============
+trig12-syntax-bad-06
+:error
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p ("abc") .
+  <<:s :p ("abc") >> :q 123 .
+}
+---
+
+
+
+===============
+trig12-syntax-bad-07
+:error
+===============
+PREFIX : <http://example/>
+
+:G {<<:s :p [ :p1 :o1 ]  >> :q 123 .}
+---
+
+
+
+===============
+trig12-syntax-bad-08
+:error
+===============
+PREFIX : <http://example/>
+
+:G {:s :p << :g :s :p :o >> .}
+---
+
+
+
+===============
+trig12-syntax-bad-ann-1
+:error
+===============
+PREFIX : <http://example.com/ns#>
+
+:G {:s :p :o {|  |} .}
+---
+
+
+
+===============
+trig12-syntax-bad-ann-2
+:error
+===============
+PREFIX : <http://example.com/ns#>
+
+:G {:a :b :c {| :s :p :o |} .}
+---
+
+
+
+===============
+trig12-syntax-basic-01
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  <<:s :p :o>> :q 123 .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (INTEGER)))))))
+
+===============
+trig12-syntax-basic-02
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  :x :p <<:s :p :o>> .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (reifiedTriple
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName))))))))
+
+===============
+trig12-syntax-basic-03
+===============
+PREFIX : <http://example/>
+
+:G {:s :p <<(:s :p :o )>> .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (tripleTerm
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName))))))))
+
+===============
+trig12-syntax-basic-04
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  <<:s :p :o>> .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))))))
+
+===============
+trig12-syntax-bnode-01
+===============
+PREFIX : <http://example/>
+
+:G {
+  _:a :p :o .
+  <<_:a :p :o >> :q 456 .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (BLANK_NODE_LABEL)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (BLANK_NODE_LABEL)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (INTEGER)))))))
+
+===============
+trig12-syntax-bnode-02
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p _:a .
+  <<:s :p _:a >> :q 456 .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (BLANK_NODE_LABEL))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (BLANK_NODE_LABEL))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (INTEGER)))))))
+
+===============
+trig12-syntax-bnode-03
+===============
+PREFIX : <http://example/>
+
+:G {<<[] :p [] >> :q :z .}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        (reifiedTriple
+          subject: (ANON)
+          predicate: (PrefixedName)
+          object: (ANON))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)))))))
+
+===============
+trig12-syntax-compound
+===============
+PREFIX : <http://example/>
+
+:G {
+  :x :r :z .
+  :a :b :c .
+  <<:a :b :c>> :r :z .
+  <<:x :r :z >> :p <<:a :b :c>> .
+
+  << <<:x :r :z >> :p <<:a :b :c>> >>
+     :q
+  << <<:x :r :z >> :p <<:a :b :c>> >> .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (reifiedTriple
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName)))))
+      (triples
+        (reifiedTriple
+          subject: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName))
+          predicate: (PrefixedName)
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (reifiedTriple
+              subject: (reifiedTriple
+                subject: (PrefixedName)
+                predicate: (PrefixedName)
+                object: (PrefixedName))
+              predicate: (PrefixedName)
+              object: (reifiedTriple
+                subject: (PrefixedName)
+                predicate: (PrefixedName)
+                object: (PrefixedName)))))))))
+
+===============
+trig12-syntax-inside-01
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  [ :q <<:s :p :o>> ] :b :c .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (blankNodePropertyList
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (reifiedTriple
+                subject: (PrefixedName)
+                predicate: (PrefixedName)
+                object: (PrefixedName)))))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)))))))
+
+===============
+trig12-syntax-inside-02
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o1 .
+  :s :p :o2 .
+  ( <<:s :p :o1>> <<:s :p :o2>> )  :q 123 .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        subject: (collection
+          (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName))
+          (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (INTEGER)))))))
+
+===============
+trig12-syntax-inside-03
+===============
+PREFIX : <http://example/>
+
+:s :p << :s :p :o1 ~ :id >> .
+:id :q 123 .
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)
+          (reifier
+            (PrefixedName))))))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
+===============
+trig12-syntax-inside-04
+===============
+PREFIX : <http://example/>
+
+:s :p <<:s :p :o1 ~_:id>> .
+_:id :q 123 .
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)
+          (reifier
+            (BLANK_NODE_LABEL))))))
+  (triples
+    subject: (BLANK_NODE_LABEL)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
+===============
+trig12-syntax-nested-01
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+
+  <<:s :p :o >> :r :z .
+
+  << <<:s :p :o >> :r :z >> :q 1 .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        (reifiedTriple
+          subject: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName))
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (INTEGER)))))))
+
+===============
+trig12-syntax-nested-02
+===============
+PREFIX : <http://example/>
+
+:G {
+  :s :p :o .
+  :a :q <<:s :p :o >> .
+  << :a :q <<:s :p :o >>>> :r :z .
+}
+---
+
+(trigDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (graph
+    label: (label
+      (PrefixedName))
+    (triplesBlock
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
+      (triples
+        subject: (PrefixedName)
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (reifiedTriple
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName)))))
+      (triples
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)))))))

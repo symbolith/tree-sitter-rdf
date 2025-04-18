@@ -1,0 +1,5726 @@
+===============
+anonymous_blank_node_object
+===============
+
+<http://a.example/s> <http://a.example/p> [] .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (ANON)))))
+
+===============
+anonymous_blank_node_subject
+===============
+
+[] <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (ANON)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+bareword_a_predicate
+===============
+
+<http://a.example/s> a <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (objectList
+        (IRIREF)))))
+
+===============
+bareword_decimal
+===============
+
+<http://a.example/s> <http://a.example/p> 1.0 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DECIMAL)))))
+
+===============
+bareword_double
+===============
+
+<http://a.example/s> <http://a.example/p> 1E0 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DOUBLE)))))
+
+===============
+bareword_integer
+===============
+
+<http://a.example/s> <http://a.example/p> 1 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+blankNodePropertyList_as_object
+===============
+
+<http://a.example/s> <http://a.example/p> [ <http://a.example/p2> <http://a.example/o2> ] .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (blankNodePropertyList
+          (predicateObjectList
+            (IRIREF)
+            (objectList
+              (IRIREF))))))))
+
+===============
+blankNodePropertyList_as_subject
+===============
+
+[ <http://a.example/p> <http://a.example/o> ] <http://a.example/p2> <http://a.example/o2> .
+
+---
+
+(turtleDoc
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (IRIREF)
+        (objectList
+          (IRIREF))))
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+blankNodePropertyList_containing_collection
+===============
+
+[ <http://a.example/p1> (1) ] .
+
+---
+
+(turtleDoc
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (IRIREF)
+        (objectList
+          (collection
+            (INTEGER)))))))
+
+===============
+blankNodePropertyList_with_multiple_triples
+===============
+
+[ <http://a.example/p1> <http://a.example/o1> ; <http://a.example/p2> <http://a.example/o2> ] <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (IRIREF)
+        (objectList
+          (IRIREF))
+        (IRIREF)
+        (objectList
+          (IRIREF))))
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+collection_object
+===============
+
+<http://a.example/s> <http://a.example/p> (1) .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (collection
+          (INTEGER))))))
+
+===============
+collection_subject
+===============
+
+(1) <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (collection
+      (INTEGER))
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+comment_following_localName
+===============
+
+@prefix p: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> p:o#comment
+.
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))
+    (comment)))
+
+===============
+comment_following_PNAME_NS
+===============
+
+@prefix p: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> p:#comment
+.
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))
+    (comment)))
+
+===============
+default_namespace_IRI
+===============
+
+@prefix : <http://a.example/>.
+:s <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+double_lower_case_e
+===============
+
+<http://a.example/s> <http://a.example/p> 1e0 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DOUBLE)))))
+
+===============
+empty_collection
+===============
+
+<http://a.example/s> <http://a.example/p> () .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (collection)))))
+
+===============
+first
+===============
+
+<http://a.example/s> <http://a.example/p> ((1) 2) .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (collection
+          (collection
+            (INTEGER))
+          (INTEGER))))))
+
+===============
+HYPHEN_MINUS_in_localName
+===============
+
+@prefix p: <http://a.example/>.
+p:s- <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+IRIREF_datatype
+===============
+
+<http://a.example/s> <http://a.example/p> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF))))))
+
+===============
+IRI_subject
+===============
+
+<http://a.example/s> <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+IRI_with_all_punctuation
+===============
+
+<scheme:!$%25&amp;'()*+,-./0123456789:/@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~?#> <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+IRI_with_eight_digit_numeric_escape
+===============
+
+<http://a.example/\U00000073> <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+IRI_with_four_digit_numeric_escape
+===============
+
+<http://a.example/\u0073> <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+labeled_blank_node_object
+===============
+
+<http://a.example/s> <http://a.example/p> _:o .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BLANK_NODE_LABEL)))))
+
+===============
+labeled_blank_node_subject
+===============
+
+_:s <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+labeled_blank_node_with_leading_digit
+===============
+
+<http://a.example/s> <http://a.example/p> _:0 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BLANK_NODE_LABEL)))))
+
+===============
+labeled_blank_node_with_leading_underscore
+===============
+
+<http://a.example/s> <http://a.example/p> _:_ .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BLANK_NODE_LABEL)))))
+
+===============
+labeled_blank_node_with_non_leading_extras
+===============
+
+<http://a.example/s> <http://a.example/p> _:a·̀ͯ‿.⁀ .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BLANK_NODE_LABEL)))))
+
+===============
+labeled_blank_node_with_PN_CHARS_BASE_character_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> _:AZazÀÖØöø˿ͰͽͿ῿‌‍⁰↏Ⰰ⿯、퟿豈﷏ﷰ�𐀀󯿽 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BLANK_NODE_LABEL)))))
+
+===============
+langtagged_LONG
+===============
+
+<http://a.example/s> <http://a.example/p> """chat"""@en .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+langtagged_LONG_with_subtag
+===============
+
+# Test long literal with lang tag
+@prefix :  <http://example.org/ex#> .
+:a :b """Cheers"""@en-UK .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+langtagged_non_LONG
+===============
+
+<http://a.example/s> <http://a.example/p> "chat"@en .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+lantag_with_subtag
+===============
+
+<http://a.example/s> <http://a.example/p> "chat"@en-us .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+last
+===============
+
+<http://a.example/s> <http://a.example/p> (1 (2)) .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (collection
+          (INTEGER)
+          (collection
+            (INTEGER)))))))
+
+===============
+LITERAL1_all_controls
+===============
+
+<http://a.example/s> <http://a.example/p> '	' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+LITERAL1_all_punctuation
+===============
+
+<http://a.example/s> <http://a.example/p> ' !"#$%&():;<=>?@[]^_`{|}~' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+LITERAL1_ascii_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> '	&([]' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+LITERAL1
+===============
+
+<http://a.example/s> <http://a.example/p> 'x' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+LITERAL1_with_UTF8_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> '߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+LITERAL2_ascii_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> "	!#[]" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+LITERAL2
+===============
+
+<http://a.example/s> <http://a.example/p> "x" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+LITERAL2_with_UTF8_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> "߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+literal_false
+===============
+
+<http://a.example/s> <http://a.example/p> false .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BooleanLiteral)))))
+
+===============
+LITERAL_LONG1_ascii_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> '&([]' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+LITERAL_LONG1
+===============
+
+<http://a.example/s> <http://a.example/p> '''x''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+LITERAL_LONG1_with_1_squote
+===============
+
+<http://a.example/s> <http://a.example/p> '''x'y''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+LITERAL_LONG1_with_2_squotes
+===============
+
+<http://a.example/s> <http://a.example/p> '''x''y''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+LITERAL_LONG1_with_UTF8_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> '''߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+LITERAL_LONG2_ascii_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> "!#[]" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+LITERAL_LONG2
+===============
+
+<http://a.example/s> <http://a.example/p> """x""" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+LITERAL_LONG2_with_1_squote
+===============
+
+<http://a.example/s> <http://a.example/p> """x"y""" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+LITERAL_LONG2_with_2_squotes
+===============
+
+<http://a.example/s> <http://a.example/p> """x""y""" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+LITERAL_LONG2_with_REVERSE_SOLIDUS
+===============
+
+@prefix : <http://example.org/ns#> .
+
+:s :p1 """test-\\""" .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+LITERAL_LONG2_with_UTF8_boundaries
+===============
+
+<http://a.example/s> <http://a.example/p> """߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽""" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+literal_true
+===============
+
+<http://a.example/s> <http://a.example/p> true .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BooleanLiteral)))))
+
+===============
+literal_with_BACKSPACE
+===============
+
+<http://a.example/s> <http://a.example/p> '' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_CARRIAGE_RETURN
+===============
+
+<http://a.example/s> <http://a.example/p> '''''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+literal_with_CHARACTER_TABULATION
+===============
+
+<http://a.example/s> <http://a.example/p> '	' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_escaped_BACKSPACE
+===============
+
+<http://a.example/s> <http://a.example/p> '\b' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_escaped_CARRIAGE_RETURN
+===============
+
+<http://a.example/s> <http://a.example/p> '\r' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_escaped_CHARACTER_TABULATION
+===============
+
+<http://a.example/s> <http://a.example/p> '\t' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_escaped_FORM_FEED
+===============
+
+<http://a.example/s> <http://a.example/p> '\f' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_escaped_LINE_FEED
+===============
+
+<http://a.example/s> <http://a.example/p> '\n' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_FORM_FEED
+===============
+
+<http://a.example/s> <http://a.example/p> '' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_LINE_FEED
+===============
+
+<http://a.example/s> <http://a.example/p> '''
+''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+literal_with_numeric_escape4
+===============
+
+<http://a.example/s> <http://a.example/p> '\u006F' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_numeric_escape8
+===============
+
+<http://a.example/s> <http://a.example/p> '\U0000006F' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+literal_with_REVERSE_SOLIDUS
+===============
+
+<http://a.example/s> <http://a.example/p> '\\' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+localName_with_assigned_nfc_bmp_PN_CHARS_BASE_character_boundaries
+===============
+
+@prefix p: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> p:AZazÀÖØöø˿Ͱͽ΄῾‌‍⁰↉Ⰰ⿕、ퟻ﨎ﷇﷰ￯ .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+localName_with_assigned_nfc_PN_CHARS_BASE_character_boundaries
+===============
+
+@prefix p: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> p:AZazÀÖØöø˿Ͱͽ΄῾‌‍⁰↉Ⰰ⿕、ퟻ﨎ﷇﷰ￯𐀀󠇯 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+localname_with_COLON
+===============
+
+@prefix p: <http://a.example/>.
+p:s: <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+localName_with_leading_digit
+===============
+
+@prefix p: <http://a.example/>.
+p:0 <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+localName_with_leading_underscore
+===============
+
+@prefix p: <http://a.example/>.
+p:_ <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+localName_with_nfc_PN_CHARS_BASE_character_boundaries
+===============
+
+@prefix p: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> p:AZazÀÖØöø˿ͰͽͿ῿‌‍⁰↏Ⰰ⿯、퟿﨎﷏ﷰ￯𐀀󯿽 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+localName_with_non_leading_extras
+===============
+
+@prefix p: <http://a.example/>.
+p:a·̀ͯ‿.⁀ <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+negative_numeric
+===============
+
+<http://a.example/s> <http://a.example/p> -1 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+nested_blankNodePropertyLists
+===============
+
+[ <http://a.example/p1> [ <http://a.example/p2> <http://a.example/o2> ] ; <http://a.example/p> <http://a.example/o> ].
+
+---
+
+(turtleDoc
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (IRIREF)
+        (objectList
+          (blankNodePropertyList
+            (predicateObjectList
+              (IRIREF)
+              (objectList
+                (IRIREF)))))
+        (IRIREF)
+        (objectList
+          (IRIREF))))))
+
+===============
+nested_collection
+===============
+
+<http://a.example/s> <http://a.example/p> ((1)) .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (collection
+          (collection
+            (INTEGER)))))))
+
+===============
+number_sign_following_localName
+===============
+
+@prefix p: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> p:o\#numbersign
+.
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+number_sign_following_PNAME_NS
+===============
+
+@prefix p: <http://a.example/>.
+<http://a.example/s> <http://a.example/p> p:\#numbersign
+.
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+numeric_with_leading_0
+===============
+
+<http://a.example/s> <http://a.example/p> 01 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+objectList_with_two_objects
+===============
+
+<http://a.example/s> <http://a.example/p> <http://a.example/o1>, <http://a.example/o2> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)
+        (IRIREF)))))
+
+===============
+old_style_base
+===============
+
+@base <http://a.example/>.
+<s> <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+old_style_prefix
+===============
+
+@prefix p: <http://a.example/>.
+p:s <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+percent_escaped_localName
+===============
+
+@prefix p: <http://a.example/>.
+p:%25 <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+positive_numeric
+===============
+
+<http://a.example/s> <http://a.example/p> +1 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+predicateObjectList_with_two_objectLists
+===============
+
+<http://a.example/s> <http://a.example/p1> <http://a.example/o1>; <http://a.example/p2> <http://a.example/o2> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+prefixed_IRI_object
+===============
+
+@prefix p: <http://a.example/>.
+<http://a.example/s> <http://a.example/p> p:o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+prefixed_IRI_predicate
+===============
+
+@prefix p: <http://a.example/>.
+<http://a.example/s> p:p <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (IRIREF)))))
+
+===============
+prefixed_name_datatype
+===============
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<http://a.example/s> <http://a.example/p> "1"^^xsd:integer .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (PrefixedName))))))
+
+===============
+prefix_only_IRI
+===============
+
+@prefix p: <http://a.example/s>.
+p: <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+prefix_reassigned_and_used
+===============
+
+@prefix p: <http://a.example/>.
+@prefix p: <http://b.example/>.
+p:s <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+prefix_with_non_leading_extras
+===============
+
+@prefix a·̀ͯ‿.⁀: <http://a.example/>.
+a·̀ͯ‿.⁀:s <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+prefix_with_PN_CHARS_BASE_character_boundaries
+===============
+
+@prefix AZazÀÖØöø˿ͰͽͿ῿‌‍⁰↏Ⰰ⿯、퟿豈﷏ﷰ�𐀀󯿽: <http://a.example/> .
+<http://a.example/s> <http://a.example/p> AZazÀÖØöø˿ͰͽͿ῿‌‍⁰↏Ⰰ⿯、퟿豈﷏ﷰ�𐀀󯿽:o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (PrefixedName)))))
+
+===============
+repeated_semis_at_end
+===============
+
+<http://a.example/s> <http://a.example/p1> <http://a.example/o1>;; <http://a.example/p2> <http://a.example/o2> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+repeated_semis_not_at_end
+===============
+
+<http://a.example/s> <http://a.example/p1> <http://a.example/o1>;; .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+reserved_escaped_localName
+===============
+
+@prefix p: <http://a.example/>.
+p:\_\~\.\-\!\$\&\'\(\)\*\+\,\;\=\/\?\#\@\%00 <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+sole_blankNodePropertyList
+===============
+
+[ <http://a.example/p> <http://a.example/o> ] .
+
+---
+
+(turtleDoc
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (IRIREF)
+        (objectList
+          (IRIREF))))))
+
+===============
+SPARQL_style_base
+===============
+
+BASE <http://a.example/>
+<s> <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+SPARQL_style_prefix
+===============
+
+PREFIX p: <http://a.example/>
+p:s <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-eval-bad-01
+:error
+===============
+
+# Bad IRI : good escape, bad charcater
+<http://www.w3.org/2013/TurtleTests/\u0020> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-eval-bad-02
+:error
+===============
+
+# Bad IRI : hex 3C is <
+<http://www.w3.org/2013/TurtleTests/\u003C> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-eval-bad-03
+:error
+===============
+
+# Bad IRI : hex 3E is >
+<http://www.w3.org/2013/TurtleTests/\u003E> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-eval-bad-04
+:error
+===============
+
+# Bad IRI
+<http://www.w3.org/2013/TurtleTests/{abc}> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-eval-struct-01
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-eval-struct-02
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> 
+      <http://www.w3.org/2013/TurtleTests/p1> <http://www.w3.org/2013/TurtleTests/o1> ;
+      <http://www.w3.org/2013/TurtleTests/p2> <http://www.w3.org/2013/TurtleTests/o2> ; 
+      .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-subm-01
+===============
+
+@prefix : <#> .
+[] :x :y .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (ANON)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-subm-02
+===============
+
+# Test @prefix and qnames
+@prefix :  <http://example.org/base1#> .
+@prefix a: <http://example.org/base2#> .
+@prefix b: <http://example.org/base3#> .
+:a :b :c .
+a:a a:b a:c .
+:a a:a b:a .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-subm-03
+===============
+
+# Test , operator
+@prefix : <http://example.org/base#> .
+:a :b :c,
+      :d,
+      :e .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)
+        (PrefixedName)
+        (PrefixedName)))))
+
+===============
+turtle-subm-04
+===============
+
+# Test ; operator
+@prefix : <http://example.org/base#> .
+:a :b :c ;
+   :d :e ;
+   :f :g .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-subm-05
+===============
+
+# Test empty [] operator; not allowed as predicate
+@prefix : <http://example.org/base#> .
+[] :a :b .
+:c :d [] .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (ANON)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (ANON)))))
+
+===============
+turtle-subm-06
+===============
+
+# Test non empty [] operator; not allowed as predicate
+@prefix : <http://example.org/base#> .
+[ :a :b ] :c :d .
+:e :f [ :g :h ] .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (PrefixedName)
+        (objectList
+          (PrefixedName))))
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (blankNodePropertyList
+          (predicateObjectList
+            (PrefixedName)
+            (objectList
+              (PrefixedName))))))))
+
+===============
+turtle-subm-07
+===============
+
+# 'a' only allowed as a predicate
+@prefix : <http://example.org/base#> .
+:a a :b .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-subm-08
+===============
+
+@prefix : <http://example.org/stuff/1.0/> .
+:a :b ( "apple" "banana" ) .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection
+          (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))
+          (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
+
+===============
+turtle-subm-09
+===============
+
+@prefix : <http://example.org/stuff/1.0/> .
+:a :b ( ) .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection)))))
+
+===============
+turtle-subm-10
+===============
+
+# Test integer datatyped literals using an OWL cardinality constraint
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# based on examples in the OWL Reference
+
+_:hasParent a owl:ObjectProperty .
+
+[] a owl:Restriction ;
+  owl:onProperty _:hasParent ;
+  owl:maxCardinality 2 .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (comment)
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (objectList
+        (PrefixedName))))
+  (triples
+    (ANON)
+    (predicateObjectList
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (BLANK_NODE_LABEL))
+      (PrefixedName)
+      (objectList
+        (INTEGER)))))
+
+===============
+turtle-subm-11
+===============
+
+<http://example.org/res1> <http://example.org/prop1> 000000 .
+<http://example.org/res2> <http://example.org/prop2> 0 .
+<http://example.org/res3> <http://example.org/prop3> 000001 .
+<http://example.org/res4> <http://example.org/prop4> 2 .
+<http://example.org/res5> <http://example.org/prop5> 4 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+turtle-subm-12
+===============
+
+# Tests for - and _ in names, qnames
+@prefix ex1: <http://example.org/ex1#> .
+@prefix ex-2: <http://example.org/ex2#> .
+@prefix ex3_: <http://example.org/ex3#> .
+@prefix ex4-: <http://example.org/ex4#> .
+
+ex1:foo-bar ex1:foo_bar "a" .
+ex-2:foo-bar ex-2:foo_bar "b" .
+ex3_:foo-bar ex3_:foo_bar "c" .
+ex4-:foo-bar ex4-:foo_bar "d" .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+turtle-subm-13
+===============
+
+# Tests for rdf:_<numbers> and other qnames starting with _
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex:  <http://example.org/ex#> .
+@prefix :    <http://example.org/myprop#> .
+
+ex:foo rdf:_1 "1" .
+ex:foo rdf:_2 "2" .
+ex:foo :_abc "def" .
+ex:foo :_345 "678" .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+turtle-subm-14
+===============
+
+# Test for : allowed
+@prefix :    <http://example.org/ron> .
+
+[] : [] .
+
+: : : .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (ANON)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (ANON))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-subm-15
+===============
+
+# Test long literal
+@prefix :  <http://example.org/ex#> .
+:a :b """a long
+	literal
+with
+newlines""" .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+turtle-subm-16
+===============
+
+@prefix : <http://example.org/foo#> .
+
+## \U00015678 is a not a legal codepoint
+## :a :b """\nthis \ris a \U00015678long\t
+## literal\uABCD
+## """ .
+## 
+## :d :e """\tThis \uABCDis\r \U00015678another\n
+## one
+## """ .
+
+# \U00015678 is a not a legal codepoint
+# \U00012451 in Cuneiform numeric ban 3
+:a :b """\nthis \ris a \U00012451long\t
+literal\uABCD
+""" .
+
+:d :e """\tThis \uABCDis\r \U00012451another\n
+one
+""" .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+turtle-subm-17
+===============
+
+@prefix : <http://example.org/#> .
+
+:a :b  1.0 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (DECIMAL)))))
+
+===============
+turtle-subm-18
+===============
+
+@prefix : <http://example.org/#> .
+
+:a :b "" .
+
+:c :d """""" .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+turtle-subm-19
+===============
+
+@prefix : <http://example.org#> .
+:a :b 1.0 .
+:c :d 1 .
+:e :f 1.0e0 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (DECIMAL))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (INTEGER))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (DOUBLE)))))
+
+===============
+turtle-subm-20
+===============
+
+@prefix : <http://example.org#> .
+:a :b -1.0 .
+:c :d -1 .
+:e :f -1.0e0 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (DECIMAL))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (INTEGER))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (DOUBLE)))))
+
+===============
+turtle-subm-21
+===============
+
+# Test long literal
+@prefix :  <http://example.org/ex#> .
+:a :b """John said: "Hello World!\"""" .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+turtle-subm-22
+===============
+
+@prefix : <http://example.org#> .
+:a :b true .
+:c :d false .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (BooleanLiteral))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (BooleanLiteral)))))
+
+===============
+turtle-subm-23
+===============
+
+# comment test
+@prefix : <http://example.org/#> .
+:a :b :c . # end of line comment
+:d # ignore me
+  :e # and me
+      :f # and me
+        .
+:g :h #ignore me
+     :i,  # and me
+     :j . # and me
+
+:k :l :m ; #ignore me
+   :n :o ; # and me
+   :p :q . # and me
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (comment)
+  (triples
+    (PrefixedName)
+    (comment)
+    (predicateObjectList
+      (PrefixedName)
+      (comment)
+      (objectList
+        (PrefixedName)))
+    (comment))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (comment)
+      (objectList
+        (PrefixedName)
+        (comment)
+        (PrefixedName))))
+  (comment)
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (comment)
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (comment)
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (comment))
+
+===============
+turtle-subm-24
+===============
+
+# comment line with no final newline test
+@prefix : <http://example.org/#> .
+:a :b :c .
+#foo
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (comment))
+
+===============
+turtle-subm-25
+===============
+
+@prefix foo: <http://example.org/foo#>  .
+@prefix foo: <http://example.org/bar#>  .
+
+foo:blah foo:blah foo:blah .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-subm-26
+===============
+
+<http://example.org/foo> <http://example.org/bar> "2.345"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "1."^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "1.000000000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.234000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.2340000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.23400000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.234000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.2340000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.23400000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.234000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.2340000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.23400000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.234000000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.2340000000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.23400000000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.234000000000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.2340000000000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "2.23400000000000000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/foo> <http://example.org/bar> "1.2345678901234567890123457890"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF))))))
+
+===============
+turtle-subm-27
+===============
+
+# In-scope base URI is <http://www.w3.org/2013/TurtleTests/turtle-subm-27.ttl> at this point
+<a1> <b1> <c1> .
+@base <http://example.org/ns/> .
+# In-scope base URI is http://example.org/ns/ at this point
+<a2> <http://example.org/ns/b2> <c2> .
+@base <foo/> .
+# In-scope base URI is http://example.org/ns/foo/ at this point
+<a3> <b3> <c3> .
+@prefix : <bar#> .
+:a4 :b4 :c4 .
+@prefix : <http://example.org/ns2#> .
+:a5 :b5 :c5 .
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))))
+  (directive
+    (base
+      iri: (IRIREF)))
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))))
+  (directive
+    (base
+      iri: (IRIREF)))
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-bad-base-01
+:error
+===============
+
+# @base without URI.
+@base .
+
+---
+
+
+
+===============
+turtle-syntax-bad-base-02
+:error
+===============
+
+# @base in wrong case.
+@BASE <http://www.w3.org/2013/TurtleTests/> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-base-03
+:error
+===============
+
+# FULL STOP used after SPARQL BASE
+BASE <http://www.w3.org/2013/TurtleTests/> .
+<s> <p> <o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-blank-label-dot-end
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+_:b1. :p :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-esc-01
+:error
+===============
+
+# Bad string escape
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "a\zb" .
+
+---
+
+
+
+===============
+turtle-syntax-bad-esc-02
+:error
+===============
+
+# Bad string escape
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "\uWXYZ" .
+
+---
+
+
+
+===============
+turtle-syntax-bad-esc-03
+:error
+===============
+
+# Bad string escape
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "\U0000WXYZ" .
+
+---
+
+
+
+===============
+turtle-syntax-bad-esc-04
+:error
+===============
+
+# Bad string escape
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "\U0000WXYZ" .
+
+---
+
+
+
+===============
+turtle-syntax-bad-kw-01
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s A :C .
+
+---
+
+
+
+===============
+turtle-syntax-bad-kw-02
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+a :p :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-kw-03
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p a .
+
+---
+
+
+
+===============
+turtle-syntax-bad-kw-04
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+true :p :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-kw-05
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s true :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-lang-01
+:error
+===============
+
+# Bad lang tag
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "string"@1 .
+
+---
+
+
+
+===============
+turtle-syntax-bad-LITERAL2_with_langtag_and_datatype
+:error
+===============
+
+<http://example.org/resource> <http://example.org#pred> "value"@en^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-ln-dash-start
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :-o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-ln-escape-start
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :%2o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-ln-escape
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :o%2 .
+
+---
+
+
+
+===============
+turtle-syntax-bad-missing-ns-dot-end
+:error
+===============
+
+valid:s valid:p invalid.:o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-missing-ns-dot-start
+:error
+===============
+
+.undefined:s .undefined:p .undefined:o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-01
+:error
+===============
+
+# {} fomulae not in Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+{ :a :q :c . } :p :z .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-02
+:error
+===============
+
+# = is not Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+:a = :b .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-03
+:error
+===============
+
+# N3 paths
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+@prefix ns: <http://www.w3.org/2013/TurtleTests/p#> .
+
+:x.
+  ns:p.
+    ns:q :p :z .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-04
+:error
+===============
+
+# N3 paths
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+@prefix ns: <http://www.w3.org/2013/TurtleTests/p#> .
+
+:x^ns:p :p :z .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-05
+:error
+===============
+
+# N3 is...of
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+:z is :p of :x .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-06
+:error
+===============
+
+# = is not Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+:a.:b.:c .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-07
+:error
+===============
+
+# @keywords is not Turtle
+@keywords a .
+x a Item .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-08
+:error
+===============
+
+# @keywords is not Turtle
+@keywords a .
+x a Item .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-09
+:error
+===============
+
+# => is not Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s => :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-10
+:error
+===============
+
+# <= is not Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s <= :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-11
+:error
+===============
+
+# @forSome is not Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+@forSome :x .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-12
+:error
+===============
+
+# @forAll is not Turtle
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+@forAll :x .
+
+---
+
+
+
+===============
+turtle-syntax-bad-n3-extras-13
+:error
+===============
+
+# @keywords is not Turtle
+@keywords .
+x @a Item .
+
+---
+
+
+
+===============
+turtle-syntax-bad-ns-dot-end
+:error
+===============
+
+@prefix eg. : <http://www.w3.org/2013/TurtleTests/> .
+eg.:s eg.:p eg.:o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-ns-dot-start
+:error
+===============
+
+@prefix .eg : <http://www.w3.org/2013/TurtleTests/> .
+.eg:s .eg:p .eg:o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-num-01
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 123.abc .
+
+---
+
+
+
+===============
+turtle-syntax-bad-num-02
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 123e .
+
+---
+
+
+
+===============
+turtle-syntax-bad-num-03
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 123abc .
+
+---
+
+
+
+===============
+turtle-syntax-bad-num-04
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 0x123 .
+
+---
+
+
+
+===============
+turtle-syntax-bad-num-05
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> +-1 .
+
+---
+
+
+
+===============
+turtle-syntax-bad-number-dot-in-anon
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+:s
+	:p [
+		:p1 27.
+	] .
+
+---
+
+
+
+===============
+turtle-syntax-bad-pname-01
+:error
+===============
+
+# ~ must be escaped.
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:a~b :p :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-pname-02
+:error
+===============
+
+# Bad %-sequence
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:a%2 :p :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-pname-03
+:error
+===============
+
+# No \u (x39 is "9")
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:a\u0039 :p :o .
+
+---
+
+
+
+===============
+turtle-syntax-bad-prefix-01
+:error
+===============
+
+# No prefix
+:s <http://www.w3.org/2013/TurtleTests/p> "x" .
+
+---
+
+
+
+===============
+turtle-syntax-bad-prefix-02
+:error
+===============
+
+# No prefix
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/2013/TurtleTests/s> rdf:type :C .
+
+---
+
+
+
+===============
+turtle-syntax-bad-prefix-03
+:error
+===============
+
+# @prefix without URI.
+@prefix ex: .
+
+---
+
+
+
+===============
+turtle-syntax-bad-prefix-04
+:error
+===============
+
+# @prefix without prefix name .
+@prefix <http://www.w3.org/2013/TurtleTests/> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-prefix-05
+:error
+===============
+
+# @prefix without :
+@prefix x <http://www.w3.org/2013/TurtleTests/> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-01
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p "abc' .
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-02
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p 'abc" .
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-03
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p '''abc' .
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-04
+:error
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p """abc''' .
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-05
+:error
+===============
+
+# Long literal with missing end
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p """abc
+def
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-06
+:error
+===============
+
+# Long literal with 4"
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p """abc""""@en .
+
+---
+
+
+
+===============
+turtle-syntax-bad-string-07
+:error
+===============
+
+# Long literal with 4'
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p '''abc''''@en .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-01
+:error
+===============
+
+# Turtle is not TriG
+{ <http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> }
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-02
+:error
+===============
+
+# Turtle is not N3
+<http://www.w3.org/2013/TurtleTests/s> = <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-03
+:error
+===============
+
+# Turtle is not NQuads
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> <http://www.w3.org/2013/TurtleTests/g> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-04
+:error
+===============
+
+# Turtle does not allow literals-as-subjects
+"hello" <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-05
+:error
+===============
+
+# Turtle does not allow literals-as-predicates
+<http://www.w3.org/2013/TurtleTests/s> "hello" <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-06
+:error
+===============
+
+# Turtle does not allow bnodes-as-predicates
+<http://www.w3.org/2013/TurtleTests/s> [] <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-07
+:error
+===============
+
+# Turtle does not allow bnodes-as-predicates
+<http://www.w3.org/2013/TurtleTests/s> _:p <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-08
+:error
+===============
+
+# No DOT
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o>
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-09
+:error
+===============
+
+# Too many DOT
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> . .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-10
+:error
+===============
+
+# Too many DOT
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> . .
+<http://www.w3.org/2013/TurtleTests/s1> <http://www.w3.org/2013/TurtleTests/p1> <http://www.w3.org/2013/TurtleTests/o1> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-11
+:error
+===============
+
+# Trailing ;
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> ;
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-12
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-13
+:error
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-14
+:error
+===============
+
+# Literal as subject
+"abc" <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/p>  .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-15
+:error
+===============
+
+# Literal as predicate
+<http://www.w3.org/2013/TurtleTests/s> "abc" <http://www.w3.org/2013/TurtleTests/p>  .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-16
+:error
+===============
+
+# BNode as predicate
+<http://www.w3.org/2013/TurtleTests/s> [] <http://www.w3.org/2013/TurtleTests/p>  .
+
+---
+
+
+
+===============
+turtle-syntax-bad-struct-17
+:error
+===============
+
+# BNode as predicate
+<http://www.w3.org/2013/TurtleTests/s> _:a <http://www.w3.org/2013/TurtleTests/p>  .
+
+---
+
+
+
+===============
+turtle-syntax-bad-uri-01
+:error
+===============
+
+# Bad IRI : space.
+<http://www.w3.org/2013/TurtleTests/ space> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-uri-02
+:error
+===============
+
+# Bad IRI : bad escape
+<http://www.w3.org/2013/TurtleTests/\u00ZZ11> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-uri-03
+:error
+===============
+
+# Bad IRI : bad escape
+<http://www.w3.org/2013/TurtleTests/\U00ZZ1111> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-uri-04
+:error
+===============
+
+# Bad IRI : character escapes not allowed.
+<http://www.w3.org/2013/TurtleTests/\n> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-bad-uri-05
+:error
+===============
+
+# Bad IRI : character escapes not allowed.
+<http://www.w3.org/2013/TurtleTests/\/> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+
+
+===============
+turtle-syntax-base-01
+===============
+
+@base <http://www.w3.org/2013/TurtleTests/> .
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF))))
+
+===============
+turtle-syntax-base-02
+===============
+
+BASE <http://www.w3.org/2013/TurtleTests/>
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF))))
+
+===============
+turtle-syntax-base-03
+===============
+
+@base <http://www.w3.org/2013/TurtleTests/> .
+<s> <p> <o> .
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-syntax-base-04
+===============
+
+base <http://www.w3.org/2013/TurtleTests/>
+<s> <p> <o> .
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-syntax-blank-label
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+_:0b :p :o . # Starts with digit
+_:_b :p :o . # Starts with underscore
+_:b.0 :p :o . # Contains dot, ends with digit
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (comment)
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (comment)
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (comment))
+
+===============
+turtle-syntax-bnode-01
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+[] :p :o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (ANON)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-bnode-02
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p [] .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (ANON)))))
+
+===============
+turtle-syntax-bnode-03
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p [ :q :o ] .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (blankNodePropertyList
+          (predicateObjectList
+            (PrefixedName)
+            (objectList
+              (PrefixedName))))))))
+
+===============
+turtle-syntax-bnode-04
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p [ :q1 :o1 ; :q2 :o2 ] .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (blankNodePropertyList
+          (predicateObjectList
+            (PrefixedName)
+            (objectList
+              (PrefixedName))
+            (PrefixedName)
+            (objectList
+              (PrefixedName))))))))
+
+===============
+turtle-syntax-bnode-05
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+[ :q1 :o1 ; :q2 :o2 ] :p :o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (PrefixedName)
+        (objectList
+          (PrefixedName))
+        (PrefixedName)
+        (objectList
+          (PrefixedName))))
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-bnode-06
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+_:a  :p :o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-bnode-07
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s  :p _:a .
+_:a  :p :o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (BLANK_NODE_LABEL))))
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-bnode-08
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+[ :p  :o ] .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (PrefixedName)
+        (objectList
+          (PrefixedName))))))
+
+===============
+turtle-syntax-bnode-09
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+[ :p  :o1,:2 ] .
+:s :p :o  .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (PrefixedName)
+        (objectList
+          (PrefixedName)
+          (PrefixedName)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-bnode-10
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+:s1 :p :o .
+[ :p1  :o1 ; :p2 :o2 ] .
+:s2 :p :o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        (PrefixedName)
+        (objectList
+          (PrefixedName))
+        (PrefixedName)
+        (objectList
+          (PrefixedName)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-datatypes-01
+===============
+
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+<s> <p> "123"^^xsd:byte .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (PrefixedName))))))
+
+===============
+turtle-syntax-datatypes-02
+===============
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+<s> <p> "123"^^xsd:string .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (PrefixedName))))))
+
+===============
+turtle-syntax-file-01
+===============
+
+
+
+---
+
+(turtleDoc)
+
+===============
+turtle-syntax-file-02
+===============
+
+#Empty file.
+
+---
+
+(turtleDoc
+  (comment))
+
+===============
+turtle-syntax-file-03
+===============
+
+#One comment, one empty line.
+
+---
+
+(turtleDoc
+  (comment))
+
+===============
+turtle-syntax-kw-01
+===============
+
+<s> <p> true .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BooleanLiteral)))))
+
+===============
+turtle-syntax-kw-02
+===============
+
+<s> <p> false .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (BooleanLiteral)))))
+
+===============
+turtle-syntax-kw-03
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s a :C .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-lists-01
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p () .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection)))))
+
+===============
+turtle-syntax-lists-02
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p (1 "2" :o) .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection
+          (INTEGER)
+          (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))
+          (PrefixedName))))))
+
+===============
+turtle-syntax-lists-03
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+(1) :p (1) .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (collection
+      (INTEGER))
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection
+          (INTEGER))))))
+
+===============
+turtle-syntax-lists-04
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+(()) :p (()) .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (collection
+      (collection))
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection
+          (collection))))))
+
+===============
+turtle-syntax-lists-05
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+(1 2 (1 2)) :p (( "a") "b" :o) .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (collection
+      (INTEGER)
+      (INTEGER)
+      (collection
+        (INTEGER)
+        (INTEGER)))
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection
+          (collection
+            (RDFLiteral
+              string: (STRING_LITERAL_QUOTE)))
+          (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))
+          (PrefixedName))))))
+
+===============
+turtle-syntax-ln-colons
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s:1 :p:1 :o:1 .
+:s::2 :p::2 :o::2 .
+:3:s :3:p :3 .
+::s ::p ::o .
+::s: ::p: ::o: .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-ln-dots
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s.1 :p.1 :o.1 .
+:s..2 :p..2 :o..2.
+:3.s :3.p :3.
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-ns-dots
+===============
+
+@prefix e.g: <http://www.w3.org/2013/TurtleTests/> .
+e.g:s e.g:p e.g:o .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-number-01
+===============
+
+<s> <p> 123 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+turtle-syntax-number-02
+===============
+
+<s> <p> -123 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+turtle-syntax-number-03
+===============
+
+<s> <p> +123 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+turtle-syntax-number-04
+===============
+
+# This is a decimal.
+<s> <p> 123.0 . 
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DECIMAL)))))
+
+===============
+turtle-syntax-number-05
+===============
+
+# This is a decimal.
+<s> <p> .1 . 
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DECIMAL)))))
+
+===============
+turtle-syntax-number-06
+===============
+
+# This is a decimal.
+<s> <p> -123.0 . 
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DECIMAL)))))
+
+===============
+turtle-syntax-number-07
+===============
+
+# This is a decimal.
+<s> <p> +123.0 . 
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DECIMAL)))))
+
+===============
+turtle-syntax-number-08
+===============
+
+# This is an integer
+<s> <p> 123.
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (INTEGER)))))
+
+===============
+turtle-syntax-number-09
+===============
+
+<s> <p> 123.0e1 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DOUBLE)))))
+
+===============
+turtle-syntax-number-10
+===============
+
+<s> <p> -123e-1 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DOUBLE)))))
+
+===============
+turtle-syntax-number-11
+===============
+
+<s> <p> 123.E+1 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (DOUBLE)))))
+
+===============
+turtle-syntax-pname-esc-01
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :\~\.\-\!\$\&\'\(\)\*\+\,\;\=\/\?\#\@\_\%AA .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-pname-esc-02
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :0123\~\.\-\!\$\&\'\(\)\*\+\,\;\=\/\?\#\@\_\%AA123 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-pname-esc-03
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:xyz\~ :abc\.:  : .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-01
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF))))
+
+===============
+turtle-syntax-prefix-02
+===============
+
+PreFIX : <http://www.w3.org/2013/TurtleTests/>
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF))))
+
+===============
+turtle-syntax-prefix-03
+===============
+
+PREFIX : <http://www.w3.org/2013/TurtleTests/>
+:s :p :123 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-04
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :%20 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-05
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+: : : .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-06
+===============
+
+# colon is a legal pname character
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+@prefix x: <http://www.w3.org/2013/TurtleTests/> .
+:a:b:c  x:d:e:f :::: .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-07
+===============
+
+# dash is a legal pname character
+@prefix x: <http://www.w3.org/2013/TurtleTests/> .
+x:a-b-c  x:p x:o .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-08
+===============
+
+# underscore is a legal pname character
+@prefix x: <http://www.w3.org/2013/TurtleTests/> .
+x:_  x:p_1 x:o .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-prefix-09
+===============
+
+# percents
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+@prefix x: <http://www.w3.org/2013/TurtleTests/> .
+:a%3E  x:%25 :a%3Eb .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-str-esc-01
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "a\n" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+turtle-syntax-str-esc-02
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "a\u0020b" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+turtle-syntax-str-esc-03
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "a\U00000020b" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+turtle-syntax-string-01
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "string" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+===============
+turtle-syntax-string-02
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "string"@en .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+turtle-syntax-string-03
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> "string"@en-uk .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+turtle-syntax-string-04
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 'string' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+===============
+turtle-syntax-string-05
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 'string'@en .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+turtle-syntax-string-06
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> 'string'@en-uk .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+turtle-syntax-string-07
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> """abc""def''ghi""" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+turtle-syntax-string-08
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> """abc
+def""" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+turtle-syntax-string-09
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> '''abc
+def''' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+===============
+turtle-syntax-string-10
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> """abc
+def"""@en .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+turtle-syntax-string-11
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> '''abc
+def'''@en .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE)
+          language_tag: (LANGTAG))))))
+
+===============
+turtle-syntax-struct-01
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p :o1 , :o2 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)
+        (PrefixedName)))))
+
+===============
+turtle-syntax-struct-02
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p1 :o1 ;
+   :p2 :o2 .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-struct-03
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p1 :o1 ;
+   :p2 :o2 ;
+   .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-struct-04
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p1 :o1 ;;
+   :p2 :o2 
+   .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-struct-05
+===============
+
+@prefix : <http://www.w3.org/2013/TurtleTests/> .
+:s :p1 :o1 ;
+   :p2 :o2 ;;
+   .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName))
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+===============
+turtle-syntax-uri-01
+===============
+
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-syntax-uri-02
+===============
+
+# x53 is capital S
+<http://www.w3.org/2013/TurtleTests/\u0053> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-syntax-uri-03
+===============
+
+# x53 is capital S
+<http://www.w3.org/2013/TurtleTests/\U00000053> <http://www.w3.org/2013/TurtleTests/p> <http://www.w3.org/2013/TurtleTests/o> .
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+turtle-syntax-uri-04
+===============
+
+# IRI with all chars in it.
+<http://www.w3.org/2013/TurtleTests/s> <http://www.w3.org/2013/TurtleTests/p>
+<scheme:!$%25&'()*+,-./0123456789:/@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~?#> .
+
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===============
+two_LITERAL_LONG2s
+===============
+
+# Test long literal twice to ensure it does not over-quote
+@prefix :  <http://example.org/ex#> .
+:a :b """first long literal""" .
+:c :d """second long literal""" .
+
+---
+
+(turtleDoc
+  (comment)
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_QUOTE))))))
+
+===============
+underscore_in_localName
+===============
+
+@prefix p: <http://a.example/>.
+p:s_ <http://a.example/p> <http://a.example/o> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))

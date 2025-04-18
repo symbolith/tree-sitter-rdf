@@ -1,0 +1,9 @@
+# Comment
+_:blank_node <p> _:blank_node .
+<s> <p> <o> . # Comment
+<s> <p> "string"@en-en .
+<s> <p> "string"@en-en--ltr .
+<s> <p> "string"^^<datatype> .
+<s> <p> "escape\tsequences\\test\b" .
+<s> <p> "hex\u0020" .
+<s> <p> <http://www.dit.unitn.it/\u0020pavel/om2017/papers/oaei17_paper11.pdf> .

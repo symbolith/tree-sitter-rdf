@@ -1,0 +1,39 @@
+{
+  "grammars": [
+    {
+      "name": "rdf11_turtle",
+      "camelcase": "Rdf11Turtle",
+      "title": "RDF 1.1 Turtle",
+      "scope": "source.turtle",
+      "file-types": [
+        "ttl"
+      ],
+      "injection-regex": "turtle",
+      "highlights": "queries/highlights.scm",
+      "tags": "queries/tags.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.2.0",
+    "license": "MIT",
+    "description": "RDF 1.1 Turtle grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Gordian Dziwis"
+      }
+    ],
+    "links": {
+      "repository": "git+https://github.com/GordianDziwis/tree-sitter-rdf.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": true,
+    "kotlin": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}

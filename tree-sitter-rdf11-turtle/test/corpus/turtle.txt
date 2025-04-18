@@ -1,0 +1,481 @@
+===============
+Simple triple
+===============
+
+<http://example.org/#spiderman> <http://www.perceive.net/schemas/relationship/enemyOf> <http://example.org/#green-goblin> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===
+Multiple triple
+===
+
+<http://example.org/#spiderman> <http://www.perceive.net/schemas/relationship/enemyOf> <http://example.org/#green-goblin> .
+
+<http://example.org/#spiderman> <http://www.perceive.net/schemas/relationship/enemyOf> <http://example.org/#green-goblin> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+===
+Triple term
+:error
+===
+
+_:anno <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( _:e38 <http://example.com/jobTitle> "Designer" )>> .
+
+---
+
+
+
+===
+Comment
+===
+
+# Comment
+<s> <p> <o> . # Comment
+---
+
+(turtleDoc
+  (comment)
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))))
+  (comment))
+
+================
+Predicate lists
+================
+
+<http://example.org/#spiderman> <http://www.perceive.net/schemas/relationship/enemyOf>
+    <http://example.org/#green-goblin> ;
+    a <http://example.org/#green-goblin> ;
+    <http://xmlns.com/foaf/0.1/name> "Spiderman", "a" .
+
+<http://example.org/#spiderman> <http://www.perceive.net/schemas/relationship/enemyOf>
+    <http://example.org/#green-goblin> ;
+    a <http://example.org/#green-goblin> ;
+    <http://xmlns.com/foaf/0.1/name> <a>, <v> .
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))
+      (objectList
+        (IRIREF))
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)))))
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF))
+      (objectList
+        (IRIREF))
+      (IRIREF)
+      (objectList
+        (IRIREF)
+        (IRIREF)))))
+
+=============
+Object lists
+=============
+
+<http://example.org/#spiderman> <http://xmlns.com/foaf/0.1/name> "Spiderman", "Человек-паук"@ru .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG))))))
+
+=============
+Absolute iri
+=============
+
+<http://one.example/subject1> <http://one.example/predicate1> <http://one.example/object1> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+============
+Relative iri
+============
+
+<subject2> <predicate2> <object2> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))
+
+==============
+Prefixed name
+==============
+
+p:subject3 p:predicate3 p:object3 .
+
+---
+
+(turtleDoc
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (PrefixedName)))))
+
+=============
+Empty prefix
+=============
+
+:subject5 a :object5 .
+
+---
+
+(turtleDoc
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (objectList
+        (PrefixedName)))))
+
+=================
+Multi-script iri
+=================
+
+<http://伝言.example/?user=أكرم&amp;channel=R%26D> a :subject8 .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (objectList
+        (PrefixedName)))))
+
+=====
+Base
+=====
+
+@base <http://one.example/> .
+BASE <http://one.example/>
+BAse <http://one.example/>
+
+---
+
+(turtleDoc
+  (directive
+    (base
+      iri: (IRIREF)))
+  (directive
+    (base
+      iri: (IRIREF)))
+  (directive
+    (base
+      iri: (IRIREF))))
+
+=======
+Prefix
+=======
+
+@prefix p: <http://two.example/> .
+
+---
+
+(turtleDoc
+  (directive
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF))))
+
+================
+Quoted literals
+================
+
+show:218 rdfs:label "That Seventies Show"^^xsd:string .
+show:218 rdfs:label "That Seventies Show"^^<http://www.w3.org/2001/XMLSchema#string> .
+show:218 rdfs:label "That Seventies Show" .
+
+---
+
+(turtleDoc
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (PrefixedName)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          datatype_iri: (IRIREF)))))
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+=============
+Language Tag
+=============
+
+show:218 show:localName 'That Seventies Show'@fr-be .
+
+---
+
+(turtleDoc
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE)
+          language_tag: (LANGTAG))))))
+
+=======================
+Literal with new lines
+=======================
+
+show:218 show:blurb '''This is a multi-line
+literal with many quotes (""""")
+and up to two sequential apostrophes ('').''' .
+
+---
+
+(turtleDoc
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+
+=================
+String with Hash
+=================
+
+<s> <p> "foo#" .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_QUOTE))))))
+
+========
+Numbers
+========
+
+<http://en.wikipedia.org/wiki/Helium>
+    :atomicNumber 2 ;               # xsd:integer
+    :atomicMass 4.002602 ;          # xsd:decimal
+    :specificGravity 1.663E-4 .     # xsd:double
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (INTEGER))
+      (comment)
+      (PrefixedName)
+      (objectList
+        (DECIMAL))
+      (comment)
+      (PrefixedName)
+      (objectList
+        (DOUBLE))))
+  (comment))
+
+=========
+Booleans
+=========
+
+<http://somecountry.example/census2007> :isLandlocked false .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (BooleanLiteral)))))
+
+============
+Blank nodes
+============
+
+_:alice foaf:knows _:bob .
+
+---
+
+(turtleDoc
+  (triples
+    (BLANK_NODE_LABEL)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (BLANK_NODE_LABEL)))))
+
+===================
+Nested blank nodes
+===================
+
+[] foaf:knows [ foaf:name "Bob" ] .
+
+---
+
+(turtleDoc
+  (triples
+    (ANON)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (blankNodePropertyList
+          (predicateObjectList
+            (PrefixedName)
+            (objectList
+              (RDFLiteral
+                string: (STRING_LITERAL_QUOTE)))))))))
+
+============
+Collections
+============
+
+() :predicate ( :a :b :c ) .
+
+---
+
+(turtleDoc
+  (triples
+    (collection)
+    (predicateObjectList
+      (PrefixedName)
+      (objectList
+        (collection
+          (PrefixedName)
+          (PrefixedName)
+          (PrefixedName))))))
+
+===
+Verb
+===
+
+:a a :a .
+
+---
+
+(turtleDoc
+  (triples
+    (PrefixedName)
+    (predicateObjectList
+      (objectList
+        (PrefixedName)))))
+
+===
+Escape sequences
+===
+
+<s> <p> '\ta\b' .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (RDFLiteral
+          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+
+==============
+Hex sequences
+==============
+
+<s> <p> <http://www.dit.unitn.it/\u0020pavel/om2017/papers/oaei17_paper11.pdf> .
+
+---
+
+(turtleDoc
+  (triples
+    (IRIREF)
+    (predicateObjectList
+      (IRIREF)
+      (objectList
+        (IRIREF)))))

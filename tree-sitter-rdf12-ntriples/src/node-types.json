@@ -1,0 +1,285 @@
+[
+  {
+    "type": "directive",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "versionDirective",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "object",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BLANK_NODE_LABEL",
+        "named": true
+      },
+      {
+        "type": "IRIREF",
+        "named": true
+      },
+      {
+        "type": "literal",
+        "named": true
+      },
+      {
+        "type": "tripleTerm",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "predicate",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "IRIREF",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "statement",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "directive",
+        "named": true
+      },
+      {
+        "type": "triple",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "subject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BLANK_NODE_LABEL",
+        "named": true
+      },
+      {
+        "type": "IRIREF",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "versionSpecifier",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "STRING_LITERAL_QUOTE",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "fields": {
+      "base_direction": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "BASE_DIRECTION",
+            "named": true
+          }
+        ]
+      },
+      "datatype_iri": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "IRIREF",
+            "named": true
+          }
+        ]
+      },
+      "language_tag": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "LANGTAG",
+            "named": true
+          }
+        ]
+      },
+      "string": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "STRING_LITERAL_QUOTE",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "ntriplesDoc",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "triple",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "object",
+            "named": true
+          }
+        ]
+      },
+      "predicate": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "predicate",
+            "named": true
+          }
+        ]
+      },
+      "subject": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "subject",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "tripleTerm",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "object",
+            "named": true
+          }
+        ]
+      },
+      "predicate": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "predicate",
+            "named": true
+          }
+        ]
+      },
+      "subject": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "subject",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "versionDirective",
+    "named": true,
+    "fields": {
+      "versionSpecifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "versionSpecifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": ")>>",
+    "named": false
+  },
+  {
+    "type": "--",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "<<(",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "BASE_DIRECTION",
+    "named": true
+  },
+  {
+    "type": "BLANK_NODE_LABEL",
+    "named": true
+  },
+  {
+    "type": "IRIREF",
+    "named": true
+  },
+  {
+    "type": "LANGTAG",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_QUOTE",
+    "named": true
+  },
+  {
+    "type": "VERSION",
+    "named": false
+  },
+  {
+    "type": "^^",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  }
+]

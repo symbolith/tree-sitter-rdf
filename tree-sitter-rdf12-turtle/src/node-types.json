@@ -1,0 +1,807 @@
+[
+  {
+    "type": "BlankNode",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "ANON",
+        "named": true
+      },
+      {
+        "type": "BLANK_NODE_LABEL",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "NumericLiteral",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "DECIMAL",
+        "named": true
+      },
+      {
+        "type": "DOUBLE",
+        "named": true
+      },
+      {
+        "type": "INTEGER",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "String",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "STRING_LITERAL_LONG_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_LONG_SINGLE_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_SINGLE_QUOTE",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "VersionSpecifier",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "STRING_LITERAL_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_SINGLE_QUOTE",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "directive",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "base",
+        "named": true
+      },
+      {
+        "type": "prefix",
+        "named": true
+      },
+      {
+        "type": "version",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "iri",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "IRIREF",
+        "named": true
+      },
+      {
+        "type": "PrefixedName",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BooleanLiteral",
+        "named": true
+      },
+      {
+        "type": "NumericLiteral",
+        "named": true
+      },
+      {
+        "type": "RDFLiteral",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "object",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "blankNodePropertyList",
+        "named": true
+      },
+      {
+        "type": "collection",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      },
+      {
+        "type": "literal",
+        "named": true
+      },
+      {
+        "type": "reifiedTriple",
+        "named": true
+      },
+      {
+        "type": "tripleTerm",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "predicate",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "rtObject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      },
+      {
+        "type": "literal",
+        "named": true
+      },
+      {
+        "type": "reifiedTriple",
+        "named": true
+      },
+      {
+        "type": "tripleTerm",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "rtSubject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      },
+      {
+        "type": "reifiedTriple",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "subject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "collection",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "ttObject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      },
+      {
+        "type": "literal",
+        "named": true
+      },
+      {
+        "type": "tripleTerm",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "ttSubject",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "verb",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "a",
+        "named": false
+      },
+      {
+        "type": "predicate",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "BooleanLiteral",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "PrefixedName",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "RDFLiteral",
+    "named": true,
+    "fields": {
+      "base_direction": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "BASE_DIRECTION",
+            "named": true
+          }
+        ]
+      },
+      "datatype_iri": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "iri",
+            "named": true
+          }
+        ]
+      },
+      "language_tag": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "LANGTAG",
+            "named": true
+          }
+        ]
+      },
+      "string": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "String",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "annotationBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "predicateObjectList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "base",
+    "named": true,
+    "fields": {
+      "iri": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IRIREF",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "blankNodePropertyList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "predicateObjectList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "collection",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "object",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "objectList",
+    "named": true,
+    "fields": {
+      "annotation": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "annotationBlock",
+            "named": true
+          },
+          {
+            "type": "reifier",
+            "named": true
+          }
+        ]
+      },
+      "object": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "object",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "predicateObjectList",
+    "named": true,
+    "fields": {
+      "predicate": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "verb",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "objectList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "prefix",
+    "named": true,
+    "fields": {
+      "iri": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IRIREF",
+            "named": true
+          }
+        ]
+      },
+      "prefix_label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "PNAME_NS",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "reifiedTriple",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "rtObject",
+            "named": true
+          }
+        ]
+      },
+      "predicate": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "verb",
+            "named": true
+          }
+        ]
+      },
+      "subject": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "rtSubject",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "reifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "reifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "BlankNode",
+          "named": true
+        },
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tripleTerm",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ttObject",
+            "named": true
+          }
+        ]
+      },
+      "predicate": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "verb",
+            "named": true
+          }
+        ]
+      },
+      "subject": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ttSubject",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "triples",
+    "named": true,
+    "fields": {
+      "subject": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "subject",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "blankNodePropertyList",
+          "named": true
+        },
+        {
+          "type": "predicateObjectList",
+          "named": true
+        },
+        {
+          "type": "reifiedTriple",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "turtleDoc",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "directive",
+          "named": true
+        },
+        {
+          "type": "triples",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "version",
+    "named": true,
+    "fields": {
+      "versionSpecifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "VersionSpecifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ")>>",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "--",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<<",
+    "named": false
+  },
+  {
+    "type": "<<(",
+    "named": false
+  },
+  {
+    "type": ">>",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "@base",
+    "named": false
+  },
+  {
+    "type": "@prefix",
+    "named": false
+  },
+  {
+    "type": "@version",
+    "named": false
+  },
+  {
+    "type": "ANON",
+    "named": true
+  },
+  {
+    "type": "BASE",
+    "named": false
+  },
+  {
+    "type": "BASE_DIRECTION",
+    "named": true
+  },
+  {
+    "type": "BLANK_NODE_LABEL",
+    "named": true
+  },
+  {
+    "type": "DECIMAL",
+    "named": true
+  },
+  {
+    "type": "DOUBLE",
+    "named": true
+  },
+  {
+    "type": "INTEGER",
+    "named": true
+  },
+  {
+    "type": "IRIREF",
+    "named": true
+  },
+  {
+    "type": "LANGTAG",
+    "named": true
+  },
+  {
+    "type": "PNAME_NS",
+    "named": true
+  },
+  {
+    "type": "PREFIX",
+    "named": false
+  },
+  {
+    "type": "STRING_LITERAL_LONG_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_LONG_SINGLE_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_SINGLE_QUOTE",
+    "named": true
+  },
+  {
+    "type": "VERSION",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^^",
+    "named": false
+  },
+  {
+    "type": "a",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "{|",
+    "named": false
+  },
+  {
+    "type": "|}",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]

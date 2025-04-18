@@ -1,0 +1,39 @@
+{
+  "grammars": [
+    {
+      "name": "rdf12_nquads",
+      "camelcase": "Rdf12Nquads",
+      "title": "RDF 1.2 N-Quads",
+      "scope": "source.nquads",
+      "file-types": [
+        "nq"
+      ],
+      "injection-regex": "(n-quads|n_quads|nquads|nt)",
+      "highlights": "queries/highlights.scm",
+      "tags": "queries/tags.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.2.0",
+    "license": "MIT",
+    "description": "RDF 1.2 N-Quads grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Gordian Dziwis"
+      }
+    ],
+    "links": {
+      "repository": "git+https://github.com/GordianDziwis/tree-sitter-rdf.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": true,
+    "kotlin": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
