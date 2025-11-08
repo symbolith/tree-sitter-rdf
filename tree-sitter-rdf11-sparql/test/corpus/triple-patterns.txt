@@ -1,0 +1,151 @@
+===========================
+Predicate object list path
+===========================
+
+SELECT *
+
+WHERE {
+  ?s ?p0 ?o0 ;
+     ?p1 ?o1 .
+}
+
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var))
+                predicate: (Var)
+                (ObjectList
+                  object: (Var))))))))))
+
+======================
+Predicate object list
+======================
+
+CONSTRUCT WHERE {
+  ?s ?p ?o ;
+     ?p1 ?o1 .
+}
+
+---
+
+(Unit
+  (Query
+    form: (ConstructQuery
+      (TriplesTemplate
+        (TriplesSameSubject
+          predicate: (Var)
+          (PropertyList
+            predicate: (Var)
+            (ObjectList
+              object: (Var))
+            predicate: (Var)
+            (ObjectList
+              object: (Var))))))))
+
+============
+Object list
+============
+
+
+SELECT *
+
+WHERE {
+  ?s ?p ?o0 , ?o1
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)
+                  object: (Var))))))))))
+
+===============
+Rdf collection
+===============
+
+SELECT *
+
+WHERE {
+  (?foo [:p :o] (?bar))
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              (CollectionPath
+                (Var)
+                (BlankNodePropertyListPath
+                  (PropertyListPath
+                    predicate: (PathElement
+                      (PrefixedName))
+                    (ObjectListPath
+                      object: (PrefixedName))))
+                (CollectionPath
+                  (Var))))))))))
+
+=========
+Rdf:type
+=========
+
+SELECT *
+
+WHERE {
+  ?s a ?o .
+  [ a :o ] ?p ?o
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement)
+                (ObjectListPath
+                  object: (Var))))
+            (TriplesSameSubjectPath
+              (BlankNodePropertyListPath
+                (PropertyListPath
+                  predicate: (PathElement)
+                  (ObjectListPath
+                    object: (PrefixedName))))
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var))))))))))

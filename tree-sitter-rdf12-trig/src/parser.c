@@ -17,7 +17,7 @@
 #define MAX_ALIAS_SEQUENCE_LENGTH 6
 #define MAX_RESERVED_WORD_SET_SIZE 0
 #define PRODUCTION_ID_COUNT 27
-#define SUPERTYPE_COUNT 15
+#define SUPERTYPE_COUNT 16
 
 enum ts_symbol_identifiers {
   sym_comment = 1,
@@ -514,8 +514,9 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .named = true,
   },
   [sym_label] = {
-    .visible = true,
+    .visible = false,
     .named = true,
+    .supertype = true,
   },
   [sym_directive] = {
     .visible = false,
@@ -985,6 +986,7 @@ static const TSSymbol ts_supertype_symbols[SUPERTYPE_COUNT] = {
   sym_VersionSpecifier,
   sym_directive,
   sym_iri,
+  sym_label,
   sym_literal,
   sym_object,
   sym_predicate,
@@ -1003,15 +1005,16 @@ static const TSMapSlice ts_supertype_map_slices[] = {
   [sym_VersionSpecifier] = {.index = 9, .length = 2},
   [sym_directive] = {.index = 11, .length = 3},
   [sym_iri] = {.index = 14, .length = 2},
-  [sym_literal] = {.index = 16, .length = 3},
-  [sym_object] = {.index = 19, .length = 7},
-  [sym_predicate] = {.index = 26, .length = 1},
-  [sym_rtObject] = {.index = 27, .length = 5},
-  [sym_rtSubject] = {.index = 32, .length = 3},
-  [sym_subject] = {.index = 35, .length = 3},
-  [sym_ttObject] = {.index = 38, .length = 4},
-  [sym_ttSubject] = {.index = 42, .length = 2},
-  [sym_verb] = {.index = 44, .length = 2},
+  [sym_label] = {.index = 16, .length = 2},
+  [sym_literal] = {.index = 18, .length = 3},
+  [sym_object] = {.index = 21, .length = 7},
+  [sym_predicate] = {.index = 28, .length = 1},
+  [sym_rtObject] = {.index = 29, .length = 5},
+  [sym_rtSubject] = {.index = 34, .length = 3},
+  [sym_subject] = {.index = 37, .length = 3},
+  [sym_ttObject] = {.index = 40, .length = 4},
+  [sym_ttSubject] = {.index = 44, .length = 2},
+  [sym_verb] = {.index = 46, .length = 2},
 };
 
 static const TSSymbol ts_supertype_map_entries[] = {
@@ -1038,10 +1041,13 @@ static const TSSymbol ts_supertype_map_entries[] = {
     sym_IRIREF,
     sym_PrefixedName,
   [16] =
+    sym_BlankNode,
+    sym_iri,
+  [18] =
     sym_BooleanLiteral,
     sym_NumericLiteral,
     sym_RDFLiteral,
-  [19] =
+  [21] =
     sym_BlankNode,
     sym_blankNodePropertyList,
     sym_collection,
@@ -1049,31 +1055,31 @@ static const TSSymbol ts_supertype_map_entries[] = {
     sym_literal,
     sym_reifiedTriple,
     sym_tripleTerm,
-  [26] =
+  [28] =
     sym_iri,
-  [27] =
+  [29] =
     sym_BlankNode,
     sym_iri,
     sym_literal,
     sym_reifiedTriple,
     sym_tripleTerm,
-  [32] =
+  [34] =
     sym_BlankNode,
     sym_iri,
     sym_reifiedTriple,
-  [35] =
+  [37] =
     sym_BlankNode,
     sym_collection,
     sym_iri,
-  [38] =
+  [40] =
     sym_BlankNode,
     sym_iri,
     sym_literal,
     sym_tripleTerm,
-  [42] =
+  [44] =
     sym_BlankNode,
     sym_iri,
-  [44] =
+  [46] =
     anon_sym_a,
     sym_predicate,
 };

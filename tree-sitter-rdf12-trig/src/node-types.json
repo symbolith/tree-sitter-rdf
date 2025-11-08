@@ -100,6 +100,20 @@
     ]
   },
   {
+    "type": "label",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
     "type": "literal",
     "named": true,
     "subtypes": [
@@ -411,25 +425,6 @@
       "types": [
         {
           "type": "triplesBlock",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "label",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "BlankNode",
-          "named": true
-        },
-        {
-          "type": "iri",
           "named": true
         }
       ]

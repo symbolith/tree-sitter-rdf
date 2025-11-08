@@ -1,0 +1,96 @@
+===============
+syntax-service-01
+===============
+SELECT * { SERVICE <g> { ?s ?p ?o } }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (ServiceGraphPattern
+            (IRIREF)
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var))))))))))))
+
+===============
+syntax-service-02
+===============
+SELECT * { ?s ?p ?o SERVICE <g> { ?s ?p ?o } ?s ?p ?o }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (ServiceGraphPattern
+            (IRIREF)
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var)))))))
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var))))))))))
+
+===============
+syntax-service-03
+===============
+SELECT * { ?s ?p ?o SERVICE SILENT <g> { ?s ?p ?o } ?s ?p ?o }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (ServiceGraphPattern
+            (IRIREF)
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var)))))))
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var))))))))))

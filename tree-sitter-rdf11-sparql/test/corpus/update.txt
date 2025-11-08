@@ -1,0 +1,50 @@
+=======
+Insert
+=======
+
+INSERT DATA {
+  GRAPH <www.example.net> {
+    ?s ?p ?o .
+  }
+}
+
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      data: (Quads
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (Var)
+              (PropertyList
+                predicate: (Var)
+                (ObjectList
+                  object: (Var))))))))))
+
+=====
+Load
+=====
+
+LOAD :foo INTO GRAPH :bar
+
+---
+
+(Unit
+  (Update
+    operation: (Load
+      (PrefixedName)
+      (GraphRef
+        (PrefixedName)))))
+
+=====
+Clear
+=====
+CLEAR DEFAULT
+---
+
+(Unit
+  (Update
+    operation: (Clear)))

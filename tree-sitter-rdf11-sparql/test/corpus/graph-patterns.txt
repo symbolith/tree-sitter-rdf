@@ -1,0 +1,277 @@
+==================
+Blank node labels
+==================
+
+SELECT * {
+  _:s :p :o
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (BlankNode
+                (BLANK_NODE_LABEL))
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+=====================
+Group graph patterns
+=====================
+
+SELECT * {
+  ?s ?p ?o ;
+     ?p ?o ;
+     ?p ?o, ?o ;
+  { ?s ?p ?o }
+  { ?s ?p ?o }
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var))
+                predicate: (Var)
+                (ObjectList
+                  object: (Var))
+                predicate: (Var)
+                (ObjectList
+                  object: (Var)
+                  object: (Var)))))
+          (GroupGraphPattern
+            (TriplesBlock
+              (TriplesSameSubjectPath
+                subject: (Var)
+                (PropertyListPath
+                  predicate: (Var)
+                  (ObjectListPath
+                    object: (Var))))))
+          (GroupGraphPattern
+            (TriplesBlock
+              (TriplesSameSubjectPath
+                subject: (Var)
+                (PropertyListPath
+                  predicate: (Var)
+                  (ObjectListPath
+                    object: (Var)))))))))))
+
+====================
+Empty group pattern
+====================
+
+SELECT * {}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern)))))
+
+=======
+Filter
+=======
+
+SELECT * {
+  ?s ?p ?o
+  FILTER (?s > 0)
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (Var)
+                (NumericLiteralUnsigned
+                  (INTEGER))))))))))
+
+=================
+Optional pattern
+=================
+
+SELECT * {
+  {} OPTIONAL { ?s ?p ?o }
+  OPTIONAL { ?s ?p ?o }
+
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (GroupGraphPattern)
+          (OptionalGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var)))))))
+          (OptionalGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var))))))))))))
+
+============================
+Optional pattern constraint
+============================
+
+SELECT * {
+  OPTIONAL {
+    ?s ?p ?o
+    FILTER (?s < 10)
+  }
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (OptionalGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var)))))
+              (Filter
+                (BrackettedExpression
+                  (BinaryExpression
+                    (Var)
+                    (NumericLiteralUnsigned
+                      (INTEGER))))))))))))
+
+======================
+Matching alternatives
+======================
+
+SELECT * {
+  { ?s ?p ?o }
+  UNION
+  { ?s ?p ?o }
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (UnionGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var))))))
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var))))))))))))
+
+=========
+Negation
+=========
+
+SELECT * {
+  ?s ?p ?o
+  FILTER NOT EXISTS { ?s ?p ?o }
+  MINUS { ?s ?p ?o }
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BuiltInCall
+              (NotExistsFunc
+                (GroupGraphPattern
+                  (TriplesBlock
+                    (TriplesSameSubjectPath
+                      subject: (Var)
+                      (PropertyListPath
+                        predicate: (Var)
+                        (ObjectListPath
+                          object: (Var)))))))))
+          (MinusGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var))))))))))))

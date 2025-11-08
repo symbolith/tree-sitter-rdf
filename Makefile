@@ -5,7 +5,8 @@ SUBDIRS := tree-sitter-rdf11-ntriples \
            tree-sitter-rdf11-turtle \
            tree-sitter-rdf12-turtle \
            tree-sitter-rdf11-trig \
-           tree-sitter-rdf12-trig
+           tree-sitter-rdf12-trig \
+           tree-sitter-rdf11-sparql
 
 test: build
 	@for dir in $(SUBDIRS); do \
@@ -37,4 +38,9 @@ clean:
 		       ./setup.py) \
 	done
 
-.PHONY: build test clean
+update-test: build
+	@for dir in $(SUBDIRS); do \
+		(cd $$dir && $(MAKE) test TEST_FLAGS=--update) \
+	done
+
+.PHONY: build test clean update-tests

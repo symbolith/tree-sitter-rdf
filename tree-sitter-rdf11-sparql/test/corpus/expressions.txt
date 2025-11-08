@@ -1,0 +1,149 @@
+=================
+Unary expression
+=================
+
+SELECT ( -?a AS $x ) ?a {}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (UnaryExpression
+            (Var))
+          binding: (Var))
+        (Var))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+==================
+Binary expression
+==================
+
+SELECT ( ?a + ?b AS $x ) {}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BinaryExpression
+            (Var)
+            (Var))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+==================
+Binary relational expression
+==================
+
+SELECT * {
+  FILTER ( 1 = 2 )
+  FILTER ( 1 != 2 )
+  FILTER ( 1 < 2 )
+  FILTER ( 1 <= 2 )
+  FILTER ( 1 > 2 )
+  FILTER ( 1 >= 2 )
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (NumericLiteralUnsigned
+                  (INTEGER)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (NumericLiteralUnsigned
+                  (INTEGER)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (NumericLiteralUnsigned
+                  (INTEGER)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (NumericLiteralUnsigned
+                  (INTEGER)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (NumericLiteralUnsigned
+                  (INTEGER)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (NumericLiteralUnsigned
+                  (INTEGER))))))))))
+
+==================
+Precedence levels
+==================
+
+SELECT ( ?a + ?b * 1 AS $x ) {}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BinaryExpression
+            (Var)
+            (BinaryExpression
+              (Var)
+              (NumericLiteralUnsigned
+                (INTEGER))))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===================
+Extension function
+===================
+
+SELECT ( foo:bar(?a, 1)  AS ?x ) {}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (FunctionCall
+            identifier: (PrefixedName)
+            arguments: (ArgList
+              (Var)
+              (NumericLiteralUnsigned
+                (INTEGER))))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))

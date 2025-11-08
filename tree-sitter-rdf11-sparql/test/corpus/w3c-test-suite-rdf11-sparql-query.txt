@@ -1,0 +1,2039 @@
+===============
+1val1STRING_LITERAL1_with_UTF8_boundaries_escaped
+===============
+SELECT * WHERE {
+	?s <http://a.example/p1> '\u0080\u07FF\u0800\u0FFF\u1000\uCFFF\uD000\uD7FF\uE000\uFFFD\U00010000\U0003FFFD\U00040000\U000FFFFD\U00100000\U0010FFFD'
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement
+                  (IRIREF))
+                (ObjectListPath
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))))))))))
+
+===============
+1val1STRING_LITERAL1_with_UTF8_boundaries
+===============
+SELECT * WHERE {
+	?s <http://a.example/p1> '߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽'
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement
+                  (IRIREF))
+                (ObjectListPath
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))))))))))
+
+===============
+qname-escape-02
+===============
+PREFIX og: <http://ogp.me/ns#>
+SELECT * WHERE {
+	?page og:audio%3Atitle ?title
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (Var))))))))))
+
+===============
+qname-escape-03
+===============
+PREFIX og: <http://ogp.me/ns#>
+SELECT * WHERE {
+	?page og:audio:title ?title
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (Var))))))))))
+
+===============
+syn-bad-01
+:error
+===============
+# Not allowed with GROUP BY
+SELECT * { ?s ?p ?o } GROUP BY ?s
+---
+
+
+
+===============
+syn-bad-02
+:error
+===============
+# required syntax error : out of scope variable in SELECT from group
+SELECT ?o { ?s ?p ?o } GROUP BY ?s
+---
+
+
+
+===============
+syn-bad-03
+:error
+===============
+SELECT (1 AS ?X) (1 AS ?X) {}
+---
+
+
+
+===============
+syn-bad-04
+:error
+===============
+SELECT (?x +?y) {}
+---
+
+
+
+===============
+syn-bad-05
+:error
+===============
+SELECT COUNT(*) {}
+---
+
+
+
+===============
+syn-bad-06
+:error
+===============
+SELECT (SUM(?x,?y) AS ?S) {}
+---
+
+
+
+===============
+syn-bad-07
+:error
+===============
+SELECT * { {} SELECT * { ?s ?p ?o } }
+---
+
+
+
+===============
+syn-bad-08
+:error
+===============
+SELECT * { ?s ?p ?o UNION ?s ?p ?o  }
+---
+
+
+
+===============
+syn-bad-pname-01
+:error
+===============
+# Bad declaration.
+PREFIX ex:ex: <http://example/>
+
+ASK{}
+---
+
+
+
+===============
+syn-bad-pname-02
+:error
+===============
+# Bad declaration.
+PREFIX ex:ex:ex <http://example/>
+
+ASK{}
+---
+
+
+
+===============
+syn-bad-pname-03
+:error
+===============
+# Bad declaration
+PREFIX :: <http://example/>
+
+ASK{}
+---
+
+
+
+===============
+syn-bad-pname-04
+:error
+===============
+# Bad declaration
+PREFIX :a: <http://example/>
+
+ASK{}
+---
+
+
+
+===============
+syn-bad-pname-05
+:error
+===============
+PREFIX 1: <http://example/>
+
+ASK{}
+---
+
+
+
+===============
+syn-bad-pname-06
+:error
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a :b :c\:z .
+}
+---
+
+
+
+===============
+syn-bad-pname-07
+:error
+===============
+PREFIX 1: <http://example/>
+
+ASK{}
+---
+
+
+
+===============
+syn-bad-pname-08
+:error
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a:b:c .
+}
+---
+
+
+
+===============
+syn-bad-pname-09
+:error
+===============
+PREFIX x: <http://example/>
+SELECT *
+{
+  x:a:b:c .
+}
+---
+
+
+
+===============
+syn-bad-pname-10
+:error
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  ?x:a :b :c .
+}
+---
+
+
+
+===============
+syn-bad-pname-11
+:error
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a ?x:b :c .
+}
+---
+
+
+
+===============
+syn-bad-pname-12
+:error
+===============
+PREFIX z: <http://example/>
+SELECT *
+{
+  z:a z:b ?x:c .
+}
+---
+
+
+
+===============
+syn-bad-pname-13
+:error
+===============
+PREFIX z: <http://example/>
+SELECT *
+{
+  _:az:b <p> <q> .
+}
+---
+
+
+
+===============
+syn-bad-values-too-few
+:error
+===============
+SELECT * WHERE { VALUES (?a ?b) { (1) } }
+---
+
+
+
+===============
+syn-bad-values-too-many
+:error
+===============
+SELECT * WHERE { VALUES (?a ?b) { (1 2 3) } }
+---
+
+
+
+===============
+syn-codepoint-escape-01
+===============
+SELECT * WHERE {
+    ?s ?p "\U0001f46a" .
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_QUOTE)))))))))))
+
+===============
+syn-codepoint-escape-bad-04
+:error
+===============
+SELECT * WHERE {
+    ?s ?p \u005cU00000031 .
+}
+
+# the first escape here produces '\' REVERSE SOLIDUS (U+5C)
+# its unescaping must not lead to a subsequent unescaping of "\U00000031" escape.
+# This should cause a syntax error as "?s ?p \U00000031" and NOT a valid query as "?s ?p 1"
+---
+
+
+
+===============
+syn-codepoint-escape-bad-05
+:error
+===============
+SELECT * WHERE {
+    ?s ?p \U0000005cu0031 .
+}
+
+# the first escape here produces '\' REVERSE SOLIDUS (U+5C)
+# its unescaping must not lead to a subsequent unescaping of "\u0031" escape.
+# This should cause a syntax error as "?s ?p \u0031" and NOT a valid query as "?s ?p 1"
+---
+
+
+
+===============
+syn-invalid-codepoint-escaped-bad-01
+:error
+===============
+SELECT * WHERE {
+	?s <http://a.example/p1> '\uD800'
+}
+---
+
+
+
+===============
+syn-pname-01
+===============
+PREFIX : <http://example/>
+ASK{}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (AskQuery
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syn-pname-02
+===============
+PREFIX ex: <http://example/>
+ASK{}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (AskQuery
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syn-pname-03
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a :b :c .
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+===============
+syn-pname-04
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a :b :c:d .
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+===============
+syn-pname-05
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a :b :c:d\? .
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+===============
+syn-pname-06
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a :b :c\~z\. .
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+===============
+syn-pname-07
+===============
+PREFIX : <http://example/>
+SELECT *
+{
+  :a :b%3D :c\~z\. .
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+===============
+syn-pname-08
+===============
+PREFIX z: <http://example/>
+SELECT *
+{
+  _:a z:b _:1_2_3_
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (BlankNode
+                (BLANK_NODE_LABEL))
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (BlankNode
+                    (BLANK_NODE_LABEL)))))))))))
+
+===============
+syn-pname-09
+===============
+PREFIX z: <http://example/z#>
+PREFIX : <http://example/>
+
+SELECT *
+{
+  :a :123 :12.3 .
+  :: z:: :_12.3_ .
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF))
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (PrefixedName))))))))))
+
+===============
+syn-pp-in-collection
+===============
+PREFIX : <http://example.org/>
+SELECT * WHERE {
+	?s ?p ( [:p*/:q 123 ] [ ^:r "hello"] )
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (CollectionPath
+                    (BlankNodePropertyListPath
+                      (PropertyListPath
+                        predicate: (SequencePath
+                          (PathElement
+                            (PrefixedName)
+                            (PathMod))
+                          (PathElement
+                            (PrefixedName)))
+                        (ObjectListPath
+                          object: (NumericLiteralUnsigned
+                            (INTEGER)))))
+                    (BlankNodePropertyListPath
+                      (PropertyListPath
+                        predicate: (PathElement
+                          (PathInverse)
+                          (PrefixedName))
+                        (ObjectListPath
+                          object: (RDFLiteral
+                            string: (STRING_LITERAL_QUOTE)))))))))))))))
+
+===============
+syntax-aggregate-01
+===============
+SELECT (COUNT(*) AS ?count) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-02
+===============
+SELECT (COUNT(DISTINCT *) AS ?count) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-03
+===============
+SELECT (COUNT(?x) AS ?count) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-04
+===============
+SELECT (COUNT(DISTINCT ?x) AS ?count) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-05
+===============
+SELECT (SUM(?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-06
+===============
+SELECT (SUM(DISTINCT ?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-07
+===============
+SELECT (MIN(?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-08
+===============
+SELECT (MIN(DISTINCT ?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-09
+===============
+SELECT (MAX(?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-10
+===============
+SELECT (MAX(DISTINCT ?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-11
+===============
+SELECT (AVG(?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-12
+===============
+SELECT (AVG(DISTINCT ?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-13
+===============
+SELECT (GROUP_CONCAT(?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-14
+===============
+SELECT (GROUP_CONCAT(DISTINCT ?x) AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-aggregate-15
+===============
+SELECT (GROUP_CONCAT(?x; SEPARATOR=';') AS ?y) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate
+              (Var)
+              (STRING_LITERAL_SINGLE_QUOTE)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-bind-02
+===============
+SELECT ?Z { ?s ?p ?o . BIND(?o+1 AS ?Z) BIND(?Z/2 AS ?Zby2) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (Var))
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Bind
+            (BinaryExpression
+              (Var)
+              (NumericLiteralUnsigned
+                (INTEGER)))
+            bound_variable: (Var))
+          (Bind
+            (BinaryExpression
+              (Var)
+              (NumericLiteralUnsigned
+                (INTEGER)))
+            bound_variable: (Var)))))))
+
+===============
+syntax-bindings-01
+===============
+SELECT ?Z { ?s ?p ?o . BIND(?o+1 AS ?Z) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (Var))
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Bind
+            (BinaryExpression
+              (Var)
+              (NumericLiteralUnsigned
+                (INTEGER)))
+            bound_variable: (Var)))))))
+
+===============
+syntax-bindings-02a
+===============
+SELECT * { } VALUES () { }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern)))
+    values: (ValuesClause
+      (InlineDataFull
+        (NIL)))))
+
+===============
+syntax-bindings-03a
+===============
+SELECT * { } VALUES () { () }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern)))
+    values: (ValuesClause
+      (InlineDataFull
+        (NIL)
+        (NIL)))))
+
+===============
+syntax-bindings-05a
+===============
+SELECT * { } VALUES (?x ?y) { (1 2) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern)))
+    values: (ValuesClause
+      (InlineDataFull
+        (Var)
+        (Var)
+        (DataBlockValue
+          (NumericLiteralUnsigned
+            (INTEGER)))
+        (DataBlockValue
+          (NumericLiteralUnsigned
+            (INTEGER)))))))
+
+===============
+syntax-bindings-09
+:error
+===============
+SELECT * { } BINDINGS ?x ?y { (1 2) (3) }
+---
+
+
+
+===============
+syntax-BINDscope1
+===============
+ PREFIX : <http://www.example.org>
+ SELECT *
+ WHERE {
+    :s :p ?o .
+    BIND((1+?o) AS ?o1)
+    :s :q ?o1
+ }
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (Var)))))
+          (Bind
+            (BrackettedExpression
+              (BinaryExpression
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                (Var)))
+            bound_variable: (Var))
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (Var))))))))))
+
+===============
+syntax-BINDscope2
+===============
+ PREFIX : <http://www.example.org>
+ SELECT *
+ WHERE {
+    :s :p ?o .
+    :s :q ?o1
+    { BIND((1+?o) AS ?o1) }
+ }
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (Var))))
+            (TriplesSameSubjectPath
+              subject: (PrefixedName)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PrefixedName))
+                (ObjectListPath
+                  object: (Var)))))
+          (GroupGraphPattern
+            (Bind
+              (BrackettedExpression
+                (BinaryExpression
+                  (NumericLiteralUnsigned
+                    (INTEGER))
+                  (Var)))
+              bound_variable: (Var))))))))
+
+===============
+syntax-BINDscope3
+===============
+ PREFIX : <http://www.example.org>
+ SELECT *
+ WHERE {
+    { 
+    :s :p ?o .
+    :s :q ?o1
+    }
+    { BIND((1+?o) AS ?o1) }
+ }
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (GroupGraphPattern
+            (TriplesBlock
+              (TriplesSameSubjectPath
+                subject: (PrefixedName)
+                (PropertyListPath
+                  predicate: (PathElement
+                    (PrefixedName))
+                  (ObjectListPath
+                    object: (Var))))
+              (TriplesSameSubjectPath
+                subject: (PrefixedName)
+                (PropertyListPath
+                  predicate: (PathElement
+                    (PrefixedName))
+                  (ObjectListPath
+                    object: (Var))))))
+          (GroupGraphPattern
+            (Bind
+              (BrackettedExpression
+                (BinaryExpression
+                  (NumericLiteralUnsigned
+                    (INTEGER))
+                  (Var)))
+              bound_variable: (Var))))))))
+
+===============
+syntax-BINDscope4
+===============
+PREFIX : <http://www.example.org>
+SELECT *
+   {
+    { BIND (1 AS ?Y) }
+     UNION
+    { :s :p ?Y }
+  }
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (UnionGraphPattern
+            (GroupGraphPattern
+              (Bind
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                bound_variable: (Var)))
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (PrefixedName)
+                  (PropertyListPath
+                    predicate: (PathElement
+                      (PrefixedName))
+                    (ObjectListPath
+                      object: (Var))))))))))))
+
+===============
+syntax-BINDscope5
+===============
+PREFIX : <http://www.example.org>
+SELECT *
+   {
+    { :s :p ?Y }
+     UNION
+    { BIND (1 AS ?Y) } 
+   }
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (UnionGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (PrefixedName)
+                  (PropertyListPath
+                    predicate: (PathElement
+                      (PrefixedName))
+                    (ObjectListPath
+                      object: (Var))))))
+            (GroupGraphPattern
+              (Bind
+                (NumericLiteralUnsigned
+                  (INTEGER))
+                bound_variable: (Var)))))))))
+
+===============
+syntax-BINDscope6
+:error
+===============
+ PREFIX : <http://www.example.org>
+ SELECT *
+ WHERE {
+    :s :p ?o .
+    :s :q ?o1 .
+    BIND((1+?o) AS ?o1)
+ }  
+---
+
+
+
+===============
+syntax-BINDscope7
+:error
+===============
+PREFIX : <http://www.example.org>
+ SELECT *
+ WHERE {
+    {
+    :s :p ?o .
+    :s :q ?o1 .
+    }
+    BIND((1+?o) AS ?o1)
+ }  
+---
+
+
+
+===============
+syntax-BINDscope8
+:error
+===============
+PREFIX : <http://www.example.org>
+SELECT *
+  {
+    {
+       { :s :p ?Y }
+       UNION
+       { :s :p ?Z }
+    }
+   BIND (1 AS ?Y) 
+ }
+---
+
+
+
+===============
+syntax-construct-where-01
+===============
+CONSTRUCT WHERE { ?s ?p 1816 }
+---
+
+(Unit
+  (Query
+    form: (ConstructQuery
+      (TriplesTemplate
+        (TriplesSameSubject
+          predicate: (Var)
+          (PropertyList
+            predicate: (Var)
+            (ObjectList
+              object: (NumericLiteralUnsigned
+                (INTEGER)))))))))
+
+===============
+syntax-construct-where-02
+===============
+CONSTRUCT 
+FROM <file>
+WHERE { ?s ?p 1816 }
+---
+
+(Unit
+  (Query
+    form: (ConstructQuery
+      (DefaultGraphClause
+        source_selector: (IRIREF))
+      (TriplesTemplate
+        (TriplesSameSubject
+          predicate: (Var)
+          (PropertyList
+            predicate: (Var)
+            (ObjectList
+              object: (NumericLiteralUnsigned
+                (INTEGER)))))))))
+
+===============
+syntax-exists-01
+===============
+SELECT * { ?s ?p ?o FILTER(EXISTS{?s ?p ?o}) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BuiltInCall
+                (ExistsFunc
+                  (GroupGraphPattern
+                    (TriplesBlock
+                      (TriplesSameSubjectPath
+                        subject: (Var)
+                        (PropertyListPath
+                          predicate: (Var)
+                          (ObjectListPath
+                            object: (Var)))))))))))))))
+
+===============
+syntax-exists-02
+===============
+SELECT * { ?s ?p ?o FILTER EXISTS{?s ?p ?o} }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BuiltInCall
+              (ExistsFunc
+                (GroupGraphPattern
+                  (TriplesBlock
+                    (TriplesSameSubjectPath
+                      subject: (Var)
+                      (PropertyListPath
+                        predicate: (Var)
+                        (ObjectListPath
+                          object: (Var))))))))))))))
+
+===============
+syntax-exists-03
+===============
+SELECT * { ?s ?p ?o FILTER(! EXISTS{?s ?p ?o}) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (UnaryExpression
+                (BuiltInCall
+                  (ExistsFunc
+                    (GroupGraphPattern
+                      (TriplesBlock
+                        (TriplesSameSubjectPath
+                          subject: (Var)
+                          (PropertyListPath
+                            predicate: (Var)
+                            (ObjectListPath
+                              object: (Var))))))))))))))))
+
+===============
+syntax-minus-01
+===============
+SELECT * { ?s ?p ?o MINUS { ?s ?q ?v } }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (MinusGraphPattern
+            (GroupGraphPattern
+              (TriplesBlock
+                (TriplesSameSubjectPath
+                  subject: (Var)
+                  (PropertyListPath
+                    predicate: (Var)
+                    (ObjectListPath
+                      object: (Var))))))))))))
+
+===============
+syntax-not-exists-01
+===============
+SELECT * { ?s ?p ?o FILTER(NOT EXISTS{?s ?p ?o}) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BuiltInCall
+                (NotExistsFunc
+                  (GroupGraphPattern
+                    (TriplesBlock
+                      (TriplesSameSubjectPath
+                        subject: (Var)
+                        (PropertyListPath
+                          predicate: (Var)
+                          (ObjectListPath
+                            object: (Var)))))))))))))))
+
+===============
+syntax-not-exists-02
+===============
+SELECT * { ?s ?p ?o FILTER NOT EXISTS{?s ?p ?o} }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BuiltInCall
+              (NotExistsFunc
+                (GroupGraphPattern
+                  (TriplesBlock
+                    (TriplesSameSubjectPath
+                      subject: (Var)
+                      (PropertyListPath
+                        predicate: (Var)
+                        (ObjectListPath
+                          object: (Var))))))))))))))
+
+===============
+syntax-not-exists-03
+===============
+SELECT * { ?s ?p ?o FILTER(true && NOT EXISTS{?s ?p ?o}) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (BooleanLiteral)
+                (BuiltInCall
+                  (NotExistsFunc
+                    (GroupGraphPattern
+                      (TriplesBlock
+                        (TriplesSameSubjectPath
+                          subject: (Var)
+                          (PropertyListPath
+                            predicate: (Var)
+                            (ObjectListPath
+                              object: (Var))))))))))))))))
+
+===============
+syntax-oneof-01
+===============
+SELECT * { ?s ?p ?o FILTER(?o NOT IN(1,2,?s+57)) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (Var)
+                (ExpressionList
+                  (NumericLiteralUnsigned
+                    (INTEGER))
+                  (NumericLiteralUnsigned
+                    (INTEGER))
+                  (BinaryExpression
+                    (Var)
+                    (NumericLiteralUnsigned
+                      (INTEGER))))))))))))
+
+===============
+syntax-oneof-02
+===============
+SELECT * { ?s ?p ?o FILTER(?o NOT IN()) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (Var)
+                (ExpressionList
+                  (NIL))))))))))
+
+===============
+syntax-oneof-03
+===============
+SELECT * { ?s ?p ?o FILTER(?o IN(1,<x>)) }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (Var)
+                (ObjectListPath
+                  object: (Var)))))
+          (Filter
+            (BrackettedExpression
+              (BinaryExpression
+                (Var)
+                (ExpressionList
+                  (NumericLiteralUnsigned
+                    (INTEGER))
+                  (IRIREF))))))))))
+
+===============
+syntax-propertyPaths-01
+===============
+PREFIX : <http://www.example.org/>
+
+SELECT ?X WHERE
+{ 
+  [ :p|:q|:r ?X ]
+}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause
+        (Var))
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              (BlankNodePropertyListPath
+                (PropertyListPath
+                  predicate: (AlternativePath
+                    (AlternativePath
+                      (PathElement
+                        (PrefixedName))
+                      (PathElement
+                        (PrefixedName)))
+                    (PathElement
+                      (PrefixedName)))
+                  (ObjectListPath
+                    object: (Var)))))))))))
+
+===============
+syntax-select-expr-01
+===============
+SELECT (?x +?y AS ?z) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BinaryExpression
+            (Var)
+            (Var))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-select-expr-02
+===============
+SELECT ?x ?y (?x +?y AS ?z) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (Var)
+        (Var)
+        (SelectExpression
+          expression: (BinaryExpression
+            (Var)
+            (Var))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-select-expr-03
+===============
+SELECT (datatype(?x +?y) AS ?z) {}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (BinaryExpression
+              (Var)
+              (Var)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-select-expr-04
+===============
+PREFIX : <http://example/>
+SELECT (:function(?x +?y) AS ?F) ?z {}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (FunctionCall
+            identifier: (PrefixedName)
+            arguments: (ArgList
+              (BinaryExpression
+                (Var)
+                (Var))))
+          binding: (Var))
+        (Var))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-select-expr-05
+===============
+PREFIX : <http://example/>
+SELECT (COUNT(*) AS ?count) {}
+---
+
+(Unit
+  (Query
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (Aggregate))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+===============
+syntax-SELECTscope1
+===============
+SELECT *
+WHERE {
+  {SELECT (1 AS ?X ) {}
+  }
+  UNION
+  {SELECT (2 AS ?X ) {}
+  }
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (UnionGraphPattern
+            (GroupGraphPattern
+              (SubSelect
+                (SelectClause
+                  (SelectExpression
+                    expression: (NumericLiteralUnsigned
+                      (INTEGER))
+                    binding: (Var)))
+                (WhereClause
+                  (GroupGraphPattern))))
+            (GroupGraphPattern
+              (SubSelect
+                (SelectClause
+                  (SelectExpression
+                    expression: (NumericLiteralUnsigned
+                      (INTEGER))
+                    binding: (Var)))
+                (WhereClause
+                  (GroupGraphPattern))))))))))
+
+===============
+syntax-SELECTscope2
+:error
+===============
+SELECT (1 AS ?X ) 
+  {
+    SELECT (2 AS ?X ) {} 
+  }
+---
+
+
+
+===============
+syntax-SELECTscope3
+===============
+SELECT *
+WHERE {
+  {SELECT (1 AS ?X ) {}
+  }
+  {SELECT (1 AS ?X ) {}
+  }
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (GroupGraphPattern
+            (SubSelect
+              (SelectClause
+                (SelectExpression
+                  expression: (NumericLiteralUnsigned
+                    (INTEGER))
+                  binding: (Var)))
+              (WhereClause
+                (GroupGraphPattern))))
+          (GroupGraphPattern
+            (SubSelect
+              (SelectClause
+                (SelectExpression
+                  expression: (NumericLiteralUnsigned
+                    (INTEGER))
+                  binding: (Var)))
+              (WhereClause
+                (GroupGraphPattern)))))))))
+
+===============
+syntax-subquery-01
+===============
+SELECT * { SELECT * { ?s ?p ?o } }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (SubSelect
+            (SelectClause)
+            (WhereClause
+              (GroupGraphPattern
+                (TriplesBlock
+                  (TriplesSameSubjectPath
+                    subject: (Var)
+                    (PropertyListPath
+                      predicate: (Var)
+                      (ObjectListPath
+                        object: (Var)))))))))))))
+
+===============
+syntax-subquery-02
+===============
+SELECT * { 
+   {} 
+   {SELECT * { ?s ?p ?o } }
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (GroupGraphPattern)
+          (GroupGraphPattern
+            (SubSelect
+              (SelectClause)
+              (WhereClause
+                (GroupGraphPattern
+                  (TriplesBlock
+                    (TriplesSameSubjectPath
+                      subject: (Var)
+                      (PropertyListPath
+                        predicate: (Var)
+                        (ObjectListPath
+                          object: (Var))))))))))))))
+
+===============
+syntax-subquery-03
+===============
+SELECT * { {} OPTIONAL {SELECT * { ?s ?p ?o }} }
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (GroupGraphPattern)
+          (OptionalGraphPattern
+            (GroupGraphPattern
+              (SubSelect
+                (SelectClause)
+                (WhereClause
+                  (GroupGraphPattern
+                    (TriplesBlock
+                      (TriplesSameSubjectPath
+                        subject: (Var)
+                        (PropertyListPath
+                          predicate: (Var)
+                          (ObjectListPath
+                            object: (Var)))))))))))))))

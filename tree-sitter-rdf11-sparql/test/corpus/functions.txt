@@ -1,0 +1,55 @@
+======
+Regex
+======
+
+SELECT * {
+  FILTER regex(?s, '^foo', 'i')
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (Filter
+            (BuiltInCall
+              (RegexExpression
+                text: (Var)
+                pattern: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))
+                flag: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))))))))))
+
+====================
+Unary built in call
+====================
+
+SELECT (lang('foo') AS ?a) {
+  FILTER(BOUND(?a))
+  FILTER(BNODE())
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause
+        (SelectExpression
+          expression: (BuiltInCall
+            (RDFLiteral
+              string: (STRING_LITERAL_SINGLE_QUOTE)))
+          binding: (Var)))
+      (WhereClause
+        (GroupGraphPattern
+          (Filter
+            (BrackettedExpression
+              (BuiltInCall
+                (Var))))
+          (Filter
+            (BrackettedExpression
+              (BuiltInCall
+                (NIL)))))))))

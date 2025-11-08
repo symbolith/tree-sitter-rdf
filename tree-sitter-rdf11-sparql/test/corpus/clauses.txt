@@ -1,0 +1,164 @@
+===============
+Dataset clause
+===============
+
+SELECT *
+
+FROM <www.example.com>
+FROM NAMED <www.example.com>
+
+{}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (DefaultGraphClause
+        source_selector: (IRIREF))
+      (NamedGraphClause
+        source_selector: (IRIREF))
+      (WhereClause
+        (GroupGraphPattern)))))
+
+=============
+Group clause
+=============
+
+SELECT * {}
+
+GROUP BY ?a
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern))
+      (GroupClause
+        condition: (Var)))))
+
+==============
+Having clause
+==============
+
+SELECT * {}
+
+HAVING ex:function (?a, ?b)
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern))
+      (HavingClause
+        condition: (FunctionCall
+          identifier: (PrefixedName)
+          arguments: (ArgList
+            (Var)
+            (Var)))))))
+
+=============
+Order clause
+=============
+
+SELECT * {}
+
+ORDER BY ASC (?a)
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern))
+      (OrderClause
+        condition: (BrackettedExpression
+          (Var))))))
+
+====================
+Limit offset clause
+====================
+
+SELECT * {}
+
+LIMIT 10
+
+OFFSET 10
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern))
+      (LimitOffsetClauses
+        limit: (INTEGER)
+        offset: (INTEGER)))))
+
+==============
+Values clause
+==============
+SELECT * {}
+
+VALUES (?a ?b) {
+  (UNDEF 'a')
+  (UNDEF 'a')
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern)))
+    values: (ValuesClause
+      (InlineDataFull
+        (Var)
+        (Var)
+        (DataBlockValue
+          (UNDEF))
+        (DataBlockValue
+          (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))
+        (DataBlockValue
+          (UNDEF))
+        (DataBlockValue
+          (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
+
+==============
+Values clause
+==============
+SELECT * {}
+
+VALUES ?a {
+  UNDEF 'a'
+}
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern)))
+    values: (ValuesClause
+      (InlineDataOneVar
+        (Var)
+        (DataBlockValue
+          (UNDEF))
+        (DataBlockValue
+          (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))

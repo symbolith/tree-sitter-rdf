@@ -5,12 +5,16 @@ ntriples12-bad-iri-1
 <http://example/a> <http://example/b> <//example/missing-scheme> .
 ---
 
+
+
 ===============
 ntriples12-bad-reified-syntax-1
 :error
 ===============
 << <http://example/s> <http://example/p> <http://example/o> >> <http://example/q> <http://example/z> .
 ---
+
+
 
 ===============
 ntriples12-bad-reified-syntax-2
@@ -19,12 +23,16 @@ ntriples12-bad-reified-syntax-2
 <http://example/x> <http://example/p> << <http://example/s> <http://example/p> <http://example/o> >> .
 ---
 
+
+
 ===============
 ntriples12-bad-reified-syntax-3
 :error
 ===============
 << <http://example/s1> <http://example/p1> <http://example/o1> >> <http://example/q> << <http://example/s2> <http://example/p2> <http://example/o2> >> .
 ---
+
+
 
 ===============
 ntriples12-bad-reified-syntax-4
@@ -33,12 +41,16 @@ ntriples12-bad-reified-syntax-4
 <http://example/x> << <http://example/s> <http://example/p> <http://example/o> >> <http://example/z> .
 ---
 
+
+
 ===============
 ntriples12-bad-syntax-01
 :error
 ===============
 <http://example/a> <<( <http://example/s> <http://example/p> <http://example/o> )>>  <http://example/z> .
 ---
+
+
 
 ===============
 ntriples12-bad-syntax-02
@@ -47,12 +59,16 @@ ntriples12-bad-syntax-02
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( "XYZ" <http://example/p> <http://example/o> )>> .
 ---
 
+
+
 ===============
 ntriples12-bad-syntax-03
 :error
 ===============
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s> "XYZ" <http://example/o> )>> .
 ---
+
+
 
 ===============
 ntriples12-bad-syntax-04
@@ -61,12 +77,16 @@ ntriples12-bad-syntax-04
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> << <http://example/s> _:label <http://example/o> >> .
 ---
 
+
+
 ===============
 ntriples12-bad-syntax-05
 :error
 ===============
 <http://example/a> <<( <http://example/s> <http://example/p>  <http://example/o> )>> <http://example/z> .
 ---
+
+
 
 ===============
 ntriples12-bad-syntax-06
@@ -75,12 +95,16 @@ ntriples12-bad-syntax-06
 <<( "XYZ" <http://example/p> <http://example/o> )>> <http://example/q> <http://example/z> .
 ---
 
+
+
 ===============
 ntriples12-bad-syntax-07
 :error
 ===============
 <<( <http://example/s> "XYZ" <http://example/o> )>> <http://example/q> <http://example/z> .
 ---
+
+
 
 ===============
 ntriples12-bad-syntax-08
@@ -89,12 +113,16 @@ ntriples12-bad-syntax-08
 <<( <http://example/s> _:label <http://example/o> )>> <http://example/q> <http://example/z> .
 ---
 
+
+
 ===============
 ntriples12-bad-syntax-09
 :error
 ===============
 <http://example/a> <http://example/b> << <http://example/s> <http://example/p> <http://example/o> >> .
 ---
+
+
 
 ===============
 ntriples12-bad-syntax-10
@@ -103,12 +131,27 @@ ntriples12-bad-syntax-10
 <<( <http://example/s> <http://example/p> <http://example/o> )>> <http://example/a> <http://example/z> .
 ---
 
+
+
 ===============
 ntriples12-bnode-1
 ===============
 _:b0 <http://example/p> <http://example/o> .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( _:b0 <http://example/p> <http://example/o> )>> .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (BLANK_NODE_LABEL)
+      predicate: (IRIREF)
+      object: (IRIREF))))
 
 ===============
 ntriples12-bnode-bad-annotated-syntax-1
@@ -117,12 +160,16 @@ ntriples12-bnode-bad-annotated-syntax-1
 _:b0 <http://example/p> <http://example/o> {| <http://example/q> "ABC" |} .
 ---
 
+
+
 ===============
 ntriples12-bnode-bad-annotated-syntax-2
 :error
 ===============
 <http://example/s> <http://example/p> _:b1 {| <http://example/q> "456"^^<http://www.w3.org/2001/XMLSchema#integer> |} .
 ---
+
+
 
 ===============
 ntriples12-nested-1
@@ -132,11 +179,43 @@ ntriples12-nested-1
 <http://example/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s3> <http://example/p3> <http://example/o3> )>> )>> .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (tripleTerm
+        subject: (IRIREF)
+        predicate: (IRIREF)
+        object: (IRIREF)))))
+
 ===============
 ntriples12-syntax-01
 ===============
 <http://example/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s> <http://example/p> <http://example/o> )>> .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (IRIREF))))
 
 ===============
 ntriples12-syntax-02
@@ -144,11 +223,32 @@ ntriples12-syntax-02
 <http://example/s><http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies><<(<http://example/s2><http://example/p2><http://example/o2>)>>.
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (IRIREF))))
+
 ===============
 ntriples12-syntax-03
 ===============
 <http://example/s><http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies><<(<http://example/s2><http://example/q2><<(<http://example/s3><http://example/p3><http://example/o3>)>>)>>.
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (tripleTerm
+        subject: (IRIREF)
+        predicate: (IRIREF)
+        object: (IRIREF)))))
 
 ===============
 ntriples-langdir-1
@@ -156,11 +256,29 @@ ntriples-langdir-1
 <http://example/a> <http://example/b> "Hello"@en--ltr .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)
+      base_direction: (BASE_DIRECTION))))
+
 ===============
 ntriples-langdir-2
 ===============
 <http://example/a> <http://example/b> "Hello"@en--rtl .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)
+      base_direction: (BASE_DIRECTION))))
 
 ===============
 ntriples-langdir-bad-1
@@ -169,12 +287,16 @@ ntriples-langdir-bad-1
 <http://example/a> <http://example/b> "Hello"@en--unk .
 ---
 
+
+
 ===============
 ntriples-langdir-bad-2
 :error
 ===============
 <http://example/a> <http://example/b> "Hello"@en--LTR .
 ---
+
+
 
 ===============
 ntriples-langdir-bad-3
@@ -183,6 +305,8 @@ ntriples-langdir-bad-3
 <http://example/a> <http://example/b> "Hello"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
 ---
 
+
+
 ===============
 ntriples-langdir-bad-4
 :error
@@ -190,10 +314,13 @@ ntriples-langdir-bad-4
 <http://example/a> <http://example/b> "Hello"@cantbethislong .
 ---
 
+
+
 ===============
 ntriples-langdir-bad-5
 :error
 ===============
 <http://example/a> <http://example/b> "Hello"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#dirLangString> .
 ---
+
 

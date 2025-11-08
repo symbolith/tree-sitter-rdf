@@ -21,8 +21,7 @@ _:G {:a :b :f.}
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (BLANK_NODE_LABEL))
+    label: (BLANK_NODE_LABEL)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -39,8 +38,7 @@ _:G {:a :b :f.}
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (BLANK_NODE_LABEL))
+    label: (BLANK_NODE_LABEL)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -72,8 +70,7 @@ alternating_iri_graphs
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -90,8 +87,7 @@ alternating_iri_graphs
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -108,8 +104,7 @@ anonymous_blank_node_graph
 
 (trigDoc
   (graph
-    label: (label
-      (ANON))
+    label: (ANON)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -135,8 +130,7 @@ anonymous_blank_node_object
           (objectList
             object: (ANON))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -162,8 +156,7 @@ anonymous_blank_node_subject
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (ANON)
@@ -188,8 +181,7 @@ bareword_a_predicate
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -214,8 +206,7 @@ bareword_decimal
           (objectList
             object: (DECIMAL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -241,8 +232,7 @@ bareword_double
           (objectList
             object: (DOUBLE))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -268,8 +258,7 @@ bareword_integer
           (objectList
             object: (INTEGER))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -289,8 +278,7 @@ blankNodePropertyList_as_object_containing_objectList_of_two_objects
 
 (trigDoc
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -315,8 +303,7 @@ blankNodePropertyList_as_object_containing_objectList
 
 (trigDoc
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -351,8 +338,7 @@ blankNodePropertyList_as_object
                 (objectList
                   object: (IRIREF)))))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -386,8 +372,7 @@ blankNodePropertyList_as_subject
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -418,8 +403,7 @@ blankNodePropertyList_containing_collection
               object: (collection
                 (INTEGER))))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -453,8 +437,7 @@ blankNodePropertyList_with_multiple_triples
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -488,8 +471,7 @@ collection_object
             object: (collection
               (INTEGER)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -517,8 +499,7 @@ collection_subject
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (collection
@@ -553,8 +534,7 @@ comment_following_localName
         object: (PrefixedName))))
   (comment)
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -605,8 +585,7 @@ default_namespace_IRI
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -632,8 +611,7 @@ double_lower_case_e
           (objectList
             object: (DOUBLE))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -659,8 +637,7 @@ empty_collection
           (objectList
             object: (collection))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -689,8 +666,7 @@ first
                 (INTEGER))
               (INTEGER)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -723,8 +699,7 @@ HYPHEN_MINUS_in_localName
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -752,8 +727,7 @@ IRIREF_datatype
               string: (STRING_LITERAL_QUOTE)
               datatype_iri: (IRIREF)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1811,8 +1785,7 @@ IRI_subject
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1838,8 +1811,7 @@ IRI_with_all_punctuation
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1865,8 +1837,7 @@ IRI_with_eight_digit_numeric_escape
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1892,8 +1863,7 @@ IRI_with_four_digit_numeric_escape
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1910,8 +1880,7 @@ _:g {<http://a.example/s> <http://a.example/p> <http://a.example/o> .}
 
 (trigDoc
   (graph
-    label: (label
-      (BLANK_NODE_LABEL))
+    label: (BLANK_NODE_LABEL)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1937,8 +1906,7 @@ labeled_blank_node_object
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -1964,8 +1932,7 @@ labeled_blank_node_subject
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (BLANK_NODE_LABEL)
@@ -1991,8 +1958,7 @@ labeled_blank_node_with_leading_digit
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2018,8 +1984,7 @@ labeled_blank_node_with_leading_underscore
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2045,8 +2010,7 @@ labeled_blank_node_with_non_leading_extras
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2072,8 +2036,7 @@ labeled_blank_node_with_PN_CHARS_BASE_character_boundaries
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2101,8 +2064,7 @@ langtagged_LONG
               string: (STRING_LITERAL_LONG_QUOTE)
               language_tag: (LANGTAG)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2138,8 +2100,7 @@ langtagged_LONG_with_subtag
               string: (STRING_LITERAL_LONG_QUOTE)
               language_tag: (LANGTAG)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -2169,8 +2130,7 @@ langtagged_non_LONG
               string: (STRING_LITERAL_QUOTE)
               language_tag: (LANGTAG)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2200,8 +2160,7 @@ lantag_with_subtag
               string: (STRING_LITERAL_QUOTE)
               language_tag: (LANGTAG)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2232,8 +2191,7 @@ last
               (collection
                 (INTEGER))))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2263,8 +2221,7 @@ LITERAL1_all_controls
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2292,8 +2249,7 @@ LITERAL1_all_punctuation
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2321,8 +2277,7 @@ LITERAL1_ascii_boundaries
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2350,8 +2305,7 @@ LITERAL1
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2394,8 +2348,7 @@ LITERAL2_ascii_boundaries
             object: (RDFLiteral
               string: (STRING_LITERAL_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2423,8 +2376,7 @@ LITERAL2
             object: (RDFLiteral
               string: (STRING_LITERAL_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2466,8 +2418,7 @@ literal_false
           (objectList
             object: (BooleanLiteral))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2494,8 +2445,7 @@ LITERAL_LONG1_ascii_boundaries
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2523,8 +2473,7 @@ LITERAL_LONG1
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2552,8 +2501,7 @@ LITERAL_LONG1_with_1_squote
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2581,8 +2529,7 @@ LITERAL_LONG1_with_2_squotes
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2625,8 +2572,7 @@ LITERAL_LONG2_ascii_boundaries
             object: (RDFLiteral
               string: (STRING_LITERAL_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2654,8 +2600,7 @@ LITERAL_LONG2
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2683,8 +2628,7 @@ LITERAL_LONG2_with_1_squote
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2712,8 +2656,7 @@ LITERAL_LONG2_with_2_squotes
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2746,8 +2689,7 @@ LITERAL_LONG2_with_REVERSE_SOLIDUS
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -2789,8 +2731,7 @@ literal_true
           (objectList
             object: (BooleanLiteral))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2817,8 +2758,7 @@ literal_with_BACKSPACE
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2846,8 +2786,7 @@ literal_with_CARRIAGE_RETURN
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2875,8 +2814,7 @@ literal_with_CHARACTER_TABULATION
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2904,8 +2842,7 @@ literal_with_escaped_BACKSPACE
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2933,8 +2870,7 @@ literal_with_escaped_CARRIAGE_RETURN
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2962,8 +2898,7 @@ literal_with_escaped_CHARACTER_TABULATION
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -2991,8 +2926,7 @@ literal_with_escaped_FORM_FEED
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3020,8 +2954,7 @@ literal_with_escaped_LINE_FEED
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3049,8 +2982,7 @@ literal_with_FORM_FEED
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3080,8 +3012,7 @@ literal_with_LINE_FEED
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3109,8 +3040,7 @@ literal_with_numeric_escape4
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3138,8 +3068,7 @@ literal_with_numeric_escape8
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3167,8 +3096,7 @@ literal_with_REVERSE_SOLIDUS
             object: (RDFLiteral
               string: (STRING_LITERAL_SINGLE_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3199,8 +3127,7 @@ localName_with_assigned_nfc_bmp_PN_CHARS_BASE_character_boundaries
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3230,8 +3157,7 @@ localName_with_assigned_nfc_PN_CHARS_BASE_character_boundaries
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3261,8 +3187,7 @@ localname_with_COLON
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3292,8 +3217,7 @@ localName_with_leading_digit
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3323,8 +3247,7 @@ localName_with_leading_underscore
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3354,8 +3277,7 @@ localName_with_nfc_PN_CHARS_BASE_character_boundaries
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3385,8 +3307,7 @@ localName_with_non_leading_extras
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3416,8 +3337,7 @@ localName_with_PN_CHARS_BASE_character_boundaries
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3443,8 +3363,7 @@ negative_numeric
           (objectList
             object: (INTEGER))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3477,8 +3396,7 @@ nested_blankNodePropertyLists
             (objectList
               object: (IRIREF)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -3513,8 +3431,7 @@ nested_collection
               (collection
                 (INTEGER))))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3580,8 +3497,7 @@ numeric_with_leading_0
           (objectList
             object: (INTEGER))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3608,8 +3524,7 @@ objectList_with_two_objects
             object: (IRIREF)
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3639,8 +3554,7 @@ old_style_base
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3670,8 +3584,7 @@ old_style_prefix
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3701,8 +3614,7 @@ percent_escaped_localName
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3728,8 +3640,7 @@ positive_numeric
           (objectList
             object: (INTEGER))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3750,8 +3661,7 @@ predicateObjectList_with_blankNodePropertyList_as_object
 
 (trigDoc
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3792,8 +3702,7 @@ predicateObjectList_with_two_objectLists
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3826,8 +3735,7 @@ prefixed_IRI_object
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3857,8 +3765,7 @@ prefixed_IRI_predicate
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3890,8 +3797,7 @@ prefixed_name_datatype
               string: (STRING_LITERAL_QUOTE)
               datatype_iri: (PrefixedName)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -3923,8 +3829,7 @@ prefix_only_IRI
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3958,8 +3863,7 @@ prefix_reassigned_and_used
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -3989,8 +3893,7 @@ prefix_with_non_leading_extras
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4020,8 +3923,7 @@ prefix_with_PN_CHARS_BASE_character_boundaries
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -4050,8 +3952,7 @@ repeated_semis_at_end
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -4080,8 +3981,7 @@ repeated_semis_not_at_end
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -4111,8 +4011,7 @@ reserved_escaped_localName
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4139,8 +4038,7 @@ sole_blankNodePropertyList
             (objectList
               object: (IRIREF)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -4149,8 +4047,7 @@ sole_blankNodePropertyList
             (objectList
               object: (IRIREF)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -4179,8 +4076,7 @@ BASE <http://a.example/>
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -4210,8 +4106,7 @@ PREFIX p: <http://a.example/>
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4313,8 +4208,7 @@ trig-eval-struct-01
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -4354,8 +4248,7 @@ trig-eval-struct-02
           (objectList
             object: (IRIREF))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -4534,8 +4427,7 @@ GRAPH :g { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4559,8 +4451,7 @@ GRAPH :g { :s :p :o . }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4584,8 +4475,7 @@ GRAPH :g { }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))))
+    label: (PrefixedName)))
 
 ===============
 trig-kw-graph-04
@@ -4606,8 +4496,7 @@ GRAPH :g5 { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4616,8 +4505,7 @@ GRAPH :g5 { :s :p :o }
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4626,8 +4514,7 @@ GRAPH :g5 { :s :p :o }
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4636,8 +4523,7 @@ GRAPH :g5 { :s :p :o }
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4646,8 +4532,7 @@ GRAPH :g5 { :s :p :o }
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4671,8 +4556,7 @@ GRAPH :g { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4696,8 +4580,7 @@ GRAPH _:a { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (BLANK_NODE_LABEL))
+    label: (BLANK_NODE_LABEL)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4723,8 +4606,7 @@ GRAPH [] { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (ANON))
+    label: (ANON)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4733,8 +4615,7 @@ GRAPH [] { :s :p :o }
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (ANON))
+    label: (ANON)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4743,8 +4624,7 @@ GRAPH [] { :s :p :o }
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (ANON))
+    label: (ANON)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4768,8 +4648,7 @@ GRAPH :g { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4793,8 +4672,7 @@ GRAPH :g { :s :p :o }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4818,8 +4696,7 @@ GRAPH :g { }
     prefix_label: (PNAME_NS)
     iri: (IRIREF))
   (graph
-    label: (label
-      (PrefixedName))))
+    label: (PrefixedName)))
 
 ===============
 trig-subm-01
@@ -4842,8 +4719,7 @@ trig-subm-01
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (ANON)
@@ -4905,8 +4781,7 @@ trig-subm-02
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -4962,8 +4837,7 @@ trig-subm-03
             object: (PrefixedName)
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5013,8 +4887,7 @@ trig-subm-04
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5066,8 +4939,7 @@ trig-subm-05
           (objectList
             object: (ANON))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (ANON)
@@ -5127,8 +4999,7 @@ trig-subm-06
                 (objectList
                   object: (PrefixedName)))))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         (blankNodePropertyList
@@ -5173,8 +5044,7 @@ trig-subm-07
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5207,8 +5077,7 @@ trig-subm-08
               (RDFLiteral
                 string: (STRING_LITERAL_QUOTE))))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5242,8 +5111,7 @@ trig-subm-09
           (objectList
             object: (collection))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5302,8 +5170,7 @@ _:hasParent a owl:ObjectProperty .
           (objectList
             object: (INTEGER))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (BLANK_NODE_LABEL)
@@ -5376,8 +5243,7 @@ trig-subm-11
           (objectList
             object: (INTEGER))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (IRIREF)
@@ -5479,8 +5345,7 @@ ex4-:foo-bar ex4-:foo_bar "d" .
             object: (RDFLiteral
               string: (STRING_LITERAL_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5576,8 +5441,7 @@ ex:foo :_345 "678" .
             object: (RDFLiteral
               string: (STRING_LITERAL_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5649,8 +5513,7 @@ trig-subm-14
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (ANON)
@@ -5701,8 +5564,7 @@ newlines""" .
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5791,8 +5653,7 @@ one
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (comment)
     (comment)
     (comment)
@@ -5841,8 +5702,7 @@ trig-subm-17
           (objectList
             object: (DECIMAL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5892,8 +5752,7 @@ trig-subm-18
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -5953,8 +5812,7 @@ trig-subm-19
           (objectList
             object: (DOUBLE))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -6018,8 +5876,7 @@ trig-subm-20
           (objectList
             object: (DOUBLE))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -6064,8 +5921,7 @@ trig-subm-21
             object: (RDFLiteral
               string: (STRING_LITERAL_LONG_QUOTE)))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -6110,8 +5966,7 @@ trig-subm-22
           (objectList
             object: (BooleanLiteral))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -6212,8 +6067,7 @@ trig-subm-23
             object: (PrefixedName)))))
     (comment))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -6281,8 +6135,7 @@ trig-subm-24
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -6318,8 +6171,7 @@ trig-subm-25
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -8511,8 +8363,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (IRIREF))
+    label: (IRIREF)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -8534,8 +8385,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -8557,8 +8407,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (BLANK_NODE_LABEL))
+    label: (BLANK_NODE_LABEL)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -8580,8 +8429,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (BLANK_NODE_LABEL))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -8598,8 +8446,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (PrefixedName)
@@ -8608,8 +8455,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (PrefixedName))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (collection)
@@ -8626,8 +8472,7 @@ _:s{:s :p :o .:s :p"Alice".:s :p _:o.}
           (objectList
             object: (ANON))))))
   (graph
-    label: (label
-      (PrefixedName))
+    label: (PrefixedName)
     (triplesBlock
       (triples
         subject: (ANON)

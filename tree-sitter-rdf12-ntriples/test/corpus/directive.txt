@@ -23,3 +23,11 @@ two lines of comments
 #
 <a> <b> <c> .
 ---
+
+(ntriplesDoc
+  (comment)
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))

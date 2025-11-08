@@ -3649,19 +3649,20 @@
   "supertypes": [
     "BlankNode",
     "NumericLiteral",
-    "directive",
     "String",
+    "VersionSpecifier",
+    "directive",
     "iri",
+    "label",
     "literal",
     "object",
-    "rtObject",
-    "ttObject",
     "predicate",
-    "subject",
+    "rtObject",
     "rtSubject",
+    "subject",
+    "ttObject",
     "ttSubject",
-    "verb",
-    "VersionSpecifier"
+    "verb"
   ],
   "reserved": {}
 }

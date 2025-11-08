@@ -1,0 +1,978 @@
+===============
+syntax-update-01
+===============
+BASE <http://example/base#>
+PREFIX : <http://example/>
+LOAD <http://example.org/faraway>
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (BaseDecl
+        iri: (IRIREF))
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    operation: (Load
+      (IRIREF))))
+
+===============
+syntax-update-02
+===============
+# Comment
+BASE <http://example/base#>
+# Comment
+PREFIX : <http://example/>
+# Comment
+LOAD <http://example.org/faraway>
+# Comment
+---
+
+(Unit
+  (comment)
+  (Update
+    prologue: (Prologue
+      (BaseDecl
+        iri: (IRIREF))
+      (comment)
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    (comment)
+    operation: (Load
+      (IRIREF)))
+  (comment))
+
+===============
+syntax-update-03
+===============
+LOAD <http://example.org/faraway> ;
+---
+
+(Unit
+  (Update
+    operation: (Load
+      (IRIREF))))
+
+===============
+syntax-update-04
+===============
+LOAD <http://example.org/faraway> INTO GRAPH <localCopy>
+---
+
+(Unit
+  (Update
+    operation: (Load
+      (IRIREF)
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-05
+===============
+DROP NAMED
+---
+
+(Unit
+  (Update
+    operation: (Drop)))
+
+===============
+syntax-update-06
+===============
+DROP DEFAULT
+---
+
+(Unit
+  (Update
+    operation: (Drop)))
+
+===============
+syntax-update-07
+===============
+DROP ALL
+---
+
+(Unit
+  (Update
+    operation: (Drop)))
+
+===============
+syntax-update-08
+===============
+DROP GRAPH <graph>
+---
+
+(Unit
+  (Update
+    operation: (Drop
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-09
+===============
+DROP SILENT NAMED
+---
+
+(Unit
+  (Update
+    operation: (Drop)))
+
+===============
+syntax-update-10
+===============
+DROP SILENT DEFAULT
+---
+
+(Unit
+  (Update
+    operation: (Drop)))
+
+===============
+syntax-update-11
+===============
+DROP SILENT ALL
+---
+
+(Unit
+  (Update
+    operation: (Drop)))
+
+===============
+syntax-update-12
+===============
+DROP SILENT GRAPH <graph>
+---
+
+(Unit
+  (Update
+    operation: (Drop
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-13
+===============
+CREATE GRAPH <graph>
+---
+
+(Unit
+  (Update
+    operation: (Create
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-14
+===============
+CREATE SILENT GRAPH <graph>
+---
+
+(Unit
+  (Update
+    operation: (Create
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-15
+===============
+CLEAR NAMED
+---
+
+(Unit
+  (Update
+    operation: (Clear)))
+
+===============
+syntax-update-16
+===============
+CLEAR DEFAULT
+---
+
+(Unit
+  (Update
+    operation: (Clear)))
+
+===============
+syntax-update-17
+===============
+CLEAR ALL
+---
+
+(Unit
+  (Update
+    operation: (Clear)))
+
+===============
+syntax-update-18
+===============
+CLEAR GRAPH <graph>
+---
+
+(Unit
+  (Update
+    operation: (Clear
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-19
+===============
+CLEAR SILENT NAMED
+---
+
+(Unit
+  (Update
+    operation: (Clear)))
+
+===============
+syntax-update-20
+===============
+CLEAR SILENT DEFAULT
+---
+
+(Unit
+  (Update
+    operation: (Clear)))
+
+===============
+syntax-update-21
+===============
+CLEAR SILENT ALL
+---
+
+(Unit
+  (Update
+    operation: (Clear)))
+
+===============
+syntax-update-22
+===============
+CLEAR SILENT GRAPH <graph>
+---
+
+(Unit
+  (Update
+    operation: (Clear
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-23
+===============
+INSERT DATA { <s> <p> 'o1', 'o2', 'o3' }
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      data: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (IRIREF)
+            (PropertyList
+              predicate: (IRIREF)
+              (ObjectList
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))))))))))
+
+===============
+syntax-update-24
+===============
+INSERT DATA { GRAPH <G> { <s> <p> 'o1', 'o2', 'o3' } }
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      data: (Quads
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE))
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE))
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))))))))))
+
+===============
+syntax-update-25
+===============
+INSERT DATA { 
+  <s1> <p1> <o1>
+  GRAPH <G> { <s> <p1> 'o1'; <p2> <o2> } 
+  GRAPH <G1> { <s> <p1> 'o1'; <p2> <o2> } 
+  <s1> <p1> <o1>
+}
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      data: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (IRIREF)
+            (PropertyList
+              predicate: (IRIREF)
+              (ObjectList
+                object: (IRIREF)))))
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (IRIREF))))))
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (IRIREF))))))
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (IRIREF)
+            (PropertyList
+              predicate: (IRIREF)
+              (ObjectList
+                object: (IRIREF)))))))))
+
+===============
+syntax-update-26
+===============
+INSERT 
+# Comment
+DATA { GRAPH <G> { <s> <p> 'o1', 'o2', 'o3' } }
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      (comment)
+      data: (Quads
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE))
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE))
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))))))))))
+
+===============
+syntax-update-27
+===============
+INSERT 
+DATA { }
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      data: (Quads))))
+
+===============
+syntax-update-28
+===============
+INSERT 
+DATA {  GRAPH <G>{} }
+---
+
+(Unit
+  (Update
+    operation: (InsertData
+      data: (Quads
+        (QuadsNotTriples
+          (IRIREF))))))
+
+===============
+syntax-update-29
+===============
+DELETE DATA { <s> <p> 'o1', 'o2', 'o3' }
+---
+
+(Unit
+  (Update
+    operation: (DeleteData
+      data: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (IRIREF)
+            (PropertyList
+              predicate: (IRIREF)
+              (ObjectList
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_SINGLE_QUOTE))))))))))
+
+===============
+syntax-update-30
+===============
+DELETE DATA { GRAPH <G> { <s> <p> 'o1', 'o2', 'o3' } }
+---
+
+(Unit
+  (Update
+    operation: (DeleteData
+      data: (Quads
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE))
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE))
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))))))))))
+
+===============
+syntax-update-31
+===============
+DELETE DATA { 
+  <s1> <p1> <o1>
+  GRAPH <G> { <s> <p1> 'o1'; <p2> <o2> } 
+  GRAPH <G1> { <s> <p1> 'o1'; <p2> <o2> } 
+  <s1> <p1> <o1>
+}
+---
+
+(Unit
+  (Update
+    operation: (DeleteData
+      data: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (IRIREF)
+            (PropertyList
+              predicate: (IRIREF)
+              (ObjectList
+                object: (IRIREF)))))
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (IRIREF))))))
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (RDFLiteral
+                    string: (STRING_LITERAL_SINGLE_QUOTE)))
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (IRIREF))))))
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (IRIREF)
+            (PropertyList
+              predicate: (IRIREF)
+              (ObjectList
+                object: (IRIREF)))))))))
+
+===============
+syntax-update-32
+===============
+BASE    <base:>
+PREFIX  :     <http://example/>
+
+WITH :g
+DELETE {
+  <s> ?p ?o .
+}
+INSERT {
+  ?s ?p <#o> .
+}
+USING <base:g1>
+USING <base:g2>
+USING NAMED :gn1
+USING NAMED :gn2
+WHERE
+  { ?s ?p ?o }
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (BaseDecl
+        iri: (IRIREF))
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    operation: (Modify
+      (PrefixedName)
+      (DeleteClause
+        pattern: (Quads
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (Var)
+                (ObjectList
+                  object: (Var)))))))
+      (InsertClause
+        pattern: (Quads
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (Var)
+              (PropertyList
+                predicate: (Var)
+                (ObjectList
+                  object: (IRIREF)))))))
+      (UsingClause
+        (IRIREF))
+      (UsingClause
+        (IRIREF))
+      (UsingClause
+        (PrefixedName))
+      (UsingClause
+        (PrefixedName))
+      (GroupGraphPattern
+        (TriplesBlock
+          (TriplesSameSubjectPath
+            subject: (Var)
+            (PropertyListPath
+              predicate: (Var)
+              (ObjectListPath
+                object: (Var)))))))))
+
+===============
+syntax-update-33
+===============
+PREFIX  :     <http://example/>
+WITH :g
+DELETE {
+  <base:s> ?p ?o .
+}
+WHERE
+  { ?s ?p ?o }
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    operation: (Modify
+      (PrefixedName)
+      (DeleteClause
+        pattern: (Quads
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (Var)
+                (ObjectList
+                  object: (Var)))))))
+      (GroupGraphPattern
+        (TriplesBlock
+          (TriplesSameSubjectPath
+            subject: (Var)
+            (PropertyListPath
+              predicate: (Var)
+              (ObjectListPath
+                object: (Var)))))))))
+
+===============
+syntax-update-34
+===============
+PREFIX  :     <http://example/>
+WITH :g
+INSERT {
+  <base:s> ?p ?o .
+}
+WHERE
+  { ?s ?p ?o }
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    operation: (Modify
+      (PrefixedName)
+      (InsertClause
+        pattern: (Quads
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (Var)
+                (ObjectList
+                  object: (Var)))))))
+      (GroupGraphPattern
+        (TriplesBlock
+          (TriplesSameSubjectPath
+            subject: (Var)
+            (PropertyListPath
+              predicate: (Var)
+              (ObjectListPath
+                object: (Var)))))))))
+
+===============
+syntax-update-35
+===============
+DELETE WHERE { ?s ?p ?o }
+---
+
+(Unit
+  (Update
+    operation: (DeleteWhere
+      pattern: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (Var)
+            (PropertyList
+              predicate: (Var)
+              (ObjectList
+                object: (Var)))))))))
+
+===============
+syntax-update-36
+===============
+# Comment
+DELETE 
+# Comment
+WHERE 
+# Comment
+{ GRAPH <G> { <s> <p> 123 ; <q> 4567.0 . } }
+---
+
+(Unit
+  (comment)
+  (Update
+    operation: (DeleteWhere
+      (comment)
+      (comment)
+      pattern: (Quads
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (IRIREF)
+              (PropertyList
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (NumericLiteralUnsigned
+                    (INTEGER)))
+                predicate: (IRIREF)
+                (ObjectList
+                  object: (NumericLiteralUnsigned
+                    (DECIMAL)))))))))))
+
+===============
+syntax-update-37
+===============
+CREATE GRAPH <g> ;
+LOAD <remote> INTO GRAPH <g> ;
+---
+
+(Unit
+  (Update
+    operation: (Create
+      (GraphRef
+        (IRIREF)))
+    operation: (Load
+      (IRIREF)
+      (GraphRef
+        (IRIREF)))))
+
+===============
+syntax-update-38
+===============
+# Empty
+---
+
+(Unit
+  (comment))
+
+===============
+syntax-update-39
+===============
+BASE <http://example/>
+# Otherwise empty
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (BaseDecl
+        iri: (IRIREF))))
+  (comment))
+
+===============
+syntax-update-40
+===============
+PREFIX : <http://example/>
+# Otherwise empty
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF))))
+  (comment))
+
+===============
+syntax-update-53
+===============
+PREFIX : <http://www.example.org/>
+
+INSERT DATA { 
+              GRAPH<g1> { _:b1 :p :o } 
+              GRAPH<g2> { _:b1 :p :o } 
+            }
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    operation: (InsertData
+      data: (Quads
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (BlankNode
+                (BLANK_NODE_LABEL))
+              (PropertyList
+                predicate: (PrefixedName)
+                (ObjectList
+                  object: (PrefixedName))))))
+        (QuadsNotTriples
+          (IRIREF)
+          (TriplesTemplate
+            (TriplesSameSubject
+              predicate: (BlankNode
+                (BLANK_NODE_LABEL))
+              (PropertyList
+                predicate: (PrefixedName)
+                (ObjectList
+                  object: (PrefixedName))))))))))
+
+===============
+syntax-update-54
+===============
+PREFIX : <http://www.example.org/>
+
+INSERT DATA { _:b1 :p :o }
+;
+INSERT DATA { _:b1 :p :o } 
+---
+
+(Unit
+  (Update
+    prologue: (Prologue
+      (PrefixDecl
+        prefix_label: (PNAME_NS)
+        iri: (IRIREF)))
+    operation: (InsertData
+      data: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (BlankNode
+              (BLANK_NODE_LABEL))
+            (PropertyList
+              predicate: (PrefixedName)
+              (ObjectList
+                object: (PrefixedName)))))))
+    operation: (InsertData
+      data: (Quads
+        (TriplesTemplate
+          (TriplesSameSubject
+            predicate: (BlankNode
+              (BLANK_NODE_LABEL))
+            (PropertyList
+              predicate: (PrefixedName)
+              (ObjectList
+                object: (PrefixedName)))))))))
+
+===============
+syntax-update-bad-01
+:error
+===============
+# No URL
+LOAD ;
+---
+
+
+
+===============
+syntax-update-bad-02
+:error
+===============
+# Typo in keyword.
+CREATE DEAFULT
+---
+
+
+
+===============
+syntax-update-bad-03
+:error
+===============
+# Variable in data.
+DELETE DATA { ?s <p> <o> }
+---
+
+
+
+===============
+syntax-update-bad-04
+:error
+===============
+# Variable in data.
+INSERT DATA { GRAPH ?g {<s> <p> <o> } }
+---
+
+
+
+===============
+syntax-update-bad-05
+:error
+===============
+# Nested GRAPH
+DELETE DATA { 
+  GRAPH <G> { 
+    <s> <p> <o> .
+    GRAPH <G1> { <s> <p1> 'o1' }
+  }
+}
+---
+
+
+
+===============
+syntax-update-bad-06
+:error
+===============
+# Missing template
+INSERT WHERE { ?s ?p ?o }
+---
+
+
+
+===============
+syntax-update-bad-07
+:error
+===============
+# No separator
+CREATE GRAPH <g>
+LOAD <remote> INTO GRAPH <g>
+---
+
+
+
+===============
+syntax-update-bad-08
+:error
+===============
+# Too many separators
+CREATE GRAPH <g>
+;;
+LOAD <remote> INTO GRAPH <g>
+---
+
+
+
+===============
+syntax-update-bad-09
+:error
+===============
+CREATE GRAPH <g>
+;
+LOAD <remote> INTO GRAPH <g>
+;;
+---
+
+
+
+===============
+syntax-update-bad-10
+:error
+===============
+# BNode in DELETE WHERE
+DELETE WHERE { _:a <p> <o> }
+---
+
+
+
+===============
+syntax-update-bad-11
+:error
+===============
+# BNode in DELETE template
+DELETE { <s> <p> [] } WHERE { ?x <p> <o> }
+---
+
+
+
+===============
+syntax-update-bad-12
+:error
+===============
+# BNode in DELETE DATA
+DELETE DATA { _:a <p> <o> }
+---
+
+

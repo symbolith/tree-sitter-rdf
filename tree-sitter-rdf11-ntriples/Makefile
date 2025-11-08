@@ -3,7 +3,7 @@ build:
 
 test: build
 	# Exclude tests that require semanctic validation
-	tree-sitter test --show-fields -r -e "nt-syntax-bad-uri-0[6-9]"
+	tree-sitter test --show-fields --exclude "nt-syntax-bad-uri-0[6-9]" $(TEST_FLAGS)
 
 develop: build
 	tree-sitter test --show-fields -D

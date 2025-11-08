@@ -1,0 +1,2973 @@
+[
+  {
+    "type": "BinaryPath",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "AlternativePath",
+        "named": true
+      },
+      {
+        "type": "SequencePath",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "Constraint",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BrackettedExpression",
+        "named": true
+      },
+      {
+        "type": "BuiltInCall",
+        "named": true
+      },
+      {
+        "type": "FunctionCall",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "DataBlock",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "InlineDataFull",
+        "named": true
+      },
+      {
+        "type": "InlineDataOneVar",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "Expression",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BinaryExpression",
+        "named": true
+      },
+      {
+        "type": "PrimaryExpression",
+        "named": true
+      },
+      {
+        "type": "UnaryExpression",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "GraphNode",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "TriplesNode",
+        "named": true
+      },
+      {
+        "type": "VarOrTerm",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "GraphNodePath",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "TriplesNodePath",
+        "named": true
+      },
+      {
+        "type": "VarOrTerm",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "GraphPatternNotTriples",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "Bind",
+        "named": true
+      },
+      {
+        "type": "Filter",
+        "named": true
+      },
+      {
+        "type": "GraphGraphPattern",
+        "named": true
+      },
+      {
+        "type": "GroupGraphPattern",
+        "named": true
+      },
+      {
+        "type": "InlineData",
+        "named": true
+      },
+      {
+        "type": "MinusGraphPattern",
+        "named": true
+      },
+      {
+        "type": "OptionalGraphPattern",
+        "named": true
+      },
+      {
+        "type": "ServiceGraphPattern",
+        "named": true
+      },
+      {
+        "type": "UnionGraphPattern",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "GraphRefAll",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "ALL",
+        "named": false
+      },
+      {
+        "type": "DEFAULT",
+        "named": false
+      },
+      {
+        "type": "GraphRef",
+        "named": true
+      },
+      {
+        "type": "NAMED",
+        "named": false
+      }
+    ]
+  },
+  {
+    "type": "GraphTerm",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNode",
+        "named": true
+      },
+      {
+        "type": "BooleanLiteral",
+        "named": true
+      },
+      {
+        "type": "NIL",
+        "named": true
+      },
+      {
+        "type": "NumericLiteral",
+        "named": true
+      },
+      {
+        "type": "RDFLiteral",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "NumericLiteral",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "NumericLiteralNegative",
+        "named": true
+      },
+      {
+        "type": "NumericLiteralPositive",
+        "named": true
+      },
+      {
+        "type": "NumericLiteralUnsigned",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "Path",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BinaryPath",
+        "named": true
+      },
+      {
+        "type": "PathElement",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "PrimaryExpression",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BooleanLiteral",
+        "named": true
+      },
+      {
+        "type": "BrackettedExpression",
+        "named": true
+      },
+      {
+        "type": "BuiltInCall",
+        "named": true
+      },
+      {
+        "type": "FunctionCall",
+        "named": true
+      },
+      {
+        "type": "NumericLiteral",
+        "named": true
+      },
+      {
+        "type": "RDFLiteral",
+        "named": true
+      },
+      {
+        "type": "Var",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "SourceSelector",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "String",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "STRING_LITERAL_LONG_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_LONG_SINGLE_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_QUOTE",
+        "named": true
+      },
+      {
+        "type": "STRING_LITERAL_SINGLE_QUOTE",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "TriplesNodePath",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "BlankNodePropertyListPath",
+        "named": true
+      },
+      {
+        "type": "CollectionPath",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "Update1",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "Add",
+        "named": true
+      },
+      {
+        "type": "Clear",
+        "named": true
+      },
+      {
+        "type": "Copy",
+        "named": true
+      },
+      {
+        "type": "Create",
+        "named": true
+      },
+      {
+        "type": "DeleteData",
+        "named": true
+      },
+      {
+        "type": "DeleteWhere",
+        "named": true
+      },
+      {
+        "type": "Drop",
+        "named": true
+      },
+      {
+        "type": "InsertData",
+        "named": true
+      },
+      {
+        "type": "Load",
+        "named": true
+      },
+      {
+        "type": "Modify",
+        "named": true
+      },
+      {
+        "type": "Move",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "VarOrIri",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "Var",
+        "named": true
+      },
+      {
+        "type": "iri",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "VarOrTerm",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "GraphTerm",
+        "named": true
+      },
+      {
+        "type": "Var",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "Verb",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "VarOrIri",
+        "named": true
+      },
+      {
+        "type": "a",
+        "named": false
+      }
+    ]
+  },
+  {
+    "type": "iri",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "IRIREF",
+        "named": true
+      },
+      {
+        "type": "PrefixedName",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "Add",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphOrDefault",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Aggregate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        },
+        {
+          "type": "String",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "AlternativePath",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Path",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ArgList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        },
+        {
+          "type": "NIL",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "AskQuery",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "DefaultGraphClause",
+          "named": true
+        },
+        {
+          "type": "GroupClause",
+          "named": true
+        },
+        {
+          "type": "HavingClause",
+          "named": true
+        },
+        {
+          "type": "LimitOffsetClauses",
+          "named": true
+        },
+        {
+          "type": "NamedGraphClause",
+          "named": true
+        },
+        {
+          "type": "OrderClause",
+          "named": true
+        },
+        {
+          "type": "WhereClause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BaseDecl",
+    "named": true,
+    "fields": {
+      "iri": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IRIREF",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "BinaryExpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        },
+        {
+          "type": "ExpressionList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Bind",
+    "named": true,
+    "fields": {
+      "bound_variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Var",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BlankNode",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ANON",
+          "named": true
+        },
+        {
+          "type": "BLANK_NODE_LABEL",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BlankNodePropertyList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "PropertyList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BlankNodePropertyListPath",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "PropertyListPath",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BooleanLiteral",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "BrackettedExpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BuiltInCall",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Aggregate",
+          "named": true
+        },
+        {
+          "type": "ExistsFunc",
+          "named": true
+        },
+        {
+          "type": "Expression",
+          "named": true
+        },
+        {
+          "type": "ExpressionList",
+          "named": true
+        },
+        {
+          "type": "NIL",
+          "named": true
+        },
+        {
+          "type": "NotExistsFunc",
+          "named": true
+        },
+        {
+          "type": "RegexExpression",
+          "named": true
+        },
+        {
+          "type": "StrReplaceExpression",
+          "named": true
+        },
+        {
+          "type": "SubstringExpression",
+          "named": true
+        },
+        {
+          "type": "Var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Clear",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphRefAll",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Collection",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphNode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "CollectionPath",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphNodePath",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ConstructQuery",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "ConstructTemplate",
+          "named": true
+        },
+        {
+          "type": "DefaultGraphClause",
+          "named": true
+        },
+        {
+          "type": "GroupClause",
+          "named": true
+        },
+        {
+          "type": "HavingClause",
+          "named": true
+        },
+        {
+          "type": "LimitOffsetClauses",
+          "named": true
+        },
+        {
+          "type": "NamedGraphClause",
+          "named": true
+        },
+        {
+          "type": "OrderClause",
+          "named": true
+        },
+        {
+          "type": "TriplesTemplate",
+          "named": true
+        },
+        {
+          "type": "WhereClause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ConstructTemplate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "ConstructTriples",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ConstructTriples",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TriplesSameSubject",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Copy",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphOrDefault",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Create",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphRef",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "DataBlockValue",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "BooleanLiteral",
+          "named": true
+        },
+        {
+          "type": "NumericLiteral",
+          "named": true
+        },
+        {
+          "type": "RDFLiteral",
+          "named": true
+        },
+        {
+          "type": "UNDEF",
+          "named": true
+        },
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "DefaultGraphClause",
+    "named": true,
+    "fields": {
+      "source_selector": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "SourceSelector",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "DeleteClause",
+    "named": true,
+    "fields": {
+      "pattern": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Quads",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "DeleteData",
+    "named": true,
+    "fields": {
+      "data": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Quads",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "DeleteWhere",
+    "named": true,
+    "fields": {
+      "pattern": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Quads",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "DescribeQuery",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "DefaultGraphClause",
+          "named": true
+        },
+        {
+          "type": "GroupClause",
+          "named": true
+        },
+        {
+          "type": "HavingClause",
+          "named": true
+        },
+        {
+          "type": "LimitOffsetClauses",
+          "named": true
+        },
+        {
+          "type": "NamedGraphClause",
+          "named": true
+        },
+        {
+          "type": "OrderClause",
+          "named": true
+        },
+        {
+          "type": "VarOrIri",
+          "named": true
+        },
+        {
+          "type": "WhereClause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Drop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphRefAll",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ExistsFunc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ExpressionList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        },
+        {
+          "type": "NIL",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Filter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Constraint",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "FunctionCall",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ArgList",
+            "named": true
+          }
+        ]
+      },
+      "identifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "iri",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "GraphGraphPattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        },
+        {
+          "type": "VarOrIri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "GraphOrDefault",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "GraphRef",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "GroupClause",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "AS",
+            "named": false
+          },
+          {
+            "type": "BuiltInCall",
+            "named": true
+          },
+          {
+            "type": "Expression",
+            "named": true
+          },
+          {
+            "type": "FunctionCall",
+            "named": true
+          },
+          {
+            "type": "Var",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "GroupGraphPattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "GraphPatternNotTriples",
+          "named": true
+        },
+        {
+          "type": "SubSelect",
+          "named": true
+        },
+        {
+          "type": "TriplesBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "HavingClause",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Constraint",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "InlineData",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "DataBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "InlineDataFull",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "DataBlockValue",
+          "named": true
+        },
+        {
+          "type": "NIL",
+          "named": true
+        },
+        {
+          "type": "Var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "InlineDataOneVar",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "DataBlockValue",
+          "named": true
+        },
+        {
+          "type": "Var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "InsertClause",
+    "named": true,
+    "fields": {
+      "pattern": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Quads",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "InsertData",
+    "named": true,
+    "fields": {
+      "data": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Quads",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "LimitOffsetClauses",
+    "named": true,
+    "fields": {
+      "limit": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "INTEGER",
+            "named": true
+          }
+        ]
+      },
+      "offset": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "INTEGER",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "Load",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphRef",
+          "named": true
+        },
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "MinusGraphPattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Modify",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "DeleteClause",
+          "named": true
+        },
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        },
+        {
+          "type": "InsertClause",
+          "named": true
+        },
+        {
+          "type": "UsingClause",
+          "named": true
+        },
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Move",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GraphOrDefault",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "NamedGraphClause",
+    "named": true,
+    "fields": {
+      "source_selector": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "SourceSelector",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "NotExistsFunc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "NumericLiteralNegative",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "DECIMAL_NEGATIVE",
+          "named": true
+        },
+        {
+          "type": "DOUBLE_NEGATIVE",
+          "named": true
+        },
+        {
+          "type": "INTEGER_NEGATIVE",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "NumericLiteralPositive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "DECIMAL_POSITIVE",
+          "named": true
+        },
+        {
+          "type": "DOUBLE_POSITIVE",
+          "named": true
+        },
+        {
+          "type": "INTEGER_POSITIVE",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "NumericLiteralUnsigned",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "DECIMAL",
+          "named": true
+        },
+        {
+          "type": "DOUBLE",
+          "named": true
+        },
+        {
+          "type": "INTEGER",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ObjectList",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "GraphNode",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "ObjectListPath",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "GraphNodePath",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "OptionalGraphPattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "OrderClause",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "ASC",
+            "named": false
+          },
+          {
+            "type": "Constraint",
+            "named": true
+          },
+          {
+            "type": "DESC",
+            "named": false
+          },
+          {
+            "type": "Var",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "PathElement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "Path",
+          "named": true
+        },
+        {
+          "type": "PathInverse",
+          "named": true
+        },
+        {
+          "type": "PathMod",
+          "named": true
+        },
+        {
+          "type": "PathNegatedPropertySet",
+          "named": true
+        },
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "PathInverse",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "PathNegatedPropertySet",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "PathOneInPropertySet",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "PathOneInPropertySet",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "PrefixDecl",
+    "named": true,
+    "fields": {
+      "iri": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IRIREF",
+            "named": true
+          }
+        ]
+      },
+      "prefix_label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "PNAME_NS",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "PrefixedName",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "Prologue",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "BaseDecl",
+          "named": true
+        },
+        {
+          "type": "PrefixDecl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "PropertyList",
+    "named": true,
+    "fields": {
+      "predicate": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Verb",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ObjectList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "PropertyListPath",
+    "named": true,
+    "fields": {
+      "predicate": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Path",
+            "named": true
+          },
+          {
+            "type": "Var",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ObjectList",
+          "named": true
+        },
+        {
+          "type": "ObjectListPath",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Quads",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "QuadsNotTriples",
+          "named": true
+        },
+        {
+          "type": "TriplesTemplate",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "QuadsNotTriples",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TriplesTemplate",
+          "named": true
+        },
+        {
+          "type": "VarOrIri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Query",
+    "named": true,
+    "fields": {
+      "form": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "AskQuery",
+            "named": true
+          },
+          {
+            "type": "ConstructQuery",
+            "named": true
+          },
+          {
+            "type": "DescribeQuery",
+            "named": true
+          },
+          {
+            "type": "SelectQuery",
+            "named": true
+          }
+        ]
+      },
+      "prologue": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Prologue",
+            "named": true
+          }
+        ]
+      },
+      "values": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ValuesClause",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "RDFLiteral",
+    "named": true,
+    "fields": {
+      "datatype_iri": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "iri",
+            "named": true
+          }
+        ]
+      },
+      "language_tag": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "LANGTAG",
+            "named": true
+          }
+        ]
+      },
+      "string": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "String",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "RegexExpression",
+    "named": true,
+    "fields": {
+      "flag": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Expression",
+            "named": true
+          }
+        ]
+      },
+      "pattern": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Expression",
+            "named": true
+          }
+        ]
+      },
+      "text": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "SelectClause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "SelectExpression",
+          "named": true
+        },
+        {
+          "type": "Var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "SelectExpression",
+    "named": true,
+    "fields": {
+      "binding": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Var",
+            "named": true
+          }
+        ]
+      },
+      "expression": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "SelectQuery",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "DefaultGraphClause",
+          "named": true
+        },
+        {
+          "type": "GroupClause",
+          "named": true
+        },
+        {
+          "type": "HavingClause",
+          "named": true
+        },
+        {
+          "type": "LimitOffsetClauses",
+          "named": true
+        },
+        {
+          "type": "NamedGraphClause",
+          "named": true
+        },
+        {
+          "type": "OrderClause",
+          "named": true
+        },
+        {
+          "type": "SelectClause",
+          "named": true
+        },
+        {
+          "type": "WhereClause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "SequencePath",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Path",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ServiceGraphPattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        },
+        {
+          "type": "VarOrIri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "StrReplaceExpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "SubSelect",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupClause",
+          "named": true
+        },
+        {
+          "type": "HavingClause",
+          "named": true
+        },
+        {
+          "type": "LimitOffsetClauses",
+          "named": true
+        },
+        {
+          "type": "OrderClause",
+          "named": true
+        },
+        {
+          "type": "SelectClause",
+          "named": true
+        },
+        {
+          "type": "ValuesClause",
+          "named": true
+        },
+        {
+          "type": "WhereClause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "SubstringExpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "TriplesBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TriplesSameSubjectPath",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "TriplesNode",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "BlankNodePropertyList",
+          "named": true
+        },
+        {
+          "type": "Collection",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "TriplesSameSubject",
+    "named": true,
+    "fields": {
+      "predicate": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "VarOrTerm",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "PropertyList",
+          "named": true
+        },
+        {
+          "type": "TriplesNode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "TriplesSameSubjectPath",
+    "named": true,
+    "fields": {
+      "subject": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "VarOrTerm",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "PropertyListPath",
+          "named": true
+        },
+        {
+          "type": "TriplesNodePath",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "TriplesTemplate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TriplesSameSubject",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "UnaryExpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "PrimaryExpression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "UnionGraphPattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Unit",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "Query",
+          "named": true
+        },
+        {
+          "type": "Update",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Update",
+    "named": true,
+    "fields": {
+      "operation": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Update1",
+            "named": true
+          }
+        ]
+      },
+      "prologue": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Prologue",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "UsingClause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "iri",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ValuesClause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "DataBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Var",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "WhereClause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "GroupGraphPattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "&&",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "ABS",
+    "named": false
+  },
+  {
+    "type": "ADD",
+    "named": false
+  },
+  {
+    "type": "ALL",
+    "named": false
+  },
+  {
+    "type": "ANON",
+    "named": true
+  },
+  {
+    "type": "AS",
+    "named": false
+  },
+  {
+    "type": "ASC",
+    "named": false
+  },
+  {
+    "type": "ASK",
+    "named": false
+  },
+  {
+    "type": "AVG",
+    "named": false
+  },
+  {
+    "type": "BASE",
+    "named": false
+  },
+  {
+    "type": "BIND",
+    "named": false
+  },
+  {
+    "type": "BLANK_NODE_LABEL",
+    "named": true
+  },
+  {
+    "type": "BNODE",
+    "named": false
+  },
+  {
+    "type": "BOUND",
+    "named": false
+  },
+  {
+    "type": "BY",
+    "named": false
+  },
+  {
+    "type": "CEIL",
+    "named": false
+  },
+  {
+    "type": "CLEAR",
+    "named": false
+  },
+  {
+    "type": "COALESCE",
+    "named": false
+  },
+  {
+    "type": "CONCAT",
+    "named": false
+  },
+  {
+    "type": "CONSTRUCT",
+    "named": false
+  },
+  {
+    "type": "CONTAINS",
+    "named": false
+  },
+  {
+    "type": "COPY",
+    "named": false
+  },
+  {
+    "type": "COUNT",
+    "named": false
+  },
+  {
+    "type": "CREATE",
+    "named": false
+  },
+  {
+    "type": "DATA",
+    "named": false
+  },
+  {
+    "type": "DATATYPE",
+    "named": false
+  },
+  {
+    "type": "DAY",
+    "named": false
+  },
+  {
+    "type": "DECIMAL",
+    "named": true
+  },
+  {
+    "type": "DECIMAL_NEGATIVE",
+    "named": true
+  },
+  {
+    "type": "DECIMAL_POSITIVE",
+    "named": true
+  },
+  {
+    "type": "DEFAULT",
+    "named": false
+  },
+  {
+    "type": "DELETE",
+    "named": false
+  },
+  {
+    "type": "DESC",
+    "named": false
+  },
+  {
+    "type": "DESCRIBE",
+    "named": false
+  },
+  {
+    "type": "DISTINCT",
+    "named": false
+  },
+  {
+    "type": "DOUBLE",
+    "named": true
+  },
+  {
+    "type": "DOUBLE_NEGATIVE",
+    "named": true
+  },
+  {
+    "type": "DOUBLE_POSITIVE",
+    "named": true
+  },
+  {
+    "type": "DROP",
+    "named": false
+  },
+  {
+    "type": "ENCODE_FOR_URI",
+    "named": false
+  },
+  {
+    "type": "EXISTS",
+    "named": false
+  },
+  {
+    "type": "FILTER",
+    "named": false
+  },
+  {
+    "type": "FLOOR",
+    "named": false
+  },
+  {
+    "type": "FROM",
+    "named": false
+  },
+  {
+    "type": "GRAPH",
+    "named": false
+  },
+  {
+    "type": "GROUP",
+    "named": false
+  },
+  {
+    "type": "GROUP_CONCAT",
+    "named": false
+  },
+  {
+    "type": "HAVING",
+    "named": false
+  },
+  {
+    "type": "HOURS",
+    "named": false
+  },
+  {
+    "type": "IF",
+    "named": false
+  },
+  {
+    "type": "IN",
+    "named": false
+  },
+  {
+    "type": "INSERT",
+    "named": false
+  },
+  {
+    "type": "INTEGER",
+    "named": true
+  },
+  {
+    "type": "INTEGER_NEGATIVE",
+    "named": true
+  },
+  {
+    "type": "INTEGER_POSITIVE",
+    "named": true
+  },
+  {
+    "type": "INTO",
+    "named": false
+  },
+  {
+    "type": "IRI",
+    "named": false
+  },
+  {
+    "type": "IRIREF",
+    "named": true
+  },
+  {
+    "type": "LANG",
+    "named": false
+  },
+  {
+    "type": "LANGMATCHES",
+    "named": false
+  },
+  {
+    "type": "LANGTAG",
+    "named": true
+  },
+  {
+    "type": "LCASE",
+    "named": false
+  },
+  {
+    "type": "LIMIT",
+    "named": false
+  },
+  {
+    "type": "LOAD",
+    "named": false
+  },
+  {
+    "type": "MAX",
+    "named": false
+  },
+  {
+    "type": "MD5",
+    "named": false
+  },
+  {
+    "type": "MIN",
+    "named": false
+  },
+  {
+    "type": "MINUS",
+    "named": false
+  },
+  {
+    "type": "MINUTES",
+    "named": false
+  },
+  {
+    "type": "MONTH",
+    "named": false
+  },
+  {
+    "type": "MOVE",
+    "named": false
+  },
+  {
+    "type": "NAMED",
+    "named": false
+  },
+  {
+    "type": "NIL",
+    "named": true
+  },
+  {
+    "type": "NOT",
+    "named": false
+  },
+  {
+    "type": "NOW",
+    "named": false
+  },
+  {
+    "type": "OFFSET",
+    "named": false
+  },
+  {
+    "type": "OPTIONAL",
+    "named": false
+  },
+  {
+    "type": "ORDER",
+    "named": false
+  },
+  {
+    "type": "PNAME_NS",
+    "named": true
+  },
+  {
+    "type": "PREFIX",
+    "named": false
+  },
+  {
+    "type": "PathMod",
+    "named": true
+  },
+  {
+    "type": "RAND",
+    "named": false
+  },
+  {
+    "type": "REDUCED",
+    "named": false
+  },
+  {
+    "type": "REGEX",
+    "named": false
+  },
+  {
+    "type": "REPLACE",
+    "named": false
+  },
+  {
+    "type": "ROUND",
+    "named": false
+  },
+  {
+    "type": "SAMPLE",
+    "named": false
+  },
+  {
+    "type": "SECONDS",
+    "named": false
+  },
+  {
+    "type": "SELECT",
+    "named": false
+  },
+  {
+    "type": "SEPARATOR",
+    "named": false
+  },
+  {
+    "type": "SERVICE",
+    "named": false
+  },
+  {
+    "type": "SHA1",
+    "named": false
+  },
+  {
+    "type": "SHA256",
+    "named": false
+  },
+  {
+    "type": "SHA384",
+    "named": false
+  },
+  {
+    "type": "SHA512",
+    "named": false
+  },
+  {
+    "type": "SILENT",
+    "named": false
+  },
+  {
+    "type": "STR",
+    "named": false
+  },
+  {
+    "type": "STRAFTER",
+    "named": false
+  },
+  {
+    "type": "STRBEFORE",
+    "named": false
+  },
+  {
+    "type": "STRDT",
+    "named": false
+  },
+  {
+    "type": "STRENDS",
+    "named": false
+  },
+  {
+    "type": "STRING_LITERAL_LONG_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_LONG_SINGLE_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL_SINGLE_QUOTE",
+    "named": true
+  },
+  {
+    "type": "STRLANG",
+    "named": false
+  },
+  {
+    "type": "STRLEN",
+    "named": false
+  },
+  {
+    "type": "STRSTARTS",
+    "named": false
+  },
+  {
+    "type": "STRUUID",
+    "named": false
+  },
+  {
+    "type": "SUBSTR",
+    "named": false
+  },
+  {
+    "type": "SUM",
+    "named": false
+  },
+  {
+    "type": "TIMEZONE",
+    "named": false
+  },
+  {
+    "type": "TO",
+    "named": false
+  },
+  {
+    "type": "TZ",
+    "named": false
+  },
+  {
+    "type": "UCASE",
+    "named": false
+  },
+  {
+    "type": "UNDEF",
+    "named": true
+  },
+  {
+    "type": "UNION",
+    "named": false
+  },
+  {
+    "type": "URI",
+    "named": false
+  },
+  {
+    "type": "USING",
+    "named": false
+  },
+  {
+    "type": "UUID",
+    "named": false
+  },
+  {
+    "type": "VALUES",
+    "named": false
+  },
+  {
+    "type": "WHERE",
+    "named": false
+  },
+  {
+    "type": "WITH",
+    "named": false
+  },
+  {
+    "type": "YEAR",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "^^",
+    "named": false
+  },
+  {
+    "type": "a",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "isBLANK",
+    "named": false
+  },
+  {
+    "type": "isIRI",
+    "named": false
+  },
+  {
+    "type": "isLITERAL",
+    "named": false
+  },
+  {
+    "type": "isNUMERIC",
+    "named": false
+  },
+  {
+    "type": "isURI",
+    "named": false
+  },
+  {
+    "type": "sameTerm",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "||",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]

@@ -8,11 +8,51 @@ comment_following_triple
 <http://example/s> <http://example/p> "o"@en . # comment
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)))
+  (comment))
+
 ===============
 langtagged_string
 ===============
 <http://a.example/s> <http://a.example/p> "chat"@en .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
 
 ===============
 lantag_with_subtag
@@ -20,11 +60,26 @@ lantag_with_subtag
 <http://example.org/ex#a> <http://example.org/ex#b> "Cheers"@en-UK .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
+
 ===============
 literal_all_controls
 ===============
 <http://a.example/s> <http://a.example/p> "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\u0008\t\u000B\u000C\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_all_punctuation
@@ -32,11 +87,25 @@ literal_all_punctuation
 <http://a.example/s> <http://a.example/p> " !\"#$%&():;<=>?@[]^_`{|}~" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_ascii_boundaries
 ===============
 <http://a.example/s> <http://a.example/p> "	&([]" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_false
@@ -44,11 +113,26 @@ literal_false
 <http://a.example/s> <http://a.example/p> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
+
 ===============
 literal
 ===============
 <http://a.example/s> <http://a.example/p> "x" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_true
@@ -56,11 +140,26 @@ literal_true
 <http://a.example/s> <http://a.example/p> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
+
 ===============
 literal_with_2_dquotes
 ===============
 <http://a.example/s> <http://a.example/p> "x\"\"y" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_2_squotes
@@ -68,11 +167,25 @@ literal_with_2_squotes
 <http://a.example/s> <http://a.example/p> "x''y" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_BACKSPACE
 ===============
 <http://a.example/s> <http://a.example/p> "\b" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_CARRIAGE_RETURN
@@ -80,11 +193,25 @@ literal_with_CARRIAGE_RETURN
 <http://a.example/s> <http://a.example/p> "\r" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_CHARACTER_TABULATION
 ===============
 <http://a.example/s> <http://a.example/p> "\t" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_dquote
@@ -92,11 +219,25 @@ literal_with_dquote
 <http://a.example/s> <http://a.example/p> "x\"y" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_FORM_FEED
 ===============
 <http://a.example/s> <http://a.example/p> "\f" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_LINE_FEED
@@ -104,11 +245,25 @@ literal_with_LINE_FEED
 <http://a.example/s> <http://a.example/p> "\n" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_numeric_escape4
 ===============
 <http://a.example/s> <http://a.example/p> "\u006F" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_numeric_escape8
@@ -116,11 +271,25 @@ literal_with_numeric_escape8
 <http://a.example/s> <http://a.example/p> "\U0000006F" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_REVERSE_SOLIDUS2
 ===============
 <http://example.org/ns#s> <http://example.org/ns#p1> "test-\\" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_REVERSE_SOLIDUS
@@ -128,17 +297,38 @@ literal_with_REVERSE_SOLIDUS
 <http://a.example/s> <http://a.example/p> "\\" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_squote
 ===============
 <http://a.example/s> <http://a.example/p> "x'y" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_UTF8_boundaries
 ===============
 <http://a.example/s> <http://a.example/p> "߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 minimal_whitespace
@@ -151,12 +341,42 @@ _:s<http://example/p>"Alice".
 _:s<http://example/p>_:bnode1.
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL)))
+
 ===============
 nq-syntax-bad-literal-01
 :error
 ===============
 <http://example/s> <http://example/p> <http://example/o> "o" .
 ---
+
+
 
 ===============
 nq-syntax-bad-literal-02
@@ -165,12 +385,16 @@ nq-syntax-bad-literal-02
 <http://example/s> <http://example/p> <http://example/o> "o"@en .
 ---
 
+
+
 ===============
 nq-syntax-bad-literal-03
 :error
 ===============
 <http://example/s> <http://example/p> <http://example/o> "o"^^<http://www.w3.org/2001/XMLSchema#string> .
 ---
+
+
 
 ===============
 nq-syntax-bad-quint-01
@@ -180,6 +404,8 @@ nq-syntax-bad-quint-01
 <http://example/s> <http://example/p> <http://example/o> <http://example/g> <http://example/n> .
 ---
 
+
+
 ===============
 nq-syntax-bad-uri-01
 :error
@@ -188,11 +414,20 @@ nq-syntax-bad-uri-01
 <http://example/s> <http://example/p> <http://example/o> <g>.
 ---
 
+
+
 ===============
 nq-syntax-bnode-01
 ===============
 <http://example/s> <http://example/p> <http://example/o> _:g .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)
+    graphLabel: (BLANK_NODE_LABEL)))
 
 ===============
 nq-syntax-bnode-02
@@ -200,11 +435,25 @@ nq-syntax-bnode-02
 _:s <http://example/p> <http://example/o> _:g .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)
+    graphLabel: (BLANK_NODE_LABEL)))
+
 ===============
 nq-syntax-bnode-03
 ===============
 <http://example/s> <http://example/p> _:o _:g .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL)
+    graphLabel: (BLANK_NODE_LABEL)))
 
 ===============
 nq-syntax-bnode-04
@@ -212,11 +461,28 @@ nq-syntax-bnode-04
 <http://example/s> <http://example/p> "o" _:g .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))
+    graphLabel: (BLANK_NODE_LABEL)))
+
 ===============
 nq-syntax-bnode-05
 ===============
 <http://example/s> <http://example/p> "o"@en _:g .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))
+    graphLabel: (BLANK_NODE_LABEL)))
 
 ===============
 nq-syntax-bnode-06
@@ -224,11 +490,27 @@ nq-syntax-bnode-06
 <http://example/s> <http://example/p> "o"^^<http://www.w3.org/2001/XMLSchema#string> _:g .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))
+    graphLabel: (BLANK_NODE_LABEL)))
+
 ===============
 nq-syntax-uri-01
 ===============
 <http://example/s> <http://example/p> <http://example/o> <http://example/g> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)
+    graphLabel: (IRIREF)))
 
 ===============
 nq-syntax-uri-02
@@ -236,11 +518,25 @@ nq-syntax-uri-02
 _:s <http://example/p> <http://example/o> <http://example/g> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)
+    graphLabel: (IRIREF)))
+
 ===============
 nq-syntax-uri-03
 ===============
 <http://example/s> <http://example/p> _:o <http://example/g> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL)
+    graphLabel: (IRIREF)))
 
 ===============
 nq-syntax-uri-04
@@ -248,17 +544,43 @@ nq-syntax-uri-04
 <http://example/s> <http://example/p> "o" <http://example/g> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))
+    graphLabel: (IRIREF)))
+
 ===============
 nq-syntax-uri-05
 ===============
 <http://example/s> <http://example/p> "o"@en <http://example/g> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))
+    graphLabel: (IRIREF)))
+
 ===============
 nq-syntax-uri-06
 ===============
 <http://example/s> <http://example/p> "o"^^<http://www.w3.org/2001/XMLSchema#string> <http://example/g> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))
+    graphLabel: (IRIREF)))
 
 ===============
 nt-syntax-bad-base-01
@@ -267,6 +589,8 @@ nt-syntax-bad-base-01
 @base <http://example/> .
 ---
 
+
+
 ===============
 nt-syntax-bad-bnode-01
 :error
@@ -274,12 +598,16 @@ nt-syntax-bad-bnode-01
 _::a  <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-bnode-02
 :error
 ===============
 _:abc:def  <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-esc-01
@@ -289,6 +617,8 @@ nt-syntax-bad-esc-01
 <http://example/s> <http://example/p> "a\zb" .
 ---
 
+
+
 ===============
 nt-syntax-bad-esc-02
 :error
@@ -296,6 +626,8 @@ nt-syntax-bad-esc-02
 # Bad string escape
 <http://example/s> <http://example/p> "\uWXYZ" .
 ---
+
+
 
 ===============
 nt-syntax-bad-esc-03
@@ -305,6 +637,8 @@ nt-syntax-bad-esc-03
 <http://example/s> <http://example/p> "\U0000WXYZ" .
 ---
 
+
+
 ===============
 nt-syntax-bad-lang-01
 :error
@@ -313,12 +647,16 @@ nt-syntax-bad-lang-01
 <http://example/s> <http://example/p> "string"@1 .
 ---
 
+
+
 ===============
 nt-syntax-bad-num-01
 :error
 ===============
 <http://example/s> <http://example/p> 1 .
 ---
+
+
 
 ===============
 nt-syntax-bad-num-02
@@ -327,12 +665,16 @@ nt-syntax-bad-num-02
 <http://example/s> <http://example/p> 1.0 .
 ---
 
+
+
 ===============
 nt-syntax-bad-num-03
 :error
 ===============
 <http://example/s> <http://example/p> 1.0e0 .
 ---
+
+
 
 ===============
 nt-syntax-bad-prefix-01
@@ -341,12 +683,16 @@ nt-syntax-bad-prefix-01
 @prefix : <http://example/> .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-01
 :error
 ===============
 <http://example/s> <http://example/p> "abc' .
 ---
+
+
 
 ===============
 nt-syntax-bad-string-02
@@ -355,12 +701,16 @@ nt-syntax-bad-string-02
 <http://example/s> <http://example/p> 1.0 .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-03
 :error
 ===============
 <http://example/s> <http://example/p> 1.0e1 .
 ---
+
+
 
 ===============
 nt-syntax-bad-string-04
@@ -369,12 +719,16 @@ nt-syntax-bad-string-04
 <http://example/s> <http://example/p> '''abc''' .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-05
 :error
 ===============
 <http://example/s> <http://example/p> """abc""" .
 ---
+
+
 
 ===============
 nt-syntax-bad-string-06
@@ -383,12 +737,16 @@ nt-syntax-bad-string-06
 <http://example/s> <http://example/p> "abc .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-07
 :error
 ===============
 <http://example/s> <http://example/p> abc" .
 ---
+
+
 
 ===============
 nt-syntax-bad-struct-01
@@ -397,12 +755,16 @@ nt-syntax-bad-struct-01
 <http://example/s> <http://example/p> <http://example/o>, <http://example/o2> .
 ---
 
+
+
 ===============
 nt-syntax-bad-struct-02
 :error
 ===============
 <http://example/s> <http://example/p> <http://example/o>; <http://example/p2>, <http://example/o2> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-01
@@ -412,6 +774,8 @@ nt-syntax-bad-uri-01
 <http://example/ space> <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-02
 :error
@@ -419,6 +783,8 @@ nt-syntax-bad-uri-02
 # Bad IRI : bad escape
 <http://example/\u00ZZ11> <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-03
@@ -428,6 +794,8 @@ nt-syntax-bad-uri-03
 <http://example/\U00ZZ1111> <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-04
 :error
@@ -435,6 +803,8 @@ nt-syntax-bad-uri-04
 # Bad IRI : character escapes not allowed.
 <http://example/\n> <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-05
@@ -444,6 +814,8 @@ nt-syntax-bad-uri-05
 <http://example/\/> <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-06
 :error
@@ -451,6 +823,8 @@ nt-syntax-bad-uri-06
 # No relative IRIs in N-Quads
 <s> <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-07
@@ -460,6 +834,8 @@ nt-syntax-bad-uri-07
 <http://example/s> <p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-08
 :error
@@ -467,6 +843,8 @@ nt-syntax-bad-uri-08
 # No relative IRIs in N-Quads
 <http://example/s> <http://example/p> <o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-09
@@ -476,11 +854,19 @@ nt-syntax-bad-uri-09
 <http://example/s> <http://example/p> "foo"^^<dt> .
 ---
 
+
+
 ===============
 nt-syntax-bnode-01
 ===============
 _:a  <http://example/p> <http://example/o> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)))
 
 ===============
 nt-syntax-bnode-02
@@ -489,6 +875,16 @@ nt-syntax-bnode-02
 _:a  <http://example/p> <http://example/o> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
 ===============
 nt-syntax-bnode-03
 ===============
@@ -496,11 +892,29 @@ nt-syntax-bnode-03
 _:1a  <http://example/p> <http://example/o> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
 ===============
 nt-syntax-datatypes-01
 ===============
 <http://example/s> <http://example/p> "123"^^<http://www.w3.org/2001/XMLSchema#byte> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
 
 ===============
 nt-syntax-datatypes-02
@@ -508,11 +922,21 @@ nt-syntax-datatypes-02
 <http://example/s> <http://example/p> "123"^^<http://www.w3.org/2001/XMLSchema#string> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
+
 ===============
 nt-syntax-file-01
 ===============
 
 ---
+
+(nquadsDoc)
 
 ===============
 nt-syntax-file-02
@@ -520,11 +944,17 @@ nt-syntax-file-02
 #Empty file.
 ---
 
+(nquadsDoc
+  (comment))
+
 ===============
 nt-syntax-file-03
 ===============
 #One comment, one empty line.
 ---
+
+(nquadsDoc
+  (comment))
 
 ===============
 nt-syntax-str-esc-01
@@ -532,11 +962,25 @@ nt-syntax-str-esc-01
 <http://example/s> <http://example/p> "a\n" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 nt-syntax-str-esc-02
 ===============
 <http://example/s> <http://example/p> "a\u0020b" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 nt-syntax-str-esc-03
@@ -544,11 +988,25 @@ nt-syntax-str-esc-03
 <http://example/s> <http://example/p> "a\U00000020b" .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 nt-syntax-string-01
 ===============
 <http://example/s> <http://example/p> "string" .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 nt-syntax-string-02
@@ -556,11 +1014,27 @@ nt-syntax-string-02
 <http://example/s> <http://example/p> "string"@en .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
+
 ===============
 nt-syntax-string-03
 ===============
 <http://example/s> <http://example/p> "string"@en-uk .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
 
 ===============
 nt-syntax-subm-01
@@ -646,11 +1120,209 @@ _:anon <http://example.org/property> <http://example.org/resource2> .
 # resource33 test removed 2003-08-03
 ---
 
+(nquadsDoc
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (comment)
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (comment)
+  (comment)
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)))
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (comment))
+
 ===============
 nt-syntax-uri-01
 ===============
 <http://example/s> <http://example/p> <http://example/o> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
 
 ===============
 nt-syntax-uri-02
@@ -659,12 +1331,26 @@ nt-syntax-uri-02
 <http://example/\u0053> <http://example/p> <http://example/o> .
 ---
 
+(nquadsDoc
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
 ===============
 nt-syntax-uri-03
 ===============
 # x53 is capital S
 <http://example/\U00000053> <http://example/p> <http://example/o> .
 ---
+
+(nquadsDoc
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
 
 ===============
 nt-syntax-uri-04
@@ -673,3 +1359,9 @@ nt-syntax-uri-04
 <http://example/s> <http://example/p> <scheme:!$%25&'()*+,-./0123456789:/@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~?#> .
 ---
 
+(nquadsDoc
+  (comment)
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))

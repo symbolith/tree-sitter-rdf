@@ -5,12 +5,16 @@ nquads12-bad-reified-syntax-1
 << <http://example/s> <http://example/p> <http://example/o> >> <http://example/q> <http://example/z> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-reified-syntax-2
 :error
 ===============
 <http://example/x> <http://example/p> << <http://example/s> <http://example/p> <http://example/o> >> <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-bad-reified-syntax-3
@@ -19,12 +23,16 @@ nquads12-bad-reified-syntax-3
 << <http://example/s1> <http://example/p1> <http://example/o1> >> <http://example/q> << <http://example/s2> <http://example/p2> <http://example/o2> >> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-reified-syntax-4
 :error
 ===============
 <http://example/x> << <http://example/s> <http://example/p> <http://example/o> >> <http://example/z> <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-bad-syntax-01
@@ -33,12 +41,16 @@ nquads12-bad-syntax-01
 <http://example/a> << <http://example/s> <http://example/p>  <http://example/o> >>  <http://example/z> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-syntax-02
 :error
 ===============
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( "XYZ" <http://example/p> <http://example/o> )>> <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-bad-syntax-03
@@ -47,12 +59,16 @@ nquads12-bad-syntax-03
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s> "XYZ" <http://example/o> )>> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-syntax-04
 :error
 ===============
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> << <http://example/s> _:label <http://example/o> >> <http://example/g>> .
 ---
+
+
 
 ===============
 nquads12-bad-syntax-05
@@ -61,12 +77,16 @@ nquads12-bad-syntax-05
 <http://example/a> <<( <http://example/s> <http://example/p>  <http://example/o> )>> <http://example/z> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-syntax-06
 :error
 ===============
 <<( "XYZ" <http://example/p> <http://example/o> )>> <http://example/q> <http://example/z> <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-bad-syntax-07
@@ -75,12 +95,16 @@ nquads12-bad-syntax-07
 <<( <http://example/s> "XYZ" <http://example/o> )>> <http://example/q> <http://example/z> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-syntax-08
 :error
 ===============
 <<( <http://example/s> _:label <http://example/o> )>> <http://example/q> <http://example/z> <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-bad-syntax-09
@@ -89,12 +113,16 @@ nquads12-bad-syntax-09
 <http://example/a> <http://example/b> << <http://example/s> <http://example/p> <http://example/o> >> <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bad-syntax-10
 :error
 ===============
 <<( <http://example/s> <http://example/p> <http://example/o> )>> <http://example/a> <http://example/z> <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-bnode-1
@@ -103,6 +131,20 @@ _:b0 <http://example/p> <http://example/o> .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( _:b0 <http://example/p> <http://example/o> )>> <http://example/g>.
 ---
 
+(nquadsDoc
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (BLANK_NODE_LABEL)
+      predicate: (IRIREF)
+      object: (IRIREF))
+    graphLabel: (IRIREF)))
+
 ===============
 nquads12-bnode-bad-annotated-syntax-1
 :error
@@ -110,12 +152,16 @@ nquads12-bnode-bad-annotated-syntax-1
 _:b0 <http://example/p> <http://example/o> {| <http://example/q> "ABC" |} <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-bnode-bad-annotated-syntax-2
 :error
 ===============
-<http://example/s> <http://example/p> _:b1 {| <http://example/q> "456"^^<http://www.w3.org/2001/XMLSchema#integer> |} <http://example/g> .
+<http://example/s> <http://example/p> _:b1 {nt-ttl12-bnode-1| <http://example/q> "456"^^<http://www.w3.org/2001/XMLSchema#integer> |} <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-nested-1
@@ -125,12 +171,38 @@ nquads12-nested-1
 <http://example/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s3> <http://example/p3> <http://example/o3> )>> )>> <http://example/g> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (IRIREF)))
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (tripleTerm
+        subject: (IRIREF)
+        predicate: (IRIREF)
+        object: (IRIREF)))
+    graphLabel: (IRIREF)))
+
 ===============
 nquads12-nested-bad-annotated-syntax-1
 :error
 ===============
 <http://example/s> <http://example/p> <http://example/o> {| <http://example/r> <http://example/z> {| <http://example/q> "1"^^<http://www.w3.org/2001/XMLSchema#integer> |} |} <http://example/g> .
 ---
+
+
 
 ===============
 nquads12-nested-bad-annotated-syntax-2
@@ -140,11 +212,23 @@ nquads12-nested-bad-annotated-syntax-2
 <http://example/a> <http://example/q> << <http://example/s> <http://example/p> <http://example/o> >> {| <http://example/r> <http://example/z> |} <http://example/g> .
 ---
 
+
+
 ===============
 nquads12-syntax-01
 ===============
 <http://example/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s> <http://example/p> <http://example/o> )>> <http://example/g> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (IRIREF))
+    graphLabel: (IRIREF)))
 
 ===============
 nquads12-syntax-02
@@ -152,11 +236,34 @@ nquads12-syntax-02
 <http://example/s><http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies><<(<http://example/s2><http://example/p2><http://example/o2>)>><http://example/g>.
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (IRIREF))
+    graphLabel: (IRIREF)))
+
 ===============
 nquads12-syntax-03
 ===============
 <http://example/s><http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies><<(<http://example/s2><http://example/q2><<(<http://example/s3><http://example/p3><http://example/o3>)>>)>><http://example/g>.
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (tripleTerm
+      subject: (IRIREF)
+      predicate: (IRIREF)
+      object: (tripleTerm
+        subject: (IRIREF)
+        predicate: (IRIREF)
+        object: (IRIREF)))
+    graphLabel: (IRIREF)))
 
 ===============
 nquads-langdir-1
@@ -164,11 +271,31 @@ nquads-langdir-1
 <http://example/a> <http://example/b> "Hello"@en--ltr <http://example/g> .
 ---
 
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)
+      base_direction: (BASE_DIRECTION))
+    graphLabel: (IRIREF)))
+
 ===============
 nquads-langdir-2
 ===============
 <http://example/a> <http://example/b> "Hello"@en--rtl <http://example/g> .
 ---
+
+(nquadsDoc
+  (quad
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)
+      base_direction: (BASE_DIRECTION))
+    graphLabel: (IRIREF)))
 
 ===============
 nquads-langdir-bad-1
@@ -177,10 +304,13 @@ nquads-langdir-bad-1
 <http://example/a> <http://example/b> "Hello"@en--unk <http://example/g> .
 ---
 
+
+
 ===============
 nquads-langdir-bad-2
 :error
 ===============
 <http://example/a> <http://example/b> "Hello"@en--LTR <http://example/g> .
 ---
+
 

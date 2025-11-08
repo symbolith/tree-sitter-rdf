@@ -1,0 +1,108 @@
+=============
+Alternative
+=============
+
+SELECT * {
+  ?s :a|:b ?o
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (AlternativePath
+                  (PathElement
+                    (PrefixedName))
+                  (PathElement
+                    (PrefixedName)))
+                (ObjectListPath
+                  object: (Var))))))))))
+
+=========
+Sequence
+=========
+
+SELECT * {
+  ?s :a/:b ?o
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (SequencePath
+                  (PathElement
+                    (PrefixedName))
+                  (PathElement
+                    (PrefixedName)))
+                (ObjectListPath
+                  object: (Var))))))))))
+
+=========
+Modifier
+=========
+
+SELECT * {
+  ?s ^:p? ?o
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PathInverse)
+                  (PrefixedName)
+                  (PathMod))
+                (ObjectListPath
+                  object: (Var))))))))))
+
+=========
+A
+=========
+
+SELECT * {
+  ?s ^a? ?o
+}
+
+---
+
+(Unit
+  (Query
+    form: (SelectQuery
+      (SelectClause)
+      (WhereClause
+        (GroupGraphPattern
+          (TriplesBlock
+            (TriplesSameSubjectPath
+              subject: (Var)
+              (PropertyListPath
+                predicate: (PathElement
+                  (PathInverse)
+                  (PathMod))
+                (ObjectListPath
+                  object: (Var))))))))))

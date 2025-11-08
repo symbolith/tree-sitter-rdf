@@ -8,11 +8,51 @@ comment_following_triple
 <http://example/s> <http://example/p> "o"@en . # comment
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)))
+  (comment))
+
 ===============
 langtagged_string
 ===============
 <http://a.example/s> <http://a.example/p> "chat"@en .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
 
 ===============
 lantag_with_subtag
@@ -20,11 +60,26 @@ lantag_with_subtag
 <http://example.org/ex#a> <http://example.org/ex#b> "Cheers"@en-UK .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
+
 ===============
 literal_all_controls
 ===============
 <http://a.example/s> <http://a.example/p> "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\u0008\t\u000B\u000C\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_all_punctuation
@@ -32,11 +87,25 @@ literal_all_punctuation
 <http://a.example/s> <http://a.example/p> " !\"#$%&():;<=>?@[]^_`{|}~" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_ascii_boundaries
 ===============
 <http://a.example/s> <http://a.example/p> "	&([]" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_false
@@ -44,11 +113,26 @@ literal_false
 <http://a.example/s> <http://a.example/p> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
+
 ===============
 literal
 ===============
 <http://a.example/s> <http://a.example/p> "x" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_true
@@ -56,11 +140,26 @@ literal_true
 <http://a.example/s> <http://a.example/p> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
+
 ===============
 literal_with_2_dquotes
 ===============
 <http://a.example/s> <http://a.example/p> "x\"\"y" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_2_squotes
@@ -68,11 +167,25 @@ literal_with_2_squotes
 <http://a.example/s> <http://a.example/p> "x''y" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_BACKSPACE
 ===============
 <http://a.example/s> <http://a.example/p> "\b" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_CARRIAGE_RETURN
@@ -80,11 +193,25 @@ literal_with_CARRIAGE_RETURN
 <http://a.example/s> <http://a.example/p> "\r" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_CHARACTER_TABULATION
 ===============
 <http://a.example/s> <http://a.example/p> "\t" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_dquote
@@ -92,11 +219,25 @@ literal_with_dquote
 <http://a.example/s> <http://a.example/p> "x\"y" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_FORM_FEED
 ===============
 <http://a.example/s> <http://a.example/p> "\f" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_LINE_FEED
@@ -104,11 +245,25 @@ literal_with_LINE_FEED
 <http://a.example/s> <http://a.example/p> "\n" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_numeric_escape4
 ===============
 <http://a.example/s> <http://a.example/p> "\u006F" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_numeric_escape8
@@ -116,11 +271,25 @@ literal_with_numeric_escape8
 <http://a.example/s> <http://a.example/p> "\U0000006F" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_REVERSE_SOLIDUS2
 ===============
 <http://example.org/ns#s> <http://example.org/ns#p1> "test-\\" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 literal_with_REVERSE_SOLIDUS
@@ -128,17 +297,38 @@ literal_with_REVERSE_SOLIDUS
 <http://a.example/s> <http://a.example/p> "\\" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_squote
 ===============
 <http://a.example/s> <http://a.example/p> "x'y" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 literal_with_UTF8_boundaries
 ===============
 <http://a.example/s> <http://a.example/p> "߿ࠀ࿿က쿿퀀퟿�𐀀𿿽񀀀󿿽􀀀􏿽" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 minimal_whitespace
@@ -151,12 +341,42 @@ _:s<http://example/p>"Alice".
 _:s<http://example/p>_:bnode1.
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL)))
+
 ===============
 nt-syntax-bad-base-01
 :error
 ===============
 @base <http://example/> .
 ---
+
+
 
 ===============
 nt-syntax-bad-bnode-01
@@ -165,12 +385,16 @@ nt-syntax-bad-bnode-01
 _::a  <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-bnode-02
 :error
 ===============
 _:abc:def  <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-esc-01
@@ -180,6 +404,8 @@ nt-syntax-bad-esc-01
 <http://example/s> <http://example/p> "a\zb" .
 ---
 
+
+
 ===============
 nt-syntax-bad-esc-02
 :error
@@ -187,6 +413,8 @@ nt-syntax-bad-esc-02
 # Bad string escape
 <http://example/s> <http://example/p> "\uWXYZ" .
 ---
+
+
 
 ===============
 nt-syntax-bad-esc-03
@@ -196,6 +424,8 @@ nt-syntax-bad-esc-03
 <http://example/s> <http://example/p> "\U0000WXYZ" .
 ---
 
+
+
 ===============
 nt-syntax-bad-lang-01
 :error
@@ -204,12 +434,16 @@ nt-syntax-bad-lang-01
 <http://example/s> <http://example/p> "string"@1 .
 ---
 
+
+
 ===============
 nt-syntax-bad-num-01
 :error
 ===============
 <http://example/s> <http://example/p> 1 .
 ---
+
+
 
 ===============
 nt-syntax-bad-num-02
@@ -218,12 +452,16 @@ nt-syntax-bad-num-02
 <http://example/s> <http://example/p> 1.0 .
 ---
 
+
+
 ===============
 nt-syntax-bad-num-03
 :error
 ===============
 <http://example/s> <http://example/p> 1.0e0 .
 ---
+
+
 
 ===============
 nt-syntax-bad-prefix-01
@@ -232,12 +470,16 @@ nt-syntax-bad-prefix-01
 @prefix : <http://example/> .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-01
 :error
 ===============
 <http://example/s> <http://example/p> "abc' .
 ---
+
+
 
 ===============
 nt-syntax-bad-string-02
@@ -246,12 +488,16 @@ nt-syntax-bad-string-02
 <http://example/s> <http://example/p> 1.0 .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-03
 :error
 ===============
 <http://example/s> <http://example/p> 1.0e1 .
 ---
+
+
 
 ===============
 nt-syntax-bad-string-04
@@ -260,12 +506,16 @@ nt-syntax-bad-string-04
 <http://example/s> <http://example/p> '''abc''' .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-05
 :error
 ===============
 <http://example/s> <http://example/p> """abc""" .
 ---
+
+
 
 ===============
 nt-syntax-bad-string-06
@@ -274,12 +524,16 @@ nt-syntax-bad-string-06
 <http://example/s> <http://example/p> "abc .
 ---
 
+
+
 ===============
 nt-syntax-bad-string-07
 :error
 ===============
 <http://example/s> <http://example/p> abc" .
 ---
+
+
 
 ===============
 nt-syntax-bad-struct-01
@@ -288,12 +542,16 @@ nt-syntax-bad-struct-01
 <http://example/s> <http://example/p> <http://example/o>, <http://example/o2> .
 ---
 
+
+
 ===============
 nt-syntax-bad-struct-02
 :error
 ===============
 <http://example/s> <http://example/p> <http://example/o>; <http://example/p2>, <http://example/o2> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-01
@@ -303,6 +561,8 @@ nt-syntax-bad-uri-01
 <http://example/ space> <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-02
 :error
@@ -310,6 +570,8 @@ nt-syntax-bad-uri-02
 # Bad IRI : bad escape
 <http://example/\u00ZZ11> <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-03
@@ -319,6 +581,8 @@ nt-syntax-bad-uri-03
 <http://example/\U00ZZ1111> <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-04
 :error
@@ -326,6 +590,8 @@ nt-syntax-bad-uri-04
 # Bad IRI : character escapes not allowed.
 <http://example/\n> <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-05
@@ -335,6 +601,8 @@ nt-syntax-bad-uri-05
 <http://example/\/> <http://example/p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-06
 :error
@@ -342,6 +610,8 @@ nt-syntax-bad-uri-06
 # No relative IRIs in N-Triples
 <s> <http://example/p> <http://example/o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-07
@@ -351,6 +621,8 @@ nt-syntax-bad-uri-07
 <http://example/s> <p> <http://example/o> .
 ---
 
+
+
 ===============
 nt-syntax-bad-uri-08
 :error
@@ -358,6 +630,8 @@ nt-syntax-bad-uri-08
 # No relative IRIs in N-Triples
 <http://example/s> <http://example/p> <o> .
 ---
+
+
 
 ===============
 nt-syntax-bad-uri-09
@@ -367,11 +641,19 @@ nt-syntax-bad-uri-09
 <http://example/s> <http://example/p> "foo"^^<dt> .
 ---
 
+
+
 ===============
 nt-syntax-bnode-01
 ===============
 _:a  <http://example/p> <http://example/o> .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)))
 
 ===============
 nt-syntax-bnode-02
@@ -380,6 +662,16 @@ nt-syntax-bnode-02
 _:a  <http://example/p> <http://example/o> .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
 ===============
 nt-syntax-bnode-03
 ===============
@@ -387,11 +679,29 @@ nt-syntax-bnode-03
 _:1a  <http://example/p> <http://example/o> .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
 ===============
 nt-syntax-datatypes-01
 ===============
 <http://example/s> <http://example/p> "123"^^<http://www.w3.org/2001/XMLSchema#byte> .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
 
 ===============
 nt-syntax-datatypes-02
@@ -399,11 +709,21 @@ nt-syntax-datatypes-02
 <http://example/s> <http://example/p> "123"^^<http://www.w3.org/2001/XMLSchema#string> .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF))))
+
 ===============
 nt-syntax-file-01
 ===============
 
 ---
+
+(ntriplesDoc)
 
 ===============
 nt-syntax-file-02
@@ -411,11 +731,17 @@ nt-syntax-file-02
 #Empty file.
 ---
 
+(ntriplesDoc
+  (comment))
+
 ===============
 nt-syntax-file-03
 ===============
 #One comment, one empty line.
 ---
+
+(ntriplesDoc
+  (comment))
 
 ===============
 nt-syntax-str-esc-01
@@ -423,11 +749,25 @@ nt-syntax-str-esc-01
 <http://example/s> <http://example/p> "a\n" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 nt-syntax-str-esc-02
 ===============
 <http://example/s> <http://example/p> "a\u0020b" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 nt-syntax-str-esc-03
@@ -435,11 +775,25 @@ nt-syntax-str-esc-03
 <http://example/s> <http://example/p> "a\U00000020b" .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
+
 ===============
 nt-syntax-string-01
 ===============
 <http://example/s> <http://example/p> "string" .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE))))
 
 ===============
 nt-syntax-string-02
@@ -447,11 +801,27 @@ nt-syntax-string-02
 <http://example/s> <http://example/p> "string"@en .
 ---
 
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
+
 ===============
 nt-syntax-string-03
 ===============
 <http://example/s> <http://example/p> "string"@en-uk .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG))))
 
 ===============
 nt-syntax-subm-01
@@ -537,11 +907,209 @@ _:anon <http://example.org/property> <http://example.org/resource2> .
 # resource33 test removed 2003-08-03
 ---
 
+(ntriplesDoc
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (BLANK_NODE_LABEL)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (BLANK_NODE_LABEL))
+  (comment)
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (comment)
+  (comment)
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)))
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      language_tag: (LANGTAG)))
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (literal
+      string: (STRING_LITERAL_QUOTE)
+      datatype_iri: (IRIREF)))
+  (comment))
+
 ===============
 nt-syntax-uri-01
 ===============
 <http://example/s> <http://example/p> <http://example/o> .
 ---
+
+(ntriplesDoc
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
 
 ===============
 nt-syntax-uri-02
@@ -550,12 +1118,26 @@ nt-syntax-uri-02
 <http://example/\u0053> <http://example/p> <http://example/o> .
 ---
 
+(ntriplesDoc
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
+
 ===============
 nt-syntax-uri-03
 ===============
 # x53 is capital S
 <http://example/\U00000053> <http://example/p> <http://example/o> .
 ---
+
+(ntriplesDoc
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))
 
 ===============
 nt-syntax-uri-04
@@ -564,3 +1146,9 @@ nt-syntax-uri-04
 <http://example/s> <http://example/p> <scheme:!$%25&'()*+,-./0123456789:/@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~?#> .
 ---
 
+(ntriplesDoc
+  (comment)
+  (triple
+    subject: (IRIREF)
+    predicate: (IRIREF)
+    object: (IRIREF)))

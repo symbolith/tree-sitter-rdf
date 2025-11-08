@@ -5,12 +5,16 @@ nt-ttl12-bad-10
 <<( <http://example/s> <http://example/p> <http://example/o> )>> <http://example/a> <http://example/z> .
 ---
 
+
+
 ===============
 nt-ttl12-bad-syntax-01
 :error
 ===============
 <http://example/a> <<( <http://example/s> <http://example/p> <http://example/o> )>>  <http://example/z> .
 ---
+
+
 
 ===============
 nt-ttl12-bad-syntax-02
@@ -19,12 +23,16 @@ nt-ttl12-bad-syntax-02
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( "XYZ" <http://example/p> <http://example/o> )>> .
 ---
 
+
+
 ===============
 nt-ttl12-bad-syntax-03
 :error
 ===============
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s> "XYZ" <http://example/o> )>> .
 ---
+
+
 
 ===============
 nt-ttl12-bad-syntax-04
@@ -33,12 +41,16 @@ nt-ttl12-bad-syntax-04
 <http://example/q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> << <http://example/s> _:label <http://example/o> >> .
 ---
 
+
+
 ===============
 nt-ttl12-bad-syntax-05
 :error
 ===============
 <<( <http://example/s> <http://example/p> <http://example/o> )>> <http://example/a> <http://example/z> .
 ---
+
+
 
 ===============
 nt-ttl12-bad-syntax-06
@@ -47,12 +59,16 @@ nt-ttl12-bad-syntax-06
 <http://example/a> <<( <http://example/s> <http://example/p> <http://example/o> )>> <http://example/z> .
 ---
 
+
+
 ===============
 nt-ttl12-bad-syntax-07
 :error
 ===============
 << "XYZ" <http://example/p> <http://example/o> >> <http://example/q> <http://example/z> .
 ---
+
+
 
 ===============
 nt-ttl12-bad-syntax-08
@@ -61,12 +77,16 @@ nt-ttl12-bad-syntax-08
 << <http://example/s> "XYZ" <http://example/o> >> <http://example/q> <http://example/z> .
 ---
 
+
+
 ===============
 nt-ttl12-bad-syntax-09
 :error
 ===============
 << <http://example/s> _:label <http://example/o> >> <http://example/q> <http://example/z> .
 ---
+
+
 
 ===============
 nt-ttl12-bnode-1
@@ -75,17 +95,56 @@ _:b0 <http://example/p> <http://example/o> .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( _:b0 <http://example/p> <http://example/o> )>> .
 ---
 
+(turtleDoc
+  (triples
+    subject: (BLANK_NODE_LABEL)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (IRIREF))))
+  (triples
+    subject: (BLANK_NODE_LABEL)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (tripleTerm
+          subject: (BLANK_NODE_LABEL)
+          predicate: (IRIREF)
+          object: (IRIREF))))))
+
 ===============
 nt-ttl12-langdir-1
 ===============
 <http://example/a> <http://example/b> "Hello"@en--ltr .
 ---
 
+(turtleDoc
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG)
+          base_direction: (BASE_DIRECTION))))))
+
 ===============
 nt-ttl12-langdir-2
 ===============
 <http://example/a> <http://example/b> "Hello"@en--rtl .
 ---
+
+(turtleDoc
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (RDFLiteral
+          string: (STRING_LITERAL_QUOTE)
+          language_tag: (LANGTAG)
+          base_direction: (BASE_DIRECTION))))))
 
 ===============
 nt-ttl12-langdir-bad-1
@@ -94,12 +153,16 @@ nt-ttl12-langdir-bad-1
 <http://example/a> <http://example/b> "Hello"@en--unk .
 ---
 
+
+
 ===============
 nt-ttl12-langdir-bad-2
 :error
 ===============
 <http://example/a> <http://example/b> "Hello"@en--LTR .
 ---
+
+
 
 ===============
 nt-ttl12-nested-1
@@ -109,11 +172,51 @@ nt-ttl12-nested-1
 <http://example/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s3> <http://example/p3> <http://example/o3> )>> )>> .
 ---
 
+(turtleDoc
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (IRIREF))))
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (tripleTerm
+          subject: (IRIREF)
+          predicate: (IRIREF)
+          object: (IRIREF)))))
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (tripleTerm
+          subject: (IRIREF)
+          predicate: (IRIREF)
+          object: (tripleTerm
+            subject: (IRIREF)
+            predicate: (IRIREF)
+            object: (IRIREF)))))))
+
 ===============
 nt-ttl12-syntax-1
 ===============
 <http://example/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s> <http://example/p> <http://example/o> )>> .
 ---
+
+(turtleDoc
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (tripleTerm
+          subject: (IRIREF)
+          predicate: (IRIREF)
+          object: (IRIREF))))))
 
 ===============
 nt-ttl12-syntax-2
@@ -121,11 +224,36 @@ nt-ttl12-syntax-2
 <http://example/s><http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies><<(<http://example/s2><http://example/p2><http://example/o2>)>>.
 ---
 
+(turtleDoc
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (tripleTerm
+          subject: (IRIREF)
+          predicate: (IRIREF)
+          object: (IRIREF))))))
+
 ===============
 nt-ttl12-syntax-3
 ===============
 <http://example/s><http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies><<(<http://example/s2><http://example/q2><<(<http://example/s3><http://example/p3><http://example/o3>)>>)>>.
 ---
+
+(turtleDoc
+  (triples
+    subject: (IRIREF)
+    (predicateObjectList
+      predicate: (IRIREF)
+      (objectList
+        object: (tripleTerm
+          subject: (IRIREF)
+          predicate: (IRIREF)
+          object: (tripleTerm
+            subject: (IRIREF)
+            predicate: (IRIREF)
+            object: (IRIREF)))))))
 
 ===============
 turtle12-annotation-1
@@ -134,6 +262,22 @@ PREFIX : <http://example/>
 
 :s :p :o {| :r :z |} .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (annotationBlock
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (PrefixedName))))))))
 
 ===============
 turtle12-annotation-2
@@ -150,6 +294,46 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
           |} .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (annotationBlock
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (blankNodePropertyList
+                (predicateObjectList
+                  predicate: (PrefixedName)
+                  (objectList
+                    object: (IRIREF))
+                  predicate: (PrefixedName)
+                  (objectList
+                    object: (RDFLiteral
+                      string: (STRING_LITERAL_QUOTE)
+                      datatype_iri: (PrefixedName))))))
+            predicate: (PrefixedName)
+            (objectList
+              object: (blankNodePropertyList
+                (predicateObjectList
+                  predicate: (PrefixedName)
+                  (objectList
+                    object: (IRIREF))
+                  predicate: (PrefixedName)
+                  (objectList
+                    object: (RDFLiteral
+                      string: (STRING_LITERAL_QUOTE)
+                      datatype_iri: (PrefixedName))))))))))))
+
 ===============
 turtle12-annotation-3
 ===============
@@ -157,6 +341,25 @@ PREFIX : <http://example/>
 
 :s :p :o {| :q1 :r1 ; :q2 :r2 ; |} .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (annotationBlock
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (PrefixedName))
+            predicate: (PrefixedName)
+            (objectList
+              object: (PrefixedName))))))))
 
 ===============
 turtle12-annotation-4
@@ -166,6 +369,25 @@ PREFIX : <http://example/>
 :s :p :o {| :x :y |} ; :q :r .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (annotationBlock
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (PrefixedName)))))
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
+
 ===============
 turtle12-annotation-5
 ===============
@@ -173,6 +395,19 @@ PREFIX : <http://example/>
 
 :s :p :o ~:e .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (reifier
+          (PrefixedName))))))
 
 ===============
 turtle12-annotation-6
@@ -182,6 +417,18 @@ PREFIX : <http://example/>
 :s :p :o ~ .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (reifier)))))
+
 ===============
 turtle12-annotation-7
 ===============
@@ -190,6 +437,24 @@ PREFIX : <http://example/>
 :s :p :o ~:e {| :q :r |} .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (reifier
+          (PrefixedName))
+        annotation: (annotationBlock
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (PrefixedName))))))))
+
 ===============
 turtle12-annotation-8
 ===============
@@ -197,6 +462,23 @@ PREFIX : <http://example/>
 
 :s :p :o ~ {| :q :r |} .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)
+        annotation: (reifier)
+        annotation: (annotationBlock
+          (predicateObjectList
+            predicate: (PrefixedName)
+            (objectList
+              object: (PrefixedName))))))))
 
 ===============
 turtle12-syntax-bad-01
@@ -208,6 +490,8 @@ PREFIX : <http://example/>
 :x <<:s :p :o>> 123 .
 ---
 
+
+
 ===============
 turtle12-syntax-bad-02
 :error
@@ -218,6 +502,8 @@ PREFIX : <http://example/>
 <<3 :p :o >> :q :z .
 ---
 
+
+
 ===============
 turtle12-syntax-bad-03
 :error
@@ -226,6 +512,8 @@ PREFIX : <http://example/>
 
 <<:s [] :o>> :q 123 .
 ---
+
+
 
 ===============
 turtle12-syntax-bad-04
@@ -236,6 +524,8 @@ PREFIX : <http://example/>
 :s :p << :p :r >> .
 ---
 
+
+
 ===============
 turtle12-syntax-bad-05
 :error
@@ -244,6 +534,8 @@ PREFIX : <http://example/>
 
 :s :p << :g :s :p :o >> .
 ---
+
+
 
 ===============
 turtle12-syntax-bad-06
@@ -255,6 +547,8 @@ PREFIX : <http://example/>
 <<:s :p ("abc") >> :q 123 .
 ---
 
+
+
 ===============
 turtle12-syntax-bad-07
 :error
@@ -263,6 +557,8 @@ PREFIX : <http://example/>
 
 <<:s :p [ :p1 :o1 ]  >> :q 123 .
 ---
+
+
 
 ===============
 turtle12-syntax-bad-ann-1
@@ -275,6 +571,8 @@ SELECT * {
 }
 ---
 
+
+
 ===============
 turtle12-syntax-bad-ann-2
 :error
@@ -283,6 +581,8 @@ PREFIX : <http://example.com/ns#>
 
 :a :b :c {| :s :p :o |} .
 ---
+
+
 
 ===============
 turtle12-syntax-basic-01
@@ -293,6 +593,26 @@ PREFIX : <http://example/>
 <<:s :p :o>> :q 123 .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (PrefixedName))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
 ===============
 turtle12-syntax-basic-02
 ===============
@@ -302,6 +622,26 @@ PREFIX : <http://example/>
 :x :p <<:s :p :o>> .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))))))
+
 ===============
 turtle12-syntax-basic-03
 ===============
@@ -309,6 +649,20 @@ PREFIX : <http://example/>
 
 :s :p <<(:s :p :o )>> .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (tripleTerm
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))))))
 
 ===============
 turtle12-syntax-basic-04
@@ -319,6 +673,22 @@ PREFIX : <http://example/>
 <<:s :p :o>> .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (PrefixedName))))
+
 ===============
 turtle12-syntax-bnode-01
 ===============
@@ -327,6 +697,26 @@ PREFIX : <http://example/>
 _:a :p :o .
 <<_:a :p :o >> :q 456 .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (BLANK_NODE_LABEL)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (BLANK_NODE_LABEL)
+      predicate: (PrefixedName)
+      object: (PrefixedName))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
 
 ===============
 turtle12-syntax-bnode-02
@@ -337,6 +727,26 @@ PREFIX : <http://example/>
 <<:s :p _:a >> :q 456 .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (BLANK_NODE_LABEL))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (BLANK_NODE_LABEL))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
 ===============
 turtle12-syntax-bnode-03
 ===============
@@ -344,6 +754,20 @@ PREFIX : <http://example/>
 
 <<[] :p [] >> :q :z .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    (reifiedTriple
+      subject: (ANON)
+      predicate: (PrefixedName)
+      object: (ANON))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
 
 ===============
 turtle12-syntax-compound
@@ -361,6 +785,68 @@ PREFIX : <http://example/>
 << <<:x :r :z >> :p <<:a :b :c>> >> .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (PrefixedName))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (PrefixedName))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)))))
+  (triples
+    (reifiedTriple
+      subject: (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName))
+      predicate: (PrefixedName)
+      object: (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName)))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName))
+          predicate: (PrefixedName)
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))))))
+
 ===============
 turtle12-syntax-inside-01
 ===============
@@ -369,6 +855,30 @@ PREFIX : <http://example/>
 :s :p :o .
 [ :q <<:s :p :o>> ] :b :c .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (blankNodePropertyList
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
 
 ===============
 turtle12-syntax-inside-02
@@ -380,6 +890,37 @@ PREFIX : <http://example/>
 ( <<:s :p :o1>> <<:s :p :o2>> )  :q 123 .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    subject: (collection
+      (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName))
+      (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName)))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
 ===============
 turtle12-syntax-inside-03
 ===============
@@ -389,6 +930,28 @@ PREFIX : <http://example/>
 :id :q 123 .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)
+          (reifier
+            (PrefixedName))))))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
 ===============
 turtle12-syntax-inside-04
 ===============
@@ -397,6 +960,28 @@ PREFIX : <http://example/>
 :s :p <<:s :p :o1 ~_:id>> .
 _:id :q 123 .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)
+          (reifier
+            (BLANK_NODE_LABEL))))))
+  (triples
+    subject: (BLANK_NODE_LABEL)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
 
 ===============
 turtle12-syntax-nested-01
@@ -410,6 +995,38 @@ PREFIX : <http://example/>
 << <<:s :p :o >> :r :z >> :q 1 .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (PrefixedName))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    (reifiedTriple
+      subject: (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName))
+      predicate: (PrefixedName)
+      object: (PrefixedName))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
 ===============
 turtle12-syntax-nested-02
 ===============
@@ -420,6 +1037,38 @@ PREFIX : <http://example/>
 << :a :q <<:s :p :o >>>> :r :z .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)))))
+  (triples
+    (reifiedTriple
+      subject: (PrefixedName)
+      predicate: (PrefixedName)
+      object: (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName)))
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
+
 ===============
 turtle12-version-01
 ===============
@@ -429,6 +1078,19 @@ PREFIX : <http://example/>
 :s :p :o .
 ---
 
+(turtleDoc
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
+
 ===============
 turtle12-version-02
 ===============
@@ -437,6 +1099,19 @@ turtle12-version-02
 
 :s :p :o .
 ---
+
+(turtleDoc
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
 
 ===============
 turtle12-version-03
@@ -448,6 +1123,25 @@ VERSION "1.2"
 
 :a :b :c .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
 
 ===============
 turtle12-version-04
@@ -461,6 +1155,25 @@ PREFIX : <http://example/>
 :a :b :c .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName))))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
+
 ===============
 turtle12-version-05
 ===============
@@ -469,6 +1182,19 @@ VERSION "1.2-basic"
 
 :s :p :o .
 ---
+
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
 
 ===============
 turtle12-version-06
@@ -479,6 +1205,19 @@ PREFIX : <http://example/>
 :s :p :o .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (version
+    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
+
 ===============
 turtle12-version-07
 ===============
@@ -488,6 +1227,21 @@ VERSION "1.2"
 
 :s :p :o .
 ---
+
+(turtleDoc
+  (version
+    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (PrefixedName)))))
 
 ===============
 turtle12-version-08
@@ -513,12 +1267,55 @@ version "abc"
 :s :p 3 .
 ---
 
+(turtleDoc
+  (prefix
+    prefix_label: (PNAME_NS)
+    iri: (IRIREF))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER))))
+  (version
+    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
+  (version
+    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
+  (version
+    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER))))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (version
+    versionSpecifier: (STRING_LITERAL_QUOTE))
+  (triples
+    subject: (PrefixedName)
+    (predicateObjectList
+      predicate: (PrefixedName)
+      (objectList
+        object: (INTEGER)))))
+
 ===============
 turtle12-version-bad-01
 :error
 ===============
 VERSION 1.2
 ---
+
+
 
 ===============
 turtle12-version-bad-02
@@ -527,12 +1324,16 @@ turtle12-version-bad-02
 VERSION """1.2"""
 ---
 
+
+
 ===============
 turtle12-version-bad-03
 :error
 ===============
 VERSION '''1.2'''
 ---
+
+
 
 ===============
 turtle12-version-bad-04
@@ -541,6 +1342,8 @@ turtle12-version-bad-04
 @version 1.2 .
 ---
 
+
+
 ===============
 turtle12-version-bad-05
 :error
@@ -548,10 +1351,13 @@ turtle12-version-bad-05
 @version """1.2""" .
 ---
 
+
+
 ===============
 turtle12-version-bad-06
 :error
 ===============
 @version '''1.2''' .
 ---
+
 
