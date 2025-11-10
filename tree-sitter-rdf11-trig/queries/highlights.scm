@@ -34,12 +34,14 @@
   "]"
   "("
   ")"
+  "{"
+  "}"
 ] @punctuation.bracket
 
 [
   "."
-  ","
   ";"
+  ","
 ] @punctuation.delimiter
 
 [

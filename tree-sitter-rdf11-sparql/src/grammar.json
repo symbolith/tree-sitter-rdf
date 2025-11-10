@@ -128,31 +128,29 @@
               }
             },
             {
-              "type": "REPEAT",
-              "content": {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "STRING",
-                    "value": ";"
-                  },
-                  {
-                    "type": "FIELD",
-                    "name": "operation",
-                    "content": {
-                      "type": "SYMBOL",
-                      "name": "Update1"
-                    }
-                  }
-                ]
-              }
-            },
-            {
               "type": "CHOICE",
               "members": [
                 {
-                  "type": "STRING",
-                  "value": ";"
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "SEQ",
+                      "members": [
+                        {
+                          "type": "STRING",
+                          "value": ";"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "Update"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "STRING",
+                      "value": ";"
+                    }
+                  ]
                 },
                 {
                   "type": "BLANK"
@@ -1312,8 +1310,12 @@
               "value": "("
             },
             {
-              "type": "SYMBOL",
-              "name": "Expression"
+              "type": "FIELD",
+              "name": "expression",
+              "content": {
+                "type": "SYMBOL",
+                "name": "Expression"
+              }
             },
             {
               "type": "CHOICE",
@@ -1334,8 +1336,12 @@
                       "value": "AS"
                     },
                     {
-                      "type": "SYMBOL",
-                      "name": "Var"
+                      "type": "FIELD",
+                      "name": "binding",
+                      "content": {
+                        "type": "SYMBOL",
+                        "name": "Var"
+                      }
                     }
                   ]
                 },
@@ -2781,8 +2787,12 @@
           "value": "("
         },
         {
-          "type": "SYMBOL",
-          "name": "Expression"
+          "type": "FIELD",
+          "name": "expression",
+          "content": {
+            "type": "SYMBOL",
+            "name": "Expression"
+          }
         },
         {
           "type": "ALIAS",
@@ -2798,7 +2808,7 @@
         },
         {
           "type": "FIELD",
-          "name": "bound_variable",
+          "name": "binding",
           "content": {
             "type": "SYMBOL",
             "name": "Var"
@@ -3267,7 +3277,7 @@
           "members": [
             {
               "type": "FIELD",
-              "name": "predicate",
+              "name": "subject",
               "content": {
                 "type": "SYMBOL",
                 "name": "VarOrTerm"
@@ -3823,10 +3833,6 @@
           ]
         }
       ]
-    },
-    "Integer": {
-      "type": "SYMBOL",
-      "name": "INTEGER"
     },
     "TriplesNode": {
       "type": "CHOICE",
@@ -9467,24 +9473,25 @@
   "externals": [],
   "inline": [],
   "supertypes": [
-    "SourceSelector",
-    "PrimaryExpression",
+    "BinaryPath",
+    "BlankNode",
+    "Constraint",
     "DataBlock",
     "Expression",
-    "GraphPatternNotTriples",
-    "NumericLiteral",
-    "Constraint",
-    "VarOrTerm",
-    "GraphNodePath",
-    "GraphRefAll",
     "GraphNode",
+    "GraphNodePath",
+    "GraphPatternNotTriples",
+    "GraphRefAll",
+    "GraphTerm",
+    "NumericLiteral",
+    "Path",
+    "PrimaryExpression",
+    "SourceSelector",
+    "String",
+    "TriplesNodePath",
     "Update1",
     "VarOrIri",
-    "BinaryPath",
-    "Path",
-    "TriplesNodePath",
-    "String",
-    "GraphTerm",
+    "VarOrTerm",
     "Verb",
     "iri"
   ],

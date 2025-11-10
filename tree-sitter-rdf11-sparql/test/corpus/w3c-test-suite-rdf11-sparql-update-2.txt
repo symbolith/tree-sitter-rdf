@@ -155,7 +155,7 @@ INSERT DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -220,7 +220,7 @@ INSERT DATA {
                   object: (NumericLiteralUnsigned
                     (INTEGER)))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -1423,3229 +1423,3229 @@ INSERT DATA {
                   object: (RDFLiteral
                     string: (STRING_LITERAL_QUOTE)))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
                   object: (IRIREF))))
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList

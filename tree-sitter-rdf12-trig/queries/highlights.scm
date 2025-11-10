@@ -22,6 +22,7 @@
   "@prefix"
   "BASE"
   "PREFIX"
+  "VERSION"
 ] @keyword.directive
 
 [
@@ -34,16 +35,20 @@
   "]"
   "("
   ")"
+  "{"
+  "}"
+  "<<("
+  ")>>"
+  "<<"
+  ">>"
 ] @punctuation.bracket
 
 [
   "."
-  ","
   ";"
+  ","
 ] @punctuation.delimiter
 
 [
   "a"
 ] @constant.builtin
-
-

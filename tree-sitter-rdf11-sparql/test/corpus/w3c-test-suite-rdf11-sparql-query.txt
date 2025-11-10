@@ -620,14 +620,12 @@ SELECT *
         (GroupGraphPattern
           (TriplesBlock
             (TriplesSameSubjectPath
-              subject: (BlankNode
-                (BLANK_NODE_LABEL))
+              subject: (BLANK_NODE_LABEL)
               (PropertyListPath
                 predicate: (PathElement
                   (PrefixedName))
                 (ObjectListPath
-                  object: (BlankNode
-                    (BLANK_NODE_LABEL)))))))))))
+                  object: (BLANK_NODE_LABEL))))))))))
 
 ===============
 syn-pname-09
@@ -1007,17 +1005,17 @@ SELECT ?Z { ?s ?p ?o . BIND(?o+1 AS ?Z) BIND(?Z/2 AS ?Zby2) }
                 (ObjectListPath
                   object: (Var)))))
           (Bind
-            (BinaryExpression
+            expression: (BinaryExpression
               (Var)
               (NumericLiteralUnsigned
                 (INTEGER)))
-            bound_variable: (Var))
+            binding: (Var))
           (Bind
-            (BinaryExpression
+            expression: (BinaryExpression
               (Var)
               (NumericLiteralUnsigned
                 (INTEGER)))
-            bound_variable: (Var)))))))
+            binding: (Var)))))))
 
 ===============
 syntax-bindings-01
@@ -1040,11 +1038,11 @@ SELECT ?Z { ?s ?p ?o . BIND(?o+1 AS ?Z) }
                 (ObjectListPath
                   object: (Var)))))
           (Bind
-            (BinaryExpression
+            expression: (BinaryExpression
               (Var)
               (NumericLiteralUnsigned
                 (INTEGER)))
-            bound_variable: (Var)))))))
+            binding: (Var)))))))
 
 ===============
 syntax-bindings-02a
@@ -1142,12 +1140,12 @@ syntax-BINDscope1
                 (ObjectListPath
                   object: (Var)))))
           (Bind
-            (BrackettedExpression
+            expression: (BrackettedExpression
               (BinaryExpression
                 (NumericLiteralUnsigned
                   (INTEGER))
                 (Var)))
-            bound_variable: (Var))
+            binding: (Var))
           (TriplesBlock
             (TriplesSameSubjectPath
               subject: (PrefixedName)
@@ -1196,12 +1194,12 @@ syntax-BINDscope2
                   object: (Var)))))
           (GroupGraphPattern
             (Bind
-              (BrackettedExpression
+              expression: (BrackettedExpression
                 (BinaryExpression
                   (NumericLiteralUnsigned
                     (INTEGER))
                   (Var)))
-              bound_variable: (Var))))))))
+              binding: (Var))))))))
 
 ===============
 syntax-BINDscope3
@@ -1245,12 +1243,12 @@ syntax-BINDscope3
                     object: (Var))))))
           (GroupGraphPattern
             (Bind
-              (BrackettedExpression
+              expression: (BrackettedExpression
                 (BinaryExpression
                   (NumericLiteralUnsigned
                     (INTEGER))
                   (Var)))
-              bound_variable: (Var))))))))
+              binding: (Var))))))))
 
 ===============
 syntax-BINDscope4
@@ -1277,9 +1275,9 @@ SELECT *
           (UnionGraphPattern
             (GroupGraphPattern
               (Bind
-                (NumericLiteralUnsigned
+                expression: (NumericLiteralUnsigned
                   (INTEGER))
-                bound_variable: (Var)))
+                binding: (Var)))
             (GroupGraphPattern
               (TriplesBlock
                 (TriplesSameSubjectPath
@@ -1324,9 +1322,9 @@ SELECT *
                       object: (Var))))))
             (GroupGraphPattern
               (Bind
-                (NumericLiteralUnsigned
+                expression: (NumericLiteralUnsigned
                   (INTEGER))
-                bound_variable: (Var)))))))))
+                binding: (Var)))))))))
 
 ===============
 syntax-BINDscope6
@@ -1389,7 +1387,7 @@ CONSTRUCT WHERE { ?s ?p 1816 }
     form: (ConstructQuery
       (TriplesTemplate
         (TriplesSameSubject
-          predicate: (Var)
+          subject: (Var)
           (PropertyList
             predicate: (Var)
             (ObjectList
@@ -1411,7 +1409,7 @@ WHERE { ?s ?p 1816 }
         source_selector: (IRIREF))
       (TriplesTemplate
         (TriplesSameSubject
-          predicate: (Var)
+          subject: (Var)
           (PropertyList
             predicate: (Var)
             (ObjectList

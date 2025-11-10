@@ -170,8 +170,7 @@ SELECT * {
                     object: (RDFLiteral
                       string: (STRING_LITERAL_QUOTE))))))
             (TriplesSameSubjectPath
-              subject: (BlankNode
-                (ANON))
+              subject: (ANON)
               (PropertyListPath
                 predicate: (PathElement
                   (PrefixedName))

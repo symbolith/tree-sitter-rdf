@@ -2,7 +2,6 @@ const common = require('../common/rules');
 
 const WS = common.WS
 const EXPONENT = common.EXPONENT
-const ECHAR = common.ECHAR
 const PN_CHARS_U = common.PN_CHARS_U
 
 
@@ -51,35 +50,31 @@ module.exports = grammar({
   ],
 
   supertypes: $ => [
-    $.SourceSelector,
-    $.PrimaryExpression,
+    $.BinaryPath,
+    $.BlankNode,
+    $.Constraint,
     $.DataBlock,
     $.Expression,
-    $.GraphPatternNotTriples,
-    $.NumericLiteral,
-    $.Constraint,
-    $.VarOrTerm,
-    $.GraphNodePath,
-    $.GraphRefAll,
     $.GraphNode,
+    $.GraphNodePath,
+    $.GraphPatternNotTriples,
+    $.GraphRefAll,
+    $.GraphTerm,
+    $.NumericLiteral,
+    $.Path,
+    $.PrimaryExpression,
+    $.SourceSelector,
+    $.String,
+    $.TriplesNodePath,
     $.Update1,
     $.VarOrIri,
-    $.BinaryPath,
-    $.Path,
-    $.TriplesNodePath,
-    $.String,
-    $.GraphTerm,
+    $.VarOrTerm,
     $.Verb,
     $.iri
   ],
-  //
-  // inline: $ => [
-  //   $._Query
-  // ],
-  //
-  // word: $ => $.pn_prefix,
 
   rules: {
+
     Unit: $ => optional(choice(
       $.Query,
       $.Update
@@ -104,11 +99,13 @@ module.exports = grammar({
       seq(
         field('prologue', optional($.Prologue)),
         field('operation', $.Update1),
-        repeat(seq(
-          ';',
-          field('operation', $.Update1),
+        optional(choice(
+          seq(
+            ';',
+            $.Update,
+          ),
+          ";"
         )),
-        optional(';')
       )
     ),
 
@@ -272,10 +269,10 @@ module.exports = grammar({
       $.FunctionCall,
       seq(
         '(',
-        $.Expression,
+        field('expression', $.Expression),
         optional(seq(
           'AS'.toCaseInsensitiv(),
-          $.Var
+          field('binding', $.Var),
         )),
         ')'
       ),
@@ -544,9 +541,9 @@ module.exports = grammar({
     Bind: $ => seq(
       'BIND'.toCaseInsensitiv(),
       '(',
-      $.Expression,
+      field('expression', $.Expression),
       'AS'.toCaseInsensitiv(),
-      field('bound_variable', $.Var),
+      field('binding', $.Var),
       ')'
     ),
 
@@ -662,7 +659,7 @@ module.exports = grammar({
 
     TriplesSameSubject: $ => choice(
       seq(
-        field('predicate', $.VarOrTerm),
+        field('subject', $.VarOrTerm),
         $.PropertyList
       ),
       seq(
@@ -801,8 +798,6 @@ module.exports = grammar({
         )
       )
     ),
-
-    Integer: $ => $.INTEGER,
 
     TriplesNode: $ => choice(
       $.Collection,
@@ -1106,10 +1101,6 @@ module.exports = grammar({
 
     LANGTAG: common.LANGTAG,
 
-
-
-    LANGTAG: common.LANGTAG,
-
     INTEGER: _ => /[0-9]+/,
 
     DECIMAL: _ => token(seq(/[0-9]*/, '.', /[0-9]+/)),
@@ -1146,6 +1137,8 @@ module.exports = grammar({
       )
     )),
 
+    // This parser uses Turtle string literals, because SPARQL needs all
+    // unicode escaped before parsing, what Tree-sitter can not do.
     // STRING_LITERAL1: _ => token(seq(
     //   "'",
     //   repeat(choice(

@@ -6,7 +6,7 @@ PREFIX p: <http://two.example/>
 # Seperate triples by highlight
 <s> <o> <http://www.example.org/\u0020bar> .
 <s>  <p> foo:o .
-_:s <p> <0>, <1> .
+_:s <p> <0> .
 <s>
   # a != :a
   a <o> ;
@@ -37,3 +37,7 @@ _:s <p> <0>, <1> .
         <p> 'b' ;
     ] .
 () <p> ( :a :b :c ) .
+{:a :b :e.}
+_:G {:a :b :f.}
+{<http://a.example/s> <http://a.example/p> [] .}
+<http://a.example/s> <http://a.example/p> p:#comment

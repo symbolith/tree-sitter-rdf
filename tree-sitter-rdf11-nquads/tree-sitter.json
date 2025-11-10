@@ -4,7 +4,7 @@
       "name": "rdf11_nquads",
       "camelcase": "Rdf11Nquads",
       "title": "RDF 1.1 N-Quads",
-      "scope": "source.nquads",
+      "scope": "source.rdf11_nquads",
       "file-types": [
         "nq"
       ],

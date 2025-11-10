@@ -16,8 +16,7 @@ SELECT * {
         (GroupGraphPattern
           (TriplesBlock
             (TriplesSameSubjectPath
-              subject: (BlankNode
-                (BLANK_NODE_LABEL))
+              subject: (BLANK_NODE_LABEL)
               (PropertyListPath
                 predicate: (PathElement
                   (PrefixedName))

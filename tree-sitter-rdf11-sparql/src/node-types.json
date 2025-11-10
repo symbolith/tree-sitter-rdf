@@ -14,6 +14,20 @@
     ]
   },
   {
+    "type": "BlankNode",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "ANON",
+        "named": true
+      },
+      {
+        "type": "BLANK_NODE_LABEL",
+        "named": true
+      }
+    ]
+  },
+  {
     "type": "Constraint",
     "named": true,
     "subtypes": [
@@ -553,7 +567,7 @@
     "type": "Bind",
     "named": true,
     "fields": {
-      "bound_variable": {
+      "binding": {
         "multiple": false,
         "required": true,
         "types": [
@@ -562,36 +576,17 @@
             "named": true
           }
         ]
+      },
+      "expression": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Expression",
+            "named": true
+          }
+        ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "Expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "BlankNode",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "ANON",
-          "named": true
-        },
-        {
-          "type": "BLANK_NODE_LABEL",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -1128,6 +1123,16 @@
     "type": "GroupClause",
     "named": true,
     "fields": {
+      "binding": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Var",
+            "named": true
+          }
+        ]
+      },
       "condition": {
         "multiple": true,
         "required": true,
@@ -1158,6 +1163,16 @@
           },
           {
             "type": "Var",
+            "named": true
+          }
+        ]
+      },
+      "expression": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Expression",
             "named": true
           }
         ]
@@ -2136,7 +2151,7 @@
     "type": "TriplesSameSubject",
     "named": true,
     "fields": {
-      "predicate": {
+      "subject": {
         "multiple": false,
         "required": false,
         "types": [
@@ -2262,7 +2277,7 @@
     "named": true,
     "fields": {
       "operation": {
-        "multiple": true,
+        "multiple": false,
         "required": false,
         "types": [
           {
@@ -2281,6 +2296,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "Update",
+          "named": true
+        }
+      ]
     }
   },
   {

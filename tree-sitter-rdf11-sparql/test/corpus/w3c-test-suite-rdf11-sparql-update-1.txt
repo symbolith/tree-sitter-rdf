@@ -272,7 +272,7 @@ INSERT DATA { <s> <p> 'o1', 'o2', 'o3' }
       data: (Quads
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (IRIREF)
+            subject: (IRIREF)
             (PropertyList
               predicate: (IRIREF)
               (ObjectList
@@ -297,7 +297,7 @@ INSERT DATA { GRAPH <G> { <s> <p> 'o1', 'o2', 'o3' } }
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -325,7 +325,7 @@ INSERT DATA {
       data: (Quads
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (IRIREF)
+            subject: (IRIREF)
             (PropertyList
               predicate: (IRIREF)
               (ObjectList
@@ -334,7 +334,7 @@ INSERT DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -347,7 +347,7 @@ INSERT DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -358,7 +358,7 @@ INSERT DATA {
                   object: (IRIREF))))))
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (IRIREF)
+            subject: (IRIREF)
             (PropertyList
               predicate: (IRIREF)
               (ObjectList
@@ -381,7 +381,7 @@ DATA { GRAPH <G> { <s> <p> 'o1', 'o2', 'o3' } }
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -430,7 +430,7 @@ DELETE DATA { <s> <p> 'o1', 'o2', 'o3' }
       data: (Quads
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (IRIREF)
+            subject: (IRIREF)
             (PropertyList
               predicate: (IRIREF)
               (ObjectList
@@ -455,7 +455,7 @@ DELETE DATA { GRAPH <G> { <s> <p> 'o1', 'o2', 'o3' } }
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -483,7 +483,7 @@ DELETE DATA {
       data: (Quads
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (IRIREF)
+            subject: (IRIREF)
             (PropertyList
               predicate: (IRIREF)
               (ObjectList
@@ -492,7 +492,7 @@ DELETE DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -505,7 +505,7 @@ DELETE DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -516,7 +516,7 @@ DELETE DATA {
                   object: (IRIREF))))))
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (IRIREF)
+            subject: (IRIREF)
             (PropertyList
               predicate: (IRIREF)
               (ObjectList
@@ -557,7 +557,7 @@ WHERE
         pattern: (Quads
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (Var)
                 (ObjectList
@@ -566,7 +566,7 @@ WHERE
         pattern: (Quads
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (Var)
+              subject: (Var)
               (PropertyList
                 predicate: (Var)
                 (ObjectList
@@ -612,7 +612,7 @@ WHERE
         pattern: (Quads
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (Var)
                 (ObjectList
@@ -650,7 +650,7 @@ WHERE
         pattern: (Quads
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (Var)
                 (ObjectList
@@ -676,7 +676,7 @@ DELETE WHERE { ?s ?p ?o }
       pattern: (Quads
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (Var)
+            subject: (Var)
             (PropertyList
               predicate: (Var)
               (ObjectList
@@ -704,7 +704,7 @@ WHERE
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (IRIREF)
+              subject: (IRIREF)
               (PropertyList
                 predicate: (IRIREF)
                 (ObjectList
@@ -727,10 +727,11 @@ LOAD <remote> INTO GRAPH <g> ;
     operation: (Create
       (GraphRef
         (IRIREF)))
-    operation: (Load
-      (IRIREF)
-      (GraphRef
-        (IRIREF)))))
+    (Update
+      operation: (Load
+        (IRIREF)
+        (GraphRef
+          (IRIREF))))))
 
 ===============
 syntax-update-38
@@ -793,8 +794,7 @@ INSERT DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (BlankNode
-                (BLANK_NODE_LABEL))
+              subject: (BLANK_NODE_LABEL)
               (PropertyList
                 predicate: (PrefixedName)
                 (ObjectList
@@ -803,8 +803,7 @@ INSERT DATA {
           (IRIREF)
           (TriplesTemplate
             (TriplesSameSubject
-              predicate: (BlankNode
-                (BLANK_NODE_LABEL))
+              subject: (BLANK_NODE_LABEL)
               (PropertyList
                 predicate: (PrefixedName)
                 (ObjectList
@@ -830,22 +829,21 @@ INSERT DATA { _:b1 :p :o }
       data: (Quads
         (TriplesTemplate
           (TriplesSameSubject
-            predicate: (BlankNode
-              (BLANK_NODE_LABEL))
+            subject: (BLANK_NODE_LABEL)
             (PropertyList
               predicate: (PrefixedName)
               (ObjectList
                 object: (PrefixedName)))))))
-    operation: (InsertData
-      data: (Quads
-        (TriplesTemplate
-          (TriplesSameSubject
-            predicate: (BlankNode
-              (BLANK_NODE_LABEL))
-            (PropertyList
-              predicate: (PrefixedName)
-              (ObjectList
-                object: (PrefixedName)))))))))
+    (Update
+      operation: (InsertData
+        data: (Quads
+          (TriplesTemplate
+            (TriplesSameSubject
+              subject: (BLANK_NODE_LABEL)
+              (PropertyList
+                predicate: (PrefixedName)
+                (ObjectList
+                  object: (PrefixedName))))))))))
 
 ===============
 syntax-update-bad-01

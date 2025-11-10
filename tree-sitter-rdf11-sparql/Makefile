@@ -7,7 +7,7 @@ test: build
 
 develop:
 	tree-sitter generate
-	tree-sitter test --show-fields -D -i "syntax-update-bad-08"
+	tree-sitter test --show-fields -D
 
 clean:
 	$(MAKE) -C .. clean

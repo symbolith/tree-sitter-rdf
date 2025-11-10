@@ -4,10 +4,11 @@ VERSION "1.2"
 _:blank_node <p> _:blank_node .
 <s> <p> <o> . # Comment
 <s> <p> "string"@en-en .
-<s> <p> "string"@en-en--ltr .
 <s> <p> "string"^^<datatype> .
 <s> <p> "escape\tsequences\\test\b" .
 <s> <p> "hex\u0020" .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( _:b0 <http://example/p> <http://example/o> )>> .
 <http://example/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( <http://example/s3> <http://example/p3> <http://example/o3> )>> )>> .
 <s> <p> <http://www.dit.unitn.it/\u0020pavel/om2017/papers/oaei17_paper11.pdf> .
+<http://example/s> <http://example/p> <http://example/o> <http://example/g> .
+<http://example/s> <http://example/p> "o"@en _:g .

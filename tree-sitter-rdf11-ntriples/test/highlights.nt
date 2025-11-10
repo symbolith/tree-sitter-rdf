@@ -2,7 +2,6 @@
 _:blank_node <p> _:blank_node .
 <s> <p> <o> . # Comment
 <s> <p> "string"@en-en .
-<s> <p> "string"@en-en--ltr .
 <s> <p> "string"^^<datatype> .
 <s> <p> "escape\tsequences\\test\b" .
 <s> <p> "hex\u0020" .

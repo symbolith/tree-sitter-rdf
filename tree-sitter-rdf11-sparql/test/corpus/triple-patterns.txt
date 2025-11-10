@@ -45,7 +45,7 @@ CONSTRUCT WHERE {
     form: (ConstructQuery
       (TriplesTemplate
         (TriplesSameSubject
-          predicate: (Var)
+          subject: (Var)
           (PropertyList
             predicate: (Var)
             (ObjectList
