@@ -35,6 +35,7 @@ clean:
 		       ./pyproject.toml \
 		       ./log.html \
 		       ./*.wasm \
+		       ./*.so \
 		       ./setup.py) \
 	done
 

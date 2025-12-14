@@ -538,6 +538,25 @@
     }
   },
   {
+    "type": "statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "directive",
+          "named": true
+        },
+        {
+          "type": "triples",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "tripleTerm",
     "named": true,
     "fields": {
@@ -617,11 +636,7 @@
       "required": false,
       "types": [
         {
-          "type": "directive",
-          "named": true
-        },
-        {
-          "type": "triples",
+          "type": "statement",
           "named": true
         }
       ]

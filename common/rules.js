@@ -548,4 +548,4 @@ const rules = {
 
 }
 
-module.exports = { ...rules, WS, WS_horizontal, EOL, EXPONENT, ECHAR, PN_CHARS_U }
+export default { ...rules, WS, WS_horizontal, EOL, EXPONENT, ECHAR, PN_CHARS_U }

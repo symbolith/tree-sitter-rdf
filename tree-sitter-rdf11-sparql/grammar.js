@@ -1,4 +1,4 @@
-const common = require('../common/rules');
+import common from '../common/rules.js';
 
 const WS = common.WS
 const EXPONENT = common.EXPONENT
@@ -41,7 +41,7 @@ String.prototype.toCaseInsensitiv = function() {
   )
 }
 
-module.exports = grammar({
+export default grammar({
   name: 'sparql',
 
   extras: $ => [

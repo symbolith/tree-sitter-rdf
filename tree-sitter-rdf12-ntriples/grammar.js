@@ -1,9 +1,9 @@
-const common = require('../common/rules');
+import common from '../common/rules.js';
 
 const EOL = common.EOL
 const WS = common.WS_horizontal
 
-module.exports = grammar({
+export default grammar({
   name: 'ntriples',
 
   extras: $ => [

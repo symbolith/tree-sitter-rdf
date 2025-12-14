@@ -6,14 +6,14 @@
       "type": "REPEAT",
       "content": {
         "type": "SYMBOL",
-        "name": "_statement"
+        "name": "statement"
       }
     },
     "comment": {
       "type": "PATTERN",
       "value": "#[^\\r\\n]*"
     },
-    "_statement": {
+    "statement": {
       "type": "CHOICE",
       "members": [
         {
@@ -3519,19 +3519,19 @@
   "supertypes": [
     "BlankNode",
     "NumericLiteral",
-    "directive",
     "String",
+    "VersionSpecifier",
+    "directive",
     "iri",
     "literal",
     "object",
-    "rtObject",
-    "ttObject",
     "predicate",
-    "subject",
+    "rtObject",
     "rtSubject",
+    "subject",
+    "ttObject",
     "ttSubject",
-    "verb",
-    "VersionSpecifier"
+    "verb"
   ],
   "reserved": {}
 }

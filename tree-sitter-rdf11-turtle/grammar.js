@@ -1,8 +1,8 @@
-const common = require('../common/rules');
+import common from '../common/rules.js';
 
 const WS = common.WS
 
-module.exports = grammar({
+export default grammar({
   name: 'turtle',
 
   extras: $ => [
@@ -25,11 +25,11 @@ module.exports = grammar({
 
   rules: {
 
-    turtleDoc: $ => repeat($._statement),
+    turtleDoc: $ => repeat($.statement),
 
     comment: common.comment,
 
-    _statement: $ => choice(
+    statement: $ => choice(
       $.directive,
       seq(
         $.triples,

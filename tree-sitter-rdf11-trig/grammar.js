@@ -1,8 +1,8 @@
-const common = require('../common/rules');
+import common from '../common/rules.js';
 
 const WS = common.WS
 
-module.exports = grammar({
+export default grammar({
   name: 'trig',
 
   extras: $ => [
