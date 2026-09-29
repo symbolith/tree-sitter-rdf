@@ -3,7 +3,7 @@ import common from '../common/rules.js';
 const WS = common.WS
 
 export default grammar({
-  name: 'turtle',
+  name: 'rdf11_turtle',
 
   extras: $ => [
     $.comment,

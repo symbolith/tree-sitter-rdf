@@ -1,11 +1,11 @@
 [package]
-name = "tree-sitter-rdf12-nquads"
+name = "tree-sitter-nquads"
 description = "RDF 1.2 N-Quads grammar for tree-sitter"
 version = "0.2.0"
 authors = ["Gordian Dziwis"]
 license = "MIT"
 readme = "README.md"
-keywords = ["incremental", "parsing", "tree-sitter", "rdf12-nquads"]
+keywords = ["incremental", "parsing", "tree-sitter", "nquads"]
 categories = ["parser-implementations", "parsing", "text-editors"]
 repository = "git+https://github.com/gordiandziwis/tree-sitter-rdf.git"
 edition = "2021"
@@ -31,4 +31,4 @@ tree-sitter-language = "0.1"
 cc = "1.2"
 
 [dev-dependencies]
-tree-sitter = "0.26.2"
+tree-sitter = "0.26.8"

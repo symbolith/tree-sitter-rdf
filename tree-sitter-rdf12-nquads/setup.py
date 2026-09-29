@@ -11,7 +11,7 @@ from wheel.bdist_wheel import bdist_wheel
 class Build(build):
     def run(self):
         if path.isdir("queries"):
-            dest = path.join(self.build_lib, "tree_sitter_rdf12_nquads", "queries")
+            dest = path.join(self.build_lib, "tree_sitter_nquads", "queries")
             self.copy_tree("queries", dest)
         super().run()
 
@@ -32,7 +32,7 @@ class BuildExt(build_ext):
 class BdistWheel(bdist_wheel):
     def get_tag(self):
         python, abi, platform = super().get_tag()
-        if python.startswith("cp"):
+        if python.startswith("cp") and not get_config_var("Py_GIL_DISABLED"):
             python, abi = "cp310", "abi3"
         return python, abi, platform
 
@@ -48,15 +48,15 @@ setup(
     packages=find_packages("bindings/python"),
     package_dir={"": "bindings/python"},
     package_data={
-        "tree_sitter_rdf12_nquads": ["*.pyi", "py.typed"],
-        "tree_sitter_rdf12_nquads.queries": ["*.scm"],
+        "tree_sitter_nquads": ["*.pyi", "py.typed"],
+        "tree_sitter_nquads.queries": ["*.scm"],
     },
-    ext_package="tree_sitter_rdf12_nquads",
+    ext_package="tree_sitter_nquads",
     ext_modules=[
         Extension(
             name="_binding",
             sources=[
-                "bindings/python/tree_sitter_rdf12_nquads/binding.c",
+                "bindings/python/tree_sitter_nquads/binding.c",
                 "src/parser.c",
             ],
             define_macros=[

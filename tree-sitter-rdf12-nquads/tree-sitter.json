@@ -1,16 +1,15 @@
 {
   "grammars": [
     {
-      "name": "rdf12_nquads",
-      "camelcase": "Rdf12Nquads",
-      "title": "RDF 1.2 N-Quads",
+      "name": "nquads",
+      "camelcase": "Nquads",
+      "title": "N-Quads",
       "scope": "source.nquads",
       "file-types": [
         "nq"
       ],
-      "injection-regex": "(n-quads|n_quads|nquads|nt)",
-      "highlights": "queries/highlights.scm",
-      "tags": "queries/tags.scm"
+      "injection-regex": "(n-quads|n_quads|nquads|nq)",
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {

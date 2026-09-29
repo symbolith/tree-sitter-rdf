@@ -33,12 +33,12 @@ export default grammar({
 
     trigDoc: $ => repeat(choice(
       $.directive,
-      $._block
+      $.block
     )),
 
     comment: common.comment,
 
-    _block: $ => choice(
+    block: $ => choice(
       $.graph,
       seq(
         $.triples,

@@ -1,6 +1,6 @@
 {
   "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
-  "name": "turtle",
+  "name": "rdf11_turtle",
   "rules": {
     "turtleDoc": {
       "type": "REPEAT",

@@ -1,0 +1,79 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '*-v*'
+
+jobs:
+  extract-package:
+    runs-on: ubuntu-latest
+    outputs:
+      package-dir: ${{ steps.extract.outputs.package-dir }}
+      tag-version: ${{ steps.extract.outputs.tag-version }}
+    steps:
+      - name: Extract package directory and version from tag
+        id: extract
+        run: |
+          TAG="${{ github.ref_name }}"
+          BASE_NAME="${TAG%-v*}"
+          TAG_VERSION="${TAG##*-v}"
+          PACKAGE_DIR="tree-sitter-${BASE_NAME}"
+          echo "package-dir=$PACKAGE_DIR" >> $GITHUB_OUTPUT
+          echo "tag-version=$TAG_VERSION" >> $GITHUB_OUTPUT
+          echo "Publishing $PACKAGE_DIR at version $TAG_VERSION"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Install tree-sitter CLI
+        run: cargo install tree-sitter-cli
+
+      - name: Run tests
+        run: make test
+
+  publish-crates:
+    needs: [extract-package, test]
+    runs-on: ubuntu-latest
+    environment: crates
+    defaults:
+      run:
+        working-directory: ${{ needs.extract-package.outputs.package-dir }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Install tree-sitter CLI
+        run: cargo install tree-sitter-cli
+
+      - name: Verify tag matches tree-sitter.json version
+        run: |
+          MANIFEST_VERSION=$(jq -r '.metadata.version' tree-sitter.json)
+          TAG_VERSION="${{ needs.extract-package.outputs.tag-version }}"
+          if [ "$MANIFEST_VERSION" != "$TAG_VERSION" ]; then
+            echo "Tag version ($TAG_VERSION) does not match tree-sitter.json metadata.version ($MANIFEST_VERSION)" >&2
+            exit 1
+          fi
+
+      - name: Regenerate grammar artifacts
+        run: |
+          tree-sitter init
+          tree-sitter generate
+
+      - name: Publish to crates.io
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+        run: cargo publish --token ${CARGO_REGISTRY_TOKEN}

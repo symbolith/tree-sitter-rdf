@@ -4,7 +4,7 @@ const EOL = common.EOL
 const WS = common.WS_horizontal
 
 export default grammar({
-  name: 'nquads',
+  name: 'rdf11_nquads',
 
   extras: $ => [
     $.comment,

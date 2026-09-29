@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(tree-sitter-rdf12-trig
+project(tree-sitter-trig
         VERSION "0.2.0"
         DESCRIPTION "RDF 1.2 TriG grammar for tree-sitter"
         HOMEPAGE_URL "git+https://github.com/gordiandziwis/tree-sitter-rdf.git"
@@ -36,40 +36,40 @@ add_custom_command(OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/src/parser.c"
                    WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
                    COMMENT "Generating parser.c")
 
-add_library(tree-sitter-rdf12-trig src/parser.c)
+add_library(tree-sitter-trig src/parser.c)
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/src/scanner.c)
-  target_sources(tree-sitter-rdf12-trig PRIVATE src/scanner.c)
+  target_sources(tree-sitter-trig PRIVATE src/scanner.c)
 endif()
-target_include_directories(tree-sitter-rdf12-trig
+target_include_directories(tree-sitter-trig
                            PRIVATE src
                            INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/bindings/c>
                                      $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
-target_compile_definitions(tree-sitter-rdf12-trig PRIVATE
+target_compile_definitions(tree-sitter-trig PRIVATE
                            $<$<BOOL:${TREE_SITTER_REUSE_ALLOCATOR}>:TREE_SITTER_REUSE_ALLOCATOR>
                            $<$<CONFIG:Debug>:TREE_SITTER_DEBUG>)
 
-set_target_properties(tree-sitter-rdf12-trig
+set_target_properties(tree-sitter-trig
                       PROPERTIES
                       C_STANDARD 11
                       POSITION_INDEPENDENT_CODE ON
                       SOVERSION "${TREE_SITTER_ABI_VERSION}.${PROJECT_VERSION_MAJOR}"
                       DEFINE_SYMBOL "")
 
-configure_file(bindings/c/tree-sitter-rdf12-trig.pc.in
-               "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-rdf12-trig.pc" @ONLY)
+configure_file(bindings/c/tree-sitter-trig.pc.in
+               "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-trig.pc" @ONLY)
 
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bindings/c/tree_sitter"
         DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
         FILES_MATCHING PATTERN "*.h")
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-rdf12-trig.pc"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-trig.pc"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
-install(TARGETS tree-sitter-rdf12-trig
+install(TARGETS tree-sitter-trig
         LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 
 file(GLOB QUERIES queries/*.scm)
 install(FILES ${QUERIES}
-        DESTINATION "${CMAKE_INSTALL_DATADIR}/tree-sitter/queries/rdf12-trig")
+        DESTINATION "${CMAKE_INSTALL_DATADIR}/tree-sitter/queries/trig")
 
 add_custom_target(ts-test "${TREE_SITTER_CLI}" test
                   WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"

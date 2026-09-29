@@ -9,8 +9,7 @@
         "nt"
       ],
       "injection-regex": "(n-triples|n_triples|ntriples|nt)",
-      "highlights": "queries/highlights.scm",
-      "tags": "queries/tags.scm"
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {

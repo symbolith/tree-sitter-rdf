@@ -1,0 +1,5 @@
+[
+  (blankNodePropertyList)
+  (collection)
+  (graph)
+] @fold

@@ -3,7 +3,7 @@ import common from '../common/rules.js';
 const WS = common.WS
 
 export default grammar({
-  name: 'trig',
+  name: 'rdf11_trig',
 
   extras: $ => [
     $.comment,
@@ -28,12 +28,12 @@ export default grammar({
 
     trigDoc: $ => repeat(choice(
       $.directive,
-      $._block
+      $.block
     )),
 
     comment: common.comment,
 
-    _block: $ => choice(
+    block: $ => choice(
       seq(
         $.triples,
         "."

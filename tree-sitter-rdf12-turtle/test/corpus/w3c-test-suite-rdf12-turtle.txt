@@ -96,21 +96,23 @@ _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies> <<( _:b0 <http://examp
 ---
 
 (turtleDoc
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (tripleTerm
-          subject: (BLANK_NODE_LABEL)
-          predicate: (IRIREF)
-          object: (IRIREF))))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (tripleTerm
+            subject: (BLANK_NODE_LABEL)
+            predicate: (IRIREF)
+            object: (IRIREF)))))))
 
 ===============
 nt-ttl12-langdir-1
@@ -119,15 +121,16 @@ nt-ttl12-langdir-1
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG)
-          base_direction: (BASE_DIRECTION))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)
+            base_direction: (BASE_DIRECTION)))))))
 
 ===============
 nt-ttl12-langdir-2
@@ -136,15 +139,16 @@ nt-ttl12-langdir-2
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG)
-          base_direction: (BASE_DIRECTION))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)
+            base_direction: (BASE_DIRECTION)))))))
 
 ===============
 nt-ttl12-langdir-bad-1
@@ -173,33 +177,36 @@ nt-ttl12-nested-1
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (tripleTerm
-          subject: (IRIREF)
-          predicate: (IRIREF)
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
           object: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (tripleTerm
-          subject: (IRIREF)
-          predicate: (IRIREF)
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
           object: (tripleTerm
             subject: (IRIREF)
             predicate: (IRIREF)
-            object: (IRIREF)))))))
+            object: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (tripleTerm
+            subject: (IRIREF)
+            predicate: (IRIREF)
+            object: (tripleTerm
+              subject: (IRIREF)
+              predicate: (IRIREF)
+              object: (IRIREF))))))))
 
 ===============
 nt-ttl12-syntax-1
@@ -208,15 +215,16 @@ nt-ttl12-syntax-1
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (tripleTerm
-          subject: (IRIREF)
-          predicate: (IRIREF)
-          object: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (tripleTerm
+            subject: (IRIREF)
+            predicate: (IRIREF)
+            object: (IRIREF)))))))
 
 ===============
 nt-ttl12-syntax-2
@@ -225,15 +233,16 @@ nt-ttl12-syntax-2
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (tripleTerm
-          subject: (IRIREF)
-          predicate: (IRIREF)
-          object: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (tripleTerm
+            subject: (IRIREF)
+            predicate: (IRIREF)
+            object: (IRIREF)))))))
 
 ===============
 nt-ttl12-syntax-3
@@ -242,18 +251,19 @@ nt-ttl12-syntax-3
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (tripleTerm
-          subject: (IRIREF)
-          predicate: (IRIREF)
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
           object: (tripleTerm
             subject: (IRIREF)
             predicate: (IRIREF)
-            object: (IRIREF)))))))
+            object: (tripleTerm
+              subject: (IRIREF)
+              predicate: (IRIREF)
+              object: (IRIREF))))))))
 
 ===============
 turtle12-annotation-1
@@ -264,20 +274,22 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (annotationBlock
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (annotationBlock
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle12-annotation-2
@@ -295,44 +307,47 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (annotationBlock
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (blankNodePropertyList
-                (predicateObjectList
-                  predicate: (PrefixedName)
-                  (objectList
-                    object: (IRIREF))
-                  predicate: (PrefixedName)
-                  (objectList
-                    object: (RDFLiteral
-                      string: (STRING_LITERAL_QUOTE)
-                      datatype_iri: (PrefixedName))))))
-            predicate: (PrefixedName)
-            (objectList
-              object: (blankNodePropertyList
-                (predicateObjectList
-                  predicate: (PrefixedName)
-                  (objectList
-                    object: (IRIREF))
-                  predicate: (PrefixedName)
-                  (objectList
-                    object: (RDFLiteral
-                      string: (STRING_LITERAL_QUOTE)
-                      datatype_iri: (PrefixedName))))))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (annotationBlock
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (blankNodePropertyList
+                  (predicateObjectList
+                    predicate: (PrefixedName)
+                    (objectList
+                      object: (IRIREF))
+                    predicate: (PrefixedName)
+                    (objectList
+                      object: (RDFLiteral
+                        string: (STRING_LITERAL_QUOTE)
+                        datatype_iri: (PrefixedName))))))
+              predicate: (PrefixedName)
+              (objectList
+                object: (blankNodePropertyList
+                  (predicateObjectList
+                    predicate: (PrefixedName)
+                    (objectList
+                      object: (IRIREF))
+                    predicate: (PrefixedName)
+                    (objectList
+                      object: (RDFLiteral
+                        string: (STRING_LITERAL_QUOTE)
+                        datatype_iri: (PrefixedName)))))))))))))
 
 ===============
 turtle12-annotation-3
@@ -343,23 +358,25 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (annotationBlock
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (annotationBlock
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName))
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle12-annotation-4
@@ -370,23 +387,25 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (annotationBlock
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName)))))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (annotationBlock
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-annotation-5
@@ -397,17 +416,19 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (reifier
-          (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (reifier
+            (PrefixedName)))))))
 
 ===============
 turtle12-annotation-6
@@ -418,16 +439,18 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (reifier)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (reifier))))))
 
 ===============
 turtle12-annotation-7
@@ -438,22 +461,24 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (reifier
-          (PrefixedName))
-        annotation: (annotationBlock
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (reifier
+            (PrefixedName))
+          annotation: (annotationBlock
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle12-annotation-8
@@ -464,21 +489,23 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        annotation: (reifier)
-        annotation: (annotationBlock
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          annotation: (reifier)
+          annotation: (annotationBlock
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle12-syntax-bad-01
@@ -594,24 +621,27 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
       subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (PrefixedName))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-basic-02
@@ -623,24 +653,27 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (reifiedTriple
-          subject: (PrefixedName)
-          predicate: (PrefixedName)
-          object: (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))))))
 
 ===============
 turtle12-syntax-basic-03
@@ -651,18 +684,20 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (tripleTerm
-          subject: (PrefixedName)
-          predicate: (PrefixedName)
-          object: (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (tripleTerm
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)))))))
 
 ===============
 turtle12-syntax-basic-04
@@ -674,20 +709,23 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
       subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (PrefixedName))))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (PrefixedName)))))
 
 ===============
 turtle12-syntax-bnode-01
@@ -699,24 +737,27 @@ _:a :p :o .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
       subject: (BLANK_NODE_LABEL)
-      predicate: (PrefixedName)
-      object: (PrefixedName))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (BLANK_NODE_LABEL)
+        predicate: (PrefixedName)
+        object: (PrefixedName))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-bnode-02
@@ -728,24 +769,27 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (BLANK_NODE_LABEL))))
-  (triples
-    (reifiedTriple
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
       subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (BLANK_NODE_LABEL))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
+        object: (BLANK_NODE_LABEL))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-bnode-03
@@ -756,18 +800,20 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    (reifiedTriple
-      subject: (ANON)
-      predicate: (PrefixedName)
-      object: (ANON))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (ANON)
+        predicate: (PrefixedName)
+        object: (ANON))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-syntax-compound
@@ -786,66 +832,72 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
       subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (PrefixedName))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
-      subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (PrefixedName))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (reifiedTriple
-          subject: (PrefixedName)
-          predicate: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
           object: (PrefixedName)))))
-  (triples
-    (reifiedTriple
-      subject: (reifiedTriple
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
         subject: (PrefixedName)
         predicate: (PrefixedName)
         object: (PrefixedName))
-      predicate: (PrefixedName)
-      object: (reifiedTriple
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
         subject: (PrefixedName)
         predicate: (PrefixedName)
-        object: (PrefixedName)))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (reifiedTriple
-          subject: (reifiedTriple
-            subject: (PrefixedName)
-            predicate: (PrefixedName)
-            object: (PrefixedName))
-          predicate: (PrefixedName)
+        object: (PrefixedName))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
           object: (reifiedTriple
             subject: (PrefixedName)
             predicate: (PrefixedName)
-            object: (PrefixedName)))))))
+            object: (PrefixedName))))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        object: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (reifiedTriple
+            subject: (reifiedTriple
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName))
+            predicate: (PrefixedName)
+            object: (reifiedTriple
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName))))))))
 
 ===============
 turtle12-syntax-inside-01
@@ -857,28 +909,31 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (blankNodePropertyList
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
       (predicateObjectList
         predicate: (PrefixedName)
         (objectList
-          object: (reifiedTriple
-            subject: (PrefixedName)
-            predicate: (PrefixedName)
-            object: (PrefixedName)))))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (reifiedTriple
+              subject: (PrefixedName)
+              predicate: (PrefixedName)
+              object: (PrefixedName)))))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-syntax-inside-02
@@ -891,35 +946,39 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (collection
-      (reifiedTriple
-        subject: (PrefixedName)
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
         predicate: (PrefixedName)
-        object: (PrefixedName))
-      (reifiedTriple
-        subject: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
         predicate: (PrefixedName)
-        object: (PrefixedName)))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (collection
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName)))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-inside-03
@@ -931,26 +990,29 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (reifiedTriple
-          subject: (PrefixedName)
-          predicate: (PrefixedName)
-          object: (PrefixedName)
-          (reifier
-            (PrefixedName))))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)
+            (reifier
+              (PrefixedName)))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-inside-04
@@ -962,26 +1024,29 @@ _:id :q 123 .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (reifiedTriple
-          subject: (PrefixedName)
-          predicate: (PrefixedName)
-          object: (PrefixedName)
-          (reifier
-            (BLANK_NODE_LABEL))))))
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName)
+            (reifier
+              (BLANK_NODE_LABEL)))))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-nested-01
@@ -996,36 +1061,40 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
       subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (PrefixedName))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (reifiedTriple
-      subject: (reifiedTriple
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
         subject: (PrefixedName)
         predicate: (PrefixedName)
         object: (PrefixedName))
-      predicate: (PrefixedName)
-      object: (PrefixedName))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (reifiedTriple
+          subject: (PrefixedName)
+          predicate: (PrefixedName)
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        object: (PrefixedName))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-syntax-nested-02
@@ -1038,36 +1107,40 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (reifiedTriple
+            subject: (PrefixedName)
+            predicate: (PrefixedName)
+            object: (PrefixedName))))))
+  (statement
+    (triples
+      (reifiedTriple
+        subject: (PrefixedName)
+        predicate: (PrefixedName)
         object: (reifiedTriple
           subject: (PrefixedName)
           predicate: (PrefixedName)
-          object: (PrefixedName)))))
-  (triples
-    (reifiedTriple
-      subject: (PrefixedName)
-      predicate: (PrefixedName)
-      object: (reifiedTriple
-        subject: (PrefixedName)
+          object: (PrefixedName)))
+      (predicateObjectList
         predicate: (PrefixedName)
-        object: (PrefixedName)))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-01
@@ -1079,17 +1152,20 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-02
@@ -1101,17 +1177,20 @@ turtle12-version-02
 ---
 
 (turtleDoc
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-03
@@ -1125,23 +1204,27 @@ VERSION "1.2"
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-04
@@ -1156,23 +1239,27 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-05
@@ -1184,17 +1271,20 @@ VERSION "1.2-basic"
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-06
@@ -1206,17 +1296,20 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (version
-    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-07
@@ -1229,19 +1322,23 @@ VERSION "1.2"
 ---
 
 (turtleDoc
-  (version
-    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle12-version-08
@@ -1268,45 +1365,58 @@ version "abc"
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER))))
-  (version
-    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
-  (version
-    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
-  (version
-    versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER))))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (version
-    versionSpecifier: (STRING_LITERAL_QUOTE))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_SINGLE_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (version
+      versionSpecifier: (STRING_LITERAL_QUOTE)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle12-version-bad-01

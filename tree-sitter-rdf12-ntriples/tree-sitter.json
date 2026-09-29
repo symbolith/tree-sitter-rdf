@@ -1,16 +1,15 @@
 {
   "grammars": [
     {
-      "name": "rdf12_ntriples",
-      "camelcase": "Rdf12Ntriples",
-      "title": "RDF 1.2 N-Triples",
+      "name": "ntriples",
+      "camelcase": "Ntriples",
+      "title": "N-Triples",
       "scope": "source.ntriples",
       "file-types": [
         "nt"
       ],
       "injection-regex": "(n-triples|n_triples|ntriples|nt)",
-      "highlights": "queries/highlights.scm",
-      "tags": "queries/tags.scm"
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {

@@ -1,9 +1,9 @@
 {
   "grammars": [
     {
-      "name": "rdf12_turtle",
-      "camelcase": "Rdf12Turtle",
-      "title": "RDF 1.2 Turtle",
+      "name": "turtle",
+      "camelcase": "Turtle",
+      "title": "Turtle",
       "scope": "source.turtle",
       "file-types": [
         "ttl"

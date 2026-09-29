@@ -10,7 +10,7 @@ SUBDIRS := tree-sitter-rdf11-ntriples \
 
 test: build
 	@for dir in $(SUBDIRS); do \
-		(cd $$dir && $(MAKE) test) \
+		(cd $$dir && $(MAKE) test) || exit 1; \
 	done
 
 build: clean
@@ -18,7 +18,8 @@ build: clean
 		(cd $$dir && \
 		 tree-sitter init && \
 		 tree-sitter generate && \
-		 tree-sitter build --wasm) \
+		 tree-sitter build --wasm && \
+		 tree-sitter build) || exit 1; \
 	done
 
 clean:
@@ -44,4 +45,18 @@ update-test: build
 		(cd $$dir && $(MAKE) test TEST_FLAGS=--update) \
 	done
 
-.PHONY: build test clean update-tests
+test-highlight: build
+	@for file in */test/highlight/highlights.* */test/highlight.*; do \
+		[ -f "$$file" ] || continue; \
+		printf '\n\033[1;34m=== %s ===\033[0m\n' "$$file"; \
+		dir=$${file%%/*}; \
+		rest=$${file#*/}; \
+		(cd $$dir && tree-sitter highlight $$rest) || exit 1; \
+	done
+
+release-%:
+	@version=$$(jq -r '.metadata.version' tree-sitter-$*/tree-sitter.json) && \
+	git tag "$*-v$$version" && \
+	git push origin "$*-v$$version"
+
+.PHONY: build test clean update-test test-highlight

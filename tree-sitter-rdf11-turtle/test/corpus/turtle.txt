@@ -7,12 +7,13 @@ Simple triple
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===
 Multiple triple
@@ -25,18 +26,20 @@ Multiple triple
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===
 Triple term
@@ -59,12 +62,13 @@ Comment
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
   (comment))
 
 ================
@@ -83,32 +87,34 @@ Predicate lists
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))
-      (objectList
-        object: (IRIREF))
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))
-      (objectList
-        object: (IRIREF))
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))
+        (objectList
+          object: (IRIREF))
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))
+        (objectList
+          object: (IRIREF))
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)
+          object: (IRIREF))))))
 
 =============
 Object lists
@@ -119,16 +125,17 @@ Object lists
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 =============
 Absolute iri
@@ -139,12 +146,13 @@ Absolute iri
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ============
 Relative iri
@@ -155,12 +163,13 @@ Relative iri
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ==============
 Prefixed name
@@ -171,12 +180,13 @@ p:subject3 p:predicate3 p:object3 .
 ---
 
 (turtleDoc
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 =============
 Empty prefix
@@ -187,11 +197,12 @@ Empty prefix
 ---
 
 (turtleDoc
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName))))))
 
 =================
 Multi-script iri
@@ -202,11 +213,12 @@ Multi-script iri
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName))))))
 
 =====
 Base
@@ -219,12 +231,15 @@ BAse <http://one.example/>
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (base
-    iri: (IRIREF))
-  (base
-    iri: (IRIREF)))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (base
+      iri: (IRIREF))))
 
 =======
 Prefix
@@ -235,9 +250,10 @@ Prefix
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF))))
 
 ================
 Quoted literals
@@ -250,29 +266,32 @@ show:218 rdfs:label "That Seventies Show" .
 ---
 
 (turtleDoc
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (PrefixedName)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (PrefixedName))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 =============
 Language Tag
@@ -283,14 +302,15 @@ show:218 show:localName 'That Seventies Show'@fr-be .
 ---
 
 (turtleDoc
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 =======================
 Literal with new lines
@@ -303,13 +323,14 @@ and up to two sequential apostrophes ('').''' .
 ---
 
 (turtleDoc
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 =================
 String with Hash
@@ -320,13 +341,14 @@ String with Hash
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ========
 Numbers
@@ -340,20 +362,21 @@ Numbers
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER))
-      (comment)
-      predicate: (PrefixedName)
-      (objectList
-        object: (DECIMAL))
-      (comment)
-      predicate: (PrefixedName)
-      (objectList
-        object: (DOUBLE))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))
+        (comment)
+        predicate: (PrefixedName)
+        (objectList
+          object: (DECIMAL))
+        (comment)
+        predicate: (PrefixedName)
+        (objectList
+          object: (DOUBLE)))))
   (comment))
 
 =========
@@ -365,12 +388,13 @@ Booleans
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (BooleanLiteral)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (BooleanLiteral))))))
 
 ============
 Blank nodes
@@ -381,12 +405,13 @@ _:alice foaf:knows _:bob .
 ---
 
 (turtleDoc
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (BLANK_NODE_LABEL))))))
 
 ===================
 Nested blank nodes
@@ -397,17 +422,18 @@ Nested blank nodes
 ---
 
 (turtleDoc
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (RDFLiteral
-                string: (STRING_LITERAL_QUOTE)))))))))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (RDFLiteral
+                  string: (STRING_LITERAL_QUOTE))))))))))
 
 ============
 Collections
@@ -418,15 +444,16 @@ Collections
 ---
 
 (turtleDoc
-  (triples
-    subject: (collection)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (PrefixedName)
-          (PrefixedName)
-          (PrefixedName))))))
+  (statement
+    (triples
+      subject: (collection)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (PrefixedName)
+            (PrefixedName)
+            (PrefixedName)))))))
 
 ===
 Verb
@@ -437,11 +464,12 @@ Verb
 ---
 
 (turtleDoc
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName))))))
 
 ===
 Escape sequences
@@ -452,13 +480,14 @@ Escape sequences
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ==============
 Hex sequences
@@ -469,9 +498,10 @@ Hex sequences
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))

@@ -25,10 +25,10 @@ type NodeInfo =
  *
  * @example
  * import Parser from "tree-sitter";
- * import Rdf12Trig from "tree-sitter-rdf12-trig";
+ * import Trig from "tree-sitter-trig";
  *
  * const parser = new Parser();
- * parser.setLanguage(Rdf12Trig);
+ * parser.setLanguage(Trig);
  */
 declare const binding: {
   /**

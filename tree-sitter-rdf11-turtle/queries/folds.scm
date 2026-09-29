@@ -1,0 +1,4 @@
+[
+  (blankNodePropertyList)
+  (collection)
+] @fold

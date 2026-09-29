@@ -5,12 +5,13 @@ anonymous_blank_node_object
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (ANON)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (ANON))))))
 
 ===============
 anonymous_blank_node_subject
@@ -19,12 +20,13 @@ anonymous_blank_node_subject
 ---
 
 (turtleDoc
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 bareword_a_predicate
@@ -33,11 +35,12 @@ bareword_a_predicate
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 bareword_decimal
@@ -46,12 +49,13 @@ bareword_decimal
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 bareword_double
@@ -60,12 +64,13 @@ bareword_double
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 bareword_integer
@@ -74,12 +79,13 @@ bareword_integer
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 blankNodePropertyList_as_object_containing_objectList_of_two_objects
@@ -89,17 +95,18 @@ blankNodePropertyList_as_object_containing_objectList_of_two_objects
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (IRIREF)
-            (objectList
-              object: (IRIREF))))
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (IRIREF)
+              (objectList
+                object: (IRIREF))))
+          object: (IRIREF))))))
 
 ===============
 blankNodePropertyList_as_object_containing_objectList
@@ -108,17 +115,18 @@ blankNodePropertyList_as_object_containing_objectList
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (IRIREF)
-            (objectList
-              object: (IRIREF)
-              object: (IRIREF))))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (IRIREF)
+              (objectList
+                object: (IRIREF)
+                object: (IRIREF)))))))))
 
 ===============
 blankNodePropertyList_as_object
@@ -127,16 +135,17 @@ blankNodePropertyList_as_object
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (IRIREF)
-            (objectList
-              object: (IRIREF))))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (IRIREF)
+              (objectList
+                object: (IRIREF)))))))))
 
 ===============
 blankNodePropertyList_as_subject
@@ -145,16 +154,17 @@ blankNodePropertyList_as_subject
 ---
 
 (turtleDoc
-  (triples
-    (blankNodePropertyList
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (IRIREF)
+          (objectList
+            object: (IRIREF))))
       (predicateObjectList
         predicate: (IRIREF)
         (objectList
-          object: (IRIREF))))
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+          object: (IRIREF))))))
 
 ===============
 blankNodePropertyList_containing_collection
@@ -163,13 +173,14 @@ blankNodePropertyList_containing_collection
 ---
 
 (turtleDoc
-  (triples
-    (blankNodePropertyList
-      (predicateObjectList
-        predicate: (IRIREF)
-        (objectList
-          object: (collection
-            (INTEGER)))))))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (IRIREF)
+          (objectList
+            object: (collection
+              (INTEGER))))))))
 
 ===============
 blankNodePropertyList_with_multiple_triples
@@ -178,19 +189,20 @@ blankNodePropertyList_with_multiple_triples
 ---
 
 (turtleDoc
-  (triples
-    (blankNodePropertyList
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (IRIREF)
+          (objectList
+            object: (IRIREF))
+          predicate: (IRIREF)
+          (objectList
+            object: (IRIREF))))
       (predicateObjectList
         predicate: (IRIREF)
         (objectList
-          object: (IRIREF))
-        predicate: (IRIREF)
-        (objectList
-          object: (IRIREF))))
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+          object: (IRIREF))))))
 
 ===============
 collection_object
@@ -199,13 +211,14 @@ collection_object
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (collection
-          (INTEGER))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (collection
+            (INTEGER)))))))
 
 ===============
 collection_subject
@@ -214,13 +227,14 @@ collection_subject
 ---
 
 (turtleDoc
-  (triples
-    subject: (collection
-      (INTEGER))
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (collection
+        (INTEGER))
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 comment_following_localName
@@ -231,16 +245,18 @@ comment_following_localName
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName))))
-  (comment))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))
+    (comment)))
 
 ===============
 comment_following_PNAME_NS
@@ -251,16 +267,18 @@ comment_following_PNAME_NS
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName))))
-  (comment))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))
+    (comment)))
 
 ===============
 default_namespace_IRI
@@ -270,15 +288,17 @@ default_namespace_IRI
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 double_lower_case_e
@@ -287,12 +307,13 @@ double_lower_case_e
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 empty_collection
@@ -301,12 +322,13 @@ empty_collection
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (collection)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (collection))))))
 
 ===============
 first
@@ -315,15 +337,16 @@ first
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (collection
-          (collection
-            (INTEGER))
-          (INTEGER))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (collection
+            (collection
+              (INTEGER))
+            (INTEGER)))))))
 
 ===============
 HYPHEN_MINUS_in_localName
@@ -333,15 +356,17 @@ p:s- <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 IRIREF_datatype
@@ -350,14 +375,15 @@ IRIREF_datatype
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF)))))))
 
 ===============
 IRI-resolution-01
@@ -416,254 +442,296 @@ IRI-resolution-01
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
   (comment)
   (comment)
   (comment)
@@ -727,254 +795,296 @@ IRI-resolution-02
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
   (comment)
   (comment)
   (comment)
@@ -1032,260 +1142,303 @@ IRI-resolution-07
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 IRI-resolution-08
@@ -1310,84 +1463,99 @@ IRI-resolution-08
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 IRI_subject
@@ -1396,12 +1564,13 @@ IRI_subject
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 IRI_with_all_punctuation
@@ -1410,12 +1579,13 @@ IRI_with_all_punctuation
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 IRI_with_eight_digit_numeric_escape
@@ -1424,12 +1594,13 @@ IRI_with_eight_digit_numeric_escape
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 IRI_with_four_digit_numeric_escape
@@ -1438,12 +1609,13 @@ IRI_with_four_digit_numeric_escape
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 labeled_blank_node_object
@@ -1452,12 +1624,13 @@ labeled_blank_node_object
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BLANK_NODE_LABEL))))))
 
 ===============
 labeled_blank_node_subject
@@ -1466,12 +1639,13 @@ _:s <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 labeled_blank_node_with_leading_digit
@@ -1480,12 +1654,13 @@ labeled_blank_node_with_leading_digit
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BLANK_NODE_LABEL))))))
 
 ===============
 labeled_blank_node_with_leading_underscore
@@ -1494,12 +1669,13 @@ labeled_blank_node_with_leading_underscore
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BLANK_NODE_LABEL))))))
 
 ===============
 labeled_blank_node_with_non_leading_extras
@@ -1508,12 +1684,13 @@ labeled_blank_node_with_non_leading_extras
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BLANK_NODE_LABEL))))))
 
 ===============
 labeled_blank_node_with_PN_CHARS_BASE_character_boundaries
@@ -1522,12 +1699,13 @@ labeled_blank_node_with_PN_CHARS_BASE_character_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BLANK_NODE_LABEL))))))
 
 ===============
 langtagged_LONG
@@ -1536,14 +1714,15 @@ langtagged_LONG
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 langtagged_LONG_with_subtag
@@ -1555,17 +1734,19 @@ langtagged_LONG_with_subtag
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 langtagged_non_LONG
@@ -1574,14 +1755,15 @@ langtagged_non_LONG
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 lantag_with_subtag
@@ -1590,14 +1772,15 @@ lantag_with_subtag
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 last
@@ -1606,15 +1789,16 @@ last
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (collection
-          (INTEGER)
-          (collection
-            (INTEGER)))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (collection
+            (INTEGER)
+            (collection
+              (INTEGER))))))))
 
 ===============
 LITERAL1_all_controls
@@ -1623,13 +1807,14 @@ LITERAL1_all_controls
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL1_all_punctuation
@@ -1638,13 +1823,14 @@ LITERAL1_all_punctuation
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL1_ascii_boundaries
@@ -1653,13 +1839,14 @@ LITERAL1_ascii_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL1
@@ -1668,13 +1855,14 @@ LITERAL1
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL1_with_UTF8_boundaries
@@ -1683,13 +1871,14 @@ LITERAL1_with_UTF8_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL2_ascii_boundaries
@@ -1698,13 +1887,14 @@ LITERAL2_ascii_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 LITERAL2
@@ -1713,13 +1903,14 @@ LITERAL2
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 LITERAL2_with_UTF8_boundaries
@@ -1728,13 +1919,14 @@ LITERAL2_with_UTF8_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 literal_false
@@ -1743,12 +1935,13 @@ literal_false
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BooleanLiteral)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BooleanLiteral))))))
 
 ===============
 LITERAL_LONG1_ascii_boundaries
@@ -1757,13 +1950,14 @@ LITERAL_LONG1_ascii_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL_LONG1
@@ -1772,13 +1966,14 @@ LITERAL_LONG1
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL_LONG1_with_1_squote
@@ -1787,13 +1982,14 @@ LITERAL_LONG1_with_1_squote
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL_LONG1_with_2_squotes
@@ -1802,13 +1998,14 @@ LITERAL_LONG1_with_2_squotes
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL_LONG1_with_UTF8_boundaries
@@ -1817,13 +2014,14 @@ LITERAL_LONG1_with_UTF8_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 LITERAL_LONG2_ascii_boundaries
@@ -1832,13 +2030,14 @@ LITERAL_LONG2_ascii_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 LITERAL_LONG2
@@ -1847,13 +2046,14 @@ LITERAL_LONG2
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 LITERAL_LONG2_with_1_squote
@@ -1862,13 +2062,14 @@ LITERAL_LONG2_with_1_squote
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 LITERAL_LONG2_with_2_squotes
@@ -1877,13 +2078,14 @@ LITERAL_LONG2_with_2_squotes
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 LITERAL_LONG2_with_REVERSE_SOLIDUS
@@ -1894,16 +2096,18 @@ LITERAL_LONG2_with_REVERSE_SOLIDUS
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 LITERAL_LONG2_with_UTF8_boundaries
@@ -1912,13 +2116,14 @@ LITERAL_LONG2_with_UTF8_boundaries
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 literal_true
@@ -1927,12 +2132,13 @@ literal_true
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BooleanLiteral)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BooleanLiteral))))))
 
 ===============
 literal_with_BACKSPACE
@@ -1941,13 +2147,14 @@ literal_with_BACKSPACE
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_CARRIAGE_RETURN
@@ -1956,13 +2163,14 @@ literal_with_CARRIAGE_RETURN
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_CHARACTER_TABULATION
@@ -1971,13 +2179,14 @@ literal_with_CHARACTER_TABULATION
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_escaped_BACKSPACE
@@ -1986,13 +2195,14 @@ literal_with_escaped_BACKSPACE
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_escaped_CARRIAGE_RETURN
@@ -2001,13 +2211,14 @@ literal_with_escaped_CARRIAGE_RETURN
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_escaped_CHARACTER_TABULATION
@@ -2016,13 +2227,14 @@ literal_with_escaped_CHARACTER_TABULATION
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_escaped_FORM_FEED
@@ -2031,13 +2243,14 @@ literal_with_escaped_FORM_FEED
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_escaped_LINE_FEED
@@ -2046,13 +2259,14 @@ literal_with_escaped_LINE_FEED
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_FORM_FEED
@@ -2061,13 +2275,14 @@ literal_with_FORM_FEED
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_LINE_FEED
@@ -2077,13 +2292,14 @@ literal_with_LINE_FEED
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_numeric_escape4
@@ -2092,13 +2308,14 @@ literal_with_numeric_escape4
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_numeric_escape8
@@ -2107,13 +2324,14 @@ literal_with_numeric_escape8
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 literal_with_REVERSE_SOLIDUS
@@ -2122,13 +2340,14 @@ literal_with_REVERSE_SOLIDUS
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 localName_with_assigned_nfc_bmp_PN_CHARS_BASE_character_boundaries
@@ -2138,15 +2357,17 @@ localName_with_assigned_nfc_bmp_PN_CHARS_BASE_character_boundaries
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 localName_with_assigned_nfc_PN_CHARS_BASE_character_boundaries
@@ -2156,15 +2377,17 @@ localName_with_assigned_nfc_PN_CHARS_BASE_character_boundaries
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 localname_with_COLON
@@ -2174,15 +2397,17 @@ p:s: <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 localName_with_leading_digit
@@ -2192,15 +2417,17 @@ p:0 <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 localName_with_leading_underscore
@@ -2210,15 +2437,17 @@ p:_ <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 localName_with_nfc_PN_CHARS_BASE_character_boundaries
@@ -2228,15 +2457,17 @@ localName_with_nfc_PN_CHARS_BASE_character_boundaries
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 localName_with_non_leading_extras
@@ -2246,15 +2477,17 @@ p:a·̀ͯ‿.⁀ <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 localName_with_PN_CHARS_BASE_character_boundaries
@@ -2264,15 +2497,17 @@ localName_with_PN_CHARS_BASE_character_boundaries
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 negative_numeric
@@ -2281,12 +2516,13 @@ negative_numeric
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 nested_blankNodePropertyLists
@@ -2295,19 +2531,20 @@ nested_blankNodePropertyLists
 ---
 
 (turtleDoc
-  (triples
-    (blankNodePropertyList
-      (predicateObjectList
-        predicate: (IRIREF)
-        (objectList
-          object: (blankNodePropertyList
-            (predicateObjectList
-              predicate: (IRIREF)
-              (objectList
-                object: (IRIREF)))))
-        predicate: (IRIREF)
-        (objectList
-          object: (IRIREF))))))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (IRIREF)
+          (objectList
+            object: (blankNodePropertyList
+              (predicateObjectList
+                predicate: (IRIREF)
+                (objectList
+                  object: (IRIREF)))))
+          predicate: (IRIREF)
+          (objectList
+            object: (IRIREF)))))))
 
 ===============
 nested_collection
@@ -2316,14 +2553,15 @@ nested_collection
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (collection
-          (collection
-            (INTEGER)))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (collection
+            (collection
+              (INTEGER))))))))
 
 ===============
 number_sign_following_localName
@@ -2334,15 +2572,17 @@ number_sign_following_localName
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 number_sign_following_PNAME_NS
@@ -2353,15 +2593,17 @@ number_sign_following_PNAME_NS
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 numeric_with_leading_0
@@ -2370,12 +2612,13 @@ numeric_with_leading_0
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 objectList_with_two_objects
@@ -2384,13 +2627,14 @@ objectList_with_two_objects
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)
+          object: (IRIREF))))))
 
 ===============
 old_style_base
@@ -2400,14 +2644,16 @@ old_style_base
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 old_style_prefix
@@ -2417,15 +2663,17 @@ p:s <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 percent_escaped_localName
@@ -2435,15 +2683,17 @@ p:%25 <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 positive_numeric
@@ -2452,12 +2702,13 @@ positive_numeric
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 predicateObjectList_with_blankNodePropertyList_as_object
@@ -2468,24 +2719,25 @@ predicateObjectList_with_blankNodePropertyList_as_object
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (IRIREF)
-            (objectList
-              object: (IRIREF)))))
-      predicate: (IRIREF)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (IRIREF)
-            (objectList
-              object: (IRIREF)
-              object: (IRIREF))))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (IRIREF)
+              (objectList
+                object: (IRIREF)))))
+        predicate: (IRIREF)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (IRIREF)
+              (objectList
+                object: (IRIREF)
+                object: (IRIREF)))))))))
 
 ===============
 predicateObjectList_with_two_objectLists
@@ -2494,15 +2746,16 @@ predicateObjectList_with_two_objectLists
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 prefixed_IRI_object
@@ -2512,15 +2765,17 @@ prefixed_IRI_object
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 prefixed_IRI_predicate
@@ -2530,15 +2785,17 @@ prefixed_IRI_predicate
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 prefixed_name_datatype
@@ -2548,17 +2805,19 @@ prefixed_name_datatype
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (PrefixedName)))))))
 
 ===============
 prefix_only_IRI
@@ -2568,15 +2827,17 @@ p: <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 prefix_reassigned_and_used
@@ -2587,18 +2848,21 @@ p:s <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 prefix_with_non_leading_extras
@@ -2608,15 +2872,17 @@ a·̀ͯ‿.⁀:s <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 prefix_with_PN_CHARS_BASE_character_boundaries
@@ -2626,15 +2892,17 @@ prefix_with_PN_CHARS_BASE_character_boundaries
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 repeated_semis_at_end
@@ -2643,15 +2911,16 @@ repeated_semis_at_end
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 repeated_semis_not_at_end
@@ -2660,12 +2929,13 @@ repeated_semis_not_at_end
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 reserved_escaped_localName
@@ -2675,15 +2945,17 @@ p:\_\~\.\-\!\$\&\'\(\)\*\+\,\;\=\/\?\#\@\%00 <http://a.example/p> <http://a.exam
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 sole_blankNodePropertyList
@@ -2692,12 +2964,13 @@ sole_blankNodePropertyList
 ---
 
 (turtleDoc
-  (triples
-    (blankNodePropertyList
-      (predicateObjectList
-        predicate: (IRIREF)
-        (objectList
-          object: (IRIREF))))))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (IRIREF)
+          (objectList
+            object: (IRIREF)))))))
 
 ===============
 SPARQL_style_base
@@ -2707,14 +2980,16 @@ BASE <http://a.example/>
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 SPARQL_style_prefix
@@ -2724,15 +2999,17 @@ p:s <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 test-38
@@ -2746,16 +3023,18 @@ test-38
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-eval-bad-01
@@ -2805,15 +3084,17 @@ turtle-eval-lists-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection))))))
 
 ===============
 turtle-eval-lists-02
@@ -2823,19 +3104,21 @@ turtle-eval-lists-02
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (INTEGER)
-          (RDFLiteral
-            string: (STRING_LITERAL_QUOTE))
-          (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (INTEGER)
+            (RDFLiteral
+              string: (STRING_LITERAL_QUOTE))
+            (PrefixedName)))))))
 
 ===============
 turtle-eval-lists-03
@@ -2845,17 +3128,19 @@ turtle-eval-lists-03
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (collection
-      (INTEGER))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (INTEGER))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (collection
+        (INTEGER))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (INTEGER)))))))
 
 ===============
 turtle-eval-lists-04
@@ -2865,17 +3150,19 @@ turtle-eval-lists-04
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (collection
-      (collection))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (collection))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (collection
+        (collection))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (collection)))))))
 
 ===============
 turtle-eval-lists-05
@@ -2885,26 +3172,28 @@ turtle-eval-lists-05
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (collection
-      (INTEGER)
-      (INTEGER)
-      (collection
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (collection
         (INTEGER)
-        (INTEGER)))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (collection
+        (INTEGER)
+        (collection
+          (INTEGER)
+          (INTEGER)))
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (collection
+              (RDFLiteral
+                string: (STRING_LITERAL_QUOTE)))
             (RDFLiteral
-              string: (STRING_LITERAL_QUOTE)))
-          (RDFLiteral
-            string: (STRING_LITERAL_QUOTE))
-          (PrefixedName))))))
+              string: (STRING_LITERAL_QUOTE))
+            (PrefixedName)))))))
 
 ===============
 turtle-eval-lists-06
@@ -2914,19 +3203,21 @@ turtle-eval-lists-06
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (blankNodePropertyList
-            (predicateObjectList
-              (objectList
-                object: (PrefixedName)))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (blankNodePropertyList
+              (predicateObjectList
+                (objectList
+                  object: (PrefixedName))))))))))
 
 ===============
 turtle-eval-struct-01
@@ -2935,12 +3226,13 @@ turtle-eval-struct-01
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-eval-struct-02
@@ -2952,15 +3244,16 @@ turtle-eval-struct-02
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-subm-01
@@ -2970,15 +3263,17 @@ turtle-subm-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-02
@@ -2994,33 +3289,39 @@ a:a a:b a:c .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-03
@@ -3034,17 +3335,19 @@ turtle-subm-03
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        object: (PrefixedName)
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          object: (PrefixedName)
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-04
@@ -3058,21 +3361,23 @@ turtle-subm-04
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-05
@@ -3085,21 +3390,24 @@ turtle-subm-05
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (ANON)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (ANON))))))
 
 ===============
 turtle-subm-06
@@ -3112,29 +3420,32 @@ turtle-subm-06
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    (blankNodePropertyList
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
       (predicateObjectList
         predicate: (PrefixedName)
         (objectList
-          object: (PrefixedName))))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle-subm-07
@@ -3146,14 +3457,16 @@ turtle-subm-07
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-08
@@ -3163,19 +3476,21 @@ turtle-subm-08
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection
-          (RDFLiteral
-            string: (STRING_LITERAL_QUOTE))
-          (RDFLiteral
-            string: (STRING_LITERAL_QUOTE)))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection
+            (RDFLiteral
+              string: (STRING_LITERAL_QUOTE))
+            (RDFLiteral
+              string: (STRING_LITERAL_QUOTE))))))))
 
 ===============
 turtle-subm-09
@@ -3185,15 +3500,17 @@ turtle-subm-09
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (collection)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (collection))))))
 
 ===============
 turtle-subm-10
@@ -3212,26 +3529,29 @@ _:hasParent a owl:ObjectProperty .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
   (comment)
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (BLANK_NODE_LABEL))
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (BLANK_NODE_LABEL))
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle-subm-11
@@ -3244,36 +3564,41 @@ turtle-subm-11
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle-subm-12
@@ -3292,46 +3617,54 @@ ex4-:foo-bar ex4-:foo_bar "d" .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-subm-13
@@ -3349,43 +3682,50 @@ ex:foo :_345 "678" .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-subm-14
@@ -3400,21 +3740,24 @@ turtle-subm-14
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (ANON))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (ANON)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-15
@@ -3429,16 +3772,18 @@ newlines""" .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 turtle-subm-16
@@ -3466,9 +3811,10 @@ one
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
   (comment)
   (comment)
   (comment)
@@ -3479,20 +3825,22 @@ one
   (comment)
   (comment)
   (comment)
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 turtle-subm-17
@@ -3503,15 +3851,17 @@ turtle-subm-17
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 turtle-subm-18
@@ -3524,23 +3874,26 @@ turtle-subm-18
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 turtle-subm-19
@@ -3552,27 +3905,31 @@ turtle-subm-19
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DECIMAL))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 turtle-subm-20
@@ -3584,27 +3941,31 @@ turtle-subm-20
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DECIMAL))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (INTEGER))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 turtle-subm-21
@@ -3616,16 +3977,18 @@ turtle-subm-21
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 turtle-subm-22
@@ -3636,21 +3999,24 @@ turtle-subm-22
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (BooleanLiteral))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (BooleanLiteral)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (BooleanLiteral)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (BooleanLiteral))))))
 
 ===============
 turtle-subm-23
@@ -3673,49 +4039,54 @@ turtle-subm-23
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
   (comment)
-  (triples
-    subject: (PrefixedName)
-    (comment)
-    (predicateObjectList
-      predicate: (PrefixedName)
+  (statement
+    (triples
+      subject: (PrefixedName)
       (comment)
-      (objectList
-        object: (PrefixedName))))
-  (comment)
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (comment)
-      (objectList
-        object: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
         (comment)
-        object: (PrefixedName))))
+        (objectList
+          object: (PrefixedName))))
+    (comment))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (comment)
+        (objectList
+          object: (PrefixedName)
+          (comment)
+          object: (PrefixedName)))))
   (comment)
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      (comment)
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      (comment)
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        (comment)
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        (comment)
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
   (comment))
 
 ===============
@@ -3729,15 +4100,17 @@ turtle-subm-24
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
   (comment))
 
 ===============
@@ -3750,18 +4123,21 @@ foo:blah foo:blah foo:blah .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-subm-26
@@ -3791,182 +4167,204 @@ turtle-subm-26
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF)))))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (IRIREF)))))))
 
 ===============
 turtle-subm-27
@@ -3987,48 +4385,57 @@ turtle-subm-27
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (base
-    iri: (IRIREF))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (base
-    iri: (IRIREF))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF))))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-bad-base-01
@@ -4957,8 +5364,9 @@ turtle-syntax-base-01
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF)))
+  (statement
+    (base
+      iri: (IRIREF))))
 
 ===============
 turtle-syntax-base-02
@@ -4967,8 +5375,9 @@ BASE <http://www.w3.org/2013/TurtleTests/>
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF)))
+  (statement
+    (base
+      iri: (IRIREF))))
 
 ===============
 turtle-syntax-base-03
@@ -4978,14 +5387,16 @@ turtle-syntax-base-03
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-syntax-base-04
@@ -4995,14 +5406,16 @@ base <http://www.w3.org/2013/TurtleTests/>
 ---
 
 (turtleDoc
-  (base
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (base
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-syntax-blank-label
@@ -5014,29 +5427,33 @@ _:b.0 :p :o . # Contains dot, ends with digit
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
   (comment)
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
   (comment)
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
   (comment))
 
 ===============
@@ -5047,15 +5464,17 @@ turtle-syntax-bnode-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (ANON)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (ANON)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-bnode-02
@@ -5065,15 +5484,17 @@ turtle-syntax-bnode-02
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (ANON)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (ANON))))))
 
 ===============
 turtle-syntax-bnode-03
@@ -5083,19 +5504,21 @@ turtle-syntax-bnode-03
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle-syntax-bnode-04
@@ -5105,22 +5528,24 @@ turtle-syntax-bnode-04
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (blankNodePropertyList
-          (predicateObjectList
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))
-            predicate: (PrefixedName)
-            (objectList
-              object: (PrefixedName))))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (blankNodePropertyList
+            (predicateObjectList
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName))
+              predicate: (PrefixedName)
+              (objectList
+                object: (PrefixedName)))))))))
 
 ===============
 turtle-syntax-bnode-05
@@ -5130,22 +5555,24 @@ turtle-syntax-bnode-05
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    (blankNodePropertyList
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))
       (predicateObjectList
         predicate: (PrefixedName)
         (objectList
-          object: (PrefixedName))
-        predicate: (PrefixedName)
-        (objectList
-          object: (PrefixedName))))
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-bnode-06
@@ -5155,15 +5582,17 @@ _:a  :p :o .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-bnode-07
@@ -5174,21 +5603,24 @@ _:a  :p :o .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (BLANK_NODE_LABEL))))
-  (triples
-    subject: (BLANK_NODE_LABEL)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (BLANK_NODE_LABEL)))))
+  (statement
+    (triples
+      subject: (BLANK_NODE_LABEL)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-bnode-08
@@ -5198,15 +5630,17 @@ turtle-syntax-bnode-08
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    (blankNodePropertyList
-      (predicateObjectList
-        predicate: (PrefixedName)
-        (objectList
-          object: (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)))))))
 
 ===============
 turtle-syntax-bnode-09
@@ -5217,22 +5651,25 @@ turtle-syntax-bnode-09
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    (blankNodePropertyList
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName)
+            object: (PrefixedName))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
       (predicateObjectList
         predicate: (PrefixedName)
         (objectList
-          object: (PrefixedName)
-          object: (PrefixedName)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-bnode-10
@@ -5245,30 +5682,34 @@ turtle-syntax-bnode-10
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    (blankNodePropertyList
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
       (predicateObjectList
         predicate: (PrefixedName)
         (objectList
-          object: (PrefixedName))
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      (blankNodePropertyList
+        (predicateObjectList
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))
+          predicate: (PrefixedName)
+          (objectList
+            object: (PrefixedName))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
         predicate: (PrefixedName)
         (objectList
-          object: (PrefixedName)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-datatypes-01
@@ -5278,17 +5719,19 @@ turtle-syntax-datatypes-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (PrefixedName)))))))
 
 ===============
 turtle-syntax-datatypes-02
@@ -5299,20 +5742,23 @@ turtle-syntax-datatypes-02
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          datatype_iri: (PrefixedName))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            datatype_iri: (PrefixedName)))))))
 
 ===============
 turtle-syntax-file-01
@@ -5347,12 +5793,13 @@ turtle-syntax-kw-01
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BooleanLiteral)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BooleanLiteral))))))
 
 ===============
 turtle-syntax-kw-02
@@ -5361,12 +5808,13 @@ turtle-syntax-kw-02
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (BooleanLiteral)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (BooleanLiteral))))))
 
 ===============
 turtle-syntax-kw-03
@@ -5376,14 +5824,16 @@ turtle-syntax-kw-03
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-ln-colons
@@ -5397,39 +5847,45 @@ turtle-syntax-ln-colons
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-ln-dots
@@ -5441,27 +5897,31 @@ turtle-syntax-ln-dots
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-ns-dots
@@ -5471,15 +5931,17 @@ e.g:s e.g:p e.g:o .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-number-01
@@ -5488,12 +5950,13 @@ turtle-syntax-number-01
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle-syntax-number-02
@@ -5502,12 +5965,13 @@ turtle-syntax-number-02
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle-syntax-number-03
@@ -5516,12 +5980,13 @@ turtle-syntax-number-03
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle-syntax-number-04
@@ -5532,12 +5997,13 @@ turtle-syntax-number-04
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 turtle-syntax-number-05
@@ -5548,12 +6014,13 @@ turtle-syntax-number-05
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 turtle-syntax-number-06
@@ -5564,12 +6031,13 @@ turtle-syntax-number-06
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 turtle-syntax-number-07
@@ -5580,12 +6048,13 @@ turtle-syntax-number-07
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 turtle-syntax-number-08
@@ -5596,12 +6065,13 @@ turtle-syntax-number-08
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (INTEGER)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (INTEGER))))))
 
 ===============
 turtle-syntax-number-09
@@ -5610,12 +6080,13 @@ turtle-syntax-number-09
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 turtle-syntax-number-10
@@ -5624,12 +6095,13 @@ turtle-syntax-number-10
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 turtle-syntax-number-11
@@ -5638,12 +6110,13 @@ turtle-syntax-number-11
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 turtle-syntax-number-12
@@ -5654,15 +6127,17 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DOUBLE)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DOUBLE))))))
 
 ===============
 turtle-syntax-number-13
@@ -5673,15 +6148,17 @@ PREFIX : <http://example/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (DECIMAL)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (DECIMAL))))))
 
 ===============
 turtle-syntax-pname-dots
@@ -5691,15 +6168,17 @@ turtle-syntax-pname-dots
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-pname-esc-01
@@ -5709,15 +6188,17 @@ turtle-syntax-pname-esc-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-pname-esc-02
@@ -5727,15 +6208,17 @@ turtle-syntax-pname-esc-02
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-pname-esc-03
@@ -5745,15 +6228,17 @@ turtle-syntax-pname-esc-03
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-01
@@ -5762,9 +6247,10 @@ turtle-syntax-prefix-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF))))
 
 ===============
 turtle-syntax-prefix-02
@@ -5773,9 +6259,10 @@ PreFIX : <http://www.w3.org/2013/TurtleTests/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF))))
 
 ===============
 turtle-syntax-prefix-03
@@ -5785,15 +6272,17 @@ PREFIX : <http://www.w3.org/2013/TurtleTests/>
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-04
@@ -5803,15 +6292,17 @@ turtle-syntax-prefix-04
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-05
@@ -5821,15 +6312,17 @@ turtle-syntax-prefix-05
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-06
@@ -5842,18 +6335,21 @@ turtle-syntax-prefix-06
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-07
@@ -5865,15 +6361,17 @@ x:a-b-c  x:p x:o .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-08
@@ -5885,15 +6383,17 @@ x:_  x:p_1 x:o .
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-prefix-09
@@ -5906,18 +6406,21 @@ turtle-syntax-prefix-09
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-str-esc-01
@@ -5926,13 +6429,14 @@ turtle-syntax-str-esc-01
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-syntax-str-esc-02
@@ -5941,13 +6445,14 @@ turtle-syntax-str-esc-02
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-syntax-str-esc-03
@@ -5956,13 +6461,14 @@ turtle-syntax-str-esc-03
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-syntax-string-01
@@ -5971,13 +6477,14 @@ turtle-syntax-string-01
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)))))))
 
 ===============
 turtle-syntax-string-02
@@ -5986,14 +6493,15 @@ turtle-syntax-string-02
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 turtle-syntax-string-03
@@ -6002,14 +6510,15 @@ turtle-syntax-string-03
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 turtle-syntax-string-04
@@ -6018,13 +6527,14 @@ turtle-syntax-string-04
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)))))))
 
 ===============
 turtle-syntax-string-05
@@ -6033,14 +6543,15 @@ turtle-syntax-string-05
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 turtle-syntax-string-06
@@ -6049,14 +6560,15 @@ turtle-syntax-string-06
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_SINGLE_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_SINGLE_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 turtle-syntax-string-07
@@ -6065,13 +6577,14 @@ turtle-syntax-string-07
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 turtle-syntax-string-08
@@ -6081,13 +6594,14 @@ def""" .
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 turtle-syntax-string-09
@@ -6097,13 +6611,14 @@ def''' .
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)))))))
 
 ===============
 turtle-syntax-string-10
@@ -6113,14 +6628,15 @@ def"""@en .
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 turtle-syntax-string-11
@@ -6130,14 +6646,15 @@ def'''@en .
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_SINGLE_QUOTE)
-          language_tag: (LANGTAG))))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_SINGLE_QUOTE)
+            language_tag: (LANGTAG)))))))
 
 ===============
 turtle-syntax-struct-01
@@ -6147,16 +6664,18 @@ turtle-syntax-struct-01
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName)
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-struct-02
@@ -6167,18 +6686,20 @@ turtle-syntax-struct-02
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-struct-03
@@ -6190,18 +6711,20 @@ turtle-syntax-struct-03
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-struct-04
@@ -6213,18 +6736,20 @@ turtle-syntax-struct-04
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-struct-05
@@ -6236,18 +6761,20 @@ turtle-syntax-struct-05
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName))
-      predicate: (PrefixedName)
-      (objectList
-        object: (PrefixedName)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))
+        predicate: (PrefixedName)
+        (objectList
+          object: (PrefixedName))))))
 
 ===============
 turtle-syntax-uri-01
@@ -6256,12 +6783,13 @@ turtle-syntax-uri-01
 ---
 
 (turtleDoc
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-syntax-uri-02
@@ -6272,12 +6800,13 @@ turtle-syntax-uri-02
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-syntax-uri-03
@@ -6288,12 +6817,13 @@ turtle-syntax-uri-03
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 turtle-syntax-uri-04
@@ -6305,12 +6835,13 @@ turtle-syntax-uri-04
 
 (turtleDoc
   (comment)
-  (triples
-    subject: (IRIREF)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (triples
+      subject: (IRIREF)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))
 
 ===============
 two_LITERAL_LONG2s
@@ -6323,23 +6854,26 @@ two_LITERAL_LONG2s
 
 (turtleDoc
   (comment)
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE)))))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (PrefixedName)
-      (objectList
-        object: (RDFLiteral
-          string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE))))))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (PrefixedName)
+        (objectList
+          object: (RDFLiteral
+            string: (STRING_LITERAL_LONG_QUOTE)))))))
 
 ===============
 underscore_in_localName
@@ -6349,12 +6883,14 @@ p:s_ <http://a.example/p> <http://a.example/o> .
 ---
 
 (turtleDoc
-  (prefix
-    prefix_label: (PNAME_NS)
-    iri: (IRIREF))
-  (triples
-    subject: (PrefixedName)
-    (predicateObjectList
-      predicate: (IRIREF)
-      (objectList
-        object: (IRIREF)))))
+  (statement
+    (prefix
+      prefix_label: (PNAME_NS)
+      iri: (IRIREF)))
+  (statement
+    (triples
+      subject: (PrefixedName)
+      (predicateObjectList
+        predicate: (IRIREF)
+        (objectList
+          object: (IRIREF))))))

@@ -8,9 +8,8 @@
       "file-types": [
         "nq"
       ],
-      "injection-regex": "(n-quads|n_quads|nquads|nt)",
-      "highlights": "queries/highlights.scm",
-      "tags": "queries/tags.scm"
+      "injection-regex": "(n-quads|n_quads|nquads|nq)",
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {
@@ -34,6 +33,7 @@
     "node": true,
     "python": true,
     "rust": true,
-    "swift": true
+    "swift": true,
+    "zig": true
   }
 }

@@ -4,7 +4,7 @@
 
 (prefix
   prefix_label: (_) @module
-  iri: (_) @property)
+  iri: (_) @constant)
 
 (BlankNode) @variable.builtin
 (verb)@property
@@ -22,6 +22,7 @@
   "@prefix"
   "BASE"
   "PREFIX"
+  "VERSION"
 ] @keyword.directive
 
 [
@@ -34,6 +35,10 @@
   "]"
   "("
   ")"
+  "<<("
+  ")>>"
+  "<<"
+  ">>"
 ] @punctuation.bracket
 
 [

@@ -1,5 +1,5 @@
 {
-  "name": "tree-sitter-rdf12-turtle",
+  "name": "tree-sitter-turtle",
   "version": "0.2.0",
   "description": "RDF 1.2 Turtle grammar for tree-sitter",
   "type": "module",
@@ -17,7 +17,7 @@
     "incremental",
     "parsing",
     "tree-sitter",
-    "rdf12_turtle"
+    "turtle"
   ],
   "files": [
     "grammar.js",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "prebuildify": "^6.0.1",
     "tree-sitter": "^0.25.0",
-    "tree-sitter-cli": "^0.26.2"
+    "tree-sitter-cli": "^0.26.8"
   },
   "peerDependencies": {
     "tree-sitter": "^0.25.0"

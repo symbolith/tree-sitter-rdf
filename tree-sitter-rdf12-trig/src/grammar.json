@@ -13,7 +13,7 @@
           },
           {
             "type": "SYMBOL",
-            "name": "_block"
+            "name": "block"
           }
         ]
       }
@@ -22,7 +22,7 @@
       "type": "PATTERN",
       "value": "#[^\\r\\n]*"
     },
-    "_block": {
+    "block": {
       "type": "CHOICE",
       "members": [
         {

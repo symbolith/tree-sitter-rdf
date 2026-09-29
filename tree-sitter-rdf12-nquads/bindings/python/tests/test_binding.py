@@ -1,12 +1,12 @@
 from unittest import TestCase
 
 from tree_sitter import Language, Parser
-import tree_sitter_rdf12_nquads
+import tree_sitter_nquads
 
 
 class TestLanguage(TestCase):
     def test_can_load_grammar(self):
         try:
-            Parser(Language(tree_sitter_rdf12_nquads.language()))
+            Parser(Language(tree_sitter_nquads.language()))
         except Exception:
-            self.fail("Error loading RDF 1.2 N-Quads grammar")
+            self.fail("Error loading N-Quads grammar")

@@ -25,10 +25,10 @@ type NodeInfo =
  *
  * @example
  * import Parser from "tree-sitter";
- * import Rdf12Nquads from "tree-sitter-rdf12-nquads";
+ * import Nquads from "tree-sitter-nquads";
  *
  * const parser = new Parser();
- * parser.setLanguage(Rdf12Nquads);
+ * parser.setLanguage(Nquads);
  */
 declare const binding: {
   /**

@@ -25,10 +25,10 @@ type NodeInfo =
  *
  * @example
  * import Parser from "tree-sitter";
- * import Rdf12Turtle from "tree-sitter-rdf12-turtle";
+ * import Turtle from "tree-sitter-turtle";
  *
  * const parser = new Parser();
- * parser.setLanguage(Rdf12Turtle);
+ * parser.setLanguage(Turtle);
  */
 declare const binding: {
   /**

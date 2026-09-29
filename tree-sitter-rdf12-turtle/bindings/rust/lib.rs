@@ -1,4 +1,4 @@
-//! This crate provides RDF 1.2 Turtle language support for the [tree-sitter] parsing library.
+//! This crate provides Turtle language support for the [tree-sitter] parsing library.
 //!
 //! Typically, you will use the [`LANGUAGE`] constant to add this language to a
 //! tree-sitter [`Parser`], and then use the parser to parse some code:
@@ -7,25 +7,25 @@
 //! let code = r#"
 //! "#;
 //! let mut parser = tree_sitter::Parser::new();
-//! let language = tree_sitter_rdf12_turtle::LANGUAGE;
+//! let language = tree_sitter_turtle::LANGUAGE;
 //! parser
 //!     .set_language(&language.into())
-//!     .expect("Error loading RDF 1.2 Turtle parser");
+//!     .expect("Error loading Turtle parser");
 //! let tree = parser.parse(code, None).unwrap();
 //! assert!(!tree.root_node().has_error());
 //! ```
 //!
-//! [`Parser`]: https://docs.rs/tree-sitter/0.26.2/tree_sitter/struct.Parser.html
+//! [`Parser`]: https://docs.rs/tree-sitter/0.26.8/tree_sitter/struct.Parser.html
 //! [tree-sitter]: https://tree-sitter.github.io/
 
 use tree_sitter_language::LanguageFn;
 
 extern "C" {
-    fn tree_sitter_rdf12_turtle() -> *const ();
+    fn tree_sitter_turtle() -> *const ();
 }
 
 /// The tree-sitter [`LanguageFn`] for this grammar.
-pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_rdf12_turtle) };
+pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_turtle) };
 
 /// The content of the [`node-types.json`] file for this grammar.
 ///
@@ -55,6 +55,6 @@ mod tests {
         let mut parser = tree_sitter::Parser::new();
         parser
             .set_language(&super::LANGUAGE.into())
-            .expect("Error loading RDF 1.2 Turtle parser");
+            .expect("Error loading Turtle parser");
     }
 }

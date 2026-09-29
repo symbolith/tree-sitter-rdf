@@ -1,4 +1,4 @@
-//! This crate provides RDF 1.2 N-Triples language support for the [tree-sitter] parsing library.
+//! This crate provides N-Triples language support for the [tree-sitter] parsing library.
 //!
 //! Typically, you will use the [`LANGUAGE`] constant to add this language to a
 //! tree-sitter [`Parser`], and then use the parser to parse some code:
@@ -7,25 +7,25 @@
 //! let code = r#"
 //! "#;
 //! let mut parser = tree_sitter::Parser::new();
-//! let language = tree_sitter_rdf12_ntriples::LANGUAGE;
+//! let language = tree_sitter_ntriples::LANGUAGE;
 //! parser
 //!     .set_language(&language.into())
-//!     .expect("Error loading RDF 1.2 N-Triples parser");
+//!     .expect("Error loading N-Triples parser");
 //! let tree = parser.parse(code, None).unwrap();
 //! assert!(!tree.root_node().has_error());
 //! ```
 //!
-//! [`Parser`]: https://docs.rs/tree-sitter/0.26.2/tree_sitter/struct.Parser.html
+//! [`Parser`]: https://docs.rs/tree-sitter/0.26.8/tree_sitter/struct.Parser.html
 //! [tree-sitter]: https://tree-sitter.github.io/
 
 use tree_sitter_language::LanguageFn;
 
 extern "C" {
-    fn tree_sitter_rdf12_ntriples() -> *const ();
+    fn tree_sitter_ntriples() -> *const ();
 }
 
 /// The tree-sitter [`LanguageFn`] for this grammar.
-pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_rdf12_ntriples) };
+pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_ntriples) };
 
 /// The content of the [`node-types.json`] file for this grammar.
 ///
@@ -55,6 +55,6 @@ mod tests {
         let mut parser = tree_sitter::Parser::new();
         parser
             .set_language(&super::LANGUAGE.into())
-            .expect("Error loading RDF 1.2 N-Triples parser");
+            .expect("Error loading N-Triples parser");
     }
 }

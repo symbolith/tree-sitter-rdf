@@ -259,6 +259,25 @@
     }
   },
   {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "graph",
+          "named": true
+        },
+        {
+          "type": "triples",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "collection",
     "named": true,
     "fields": {},
@@ -377,15 +396,11 @@
       "required": false,
       "types": [
         {
+          "type": "block",
+          "named": true
+        },
+        {
           "type": "directive",
-          "named": true
-        },
-        {
-          "type": "graph",
-          "named": true
-        },
-        {
-          "type": "triples",
           "named": true
         }
       ]

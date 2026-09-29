@@ -1,9 +1,9 @@
 {
   "grammars": [
     {
-      "name": "rdf12_trig",
-      "camelcase": "Rdf12Trig",
-      "title": "RDF 1.2 TriG",
+      "name": "trig",
+      "camelcase": "Trig",
+      "title": "TriG",
       "scope": "source.trig",
       "file-types": [
         "trig"

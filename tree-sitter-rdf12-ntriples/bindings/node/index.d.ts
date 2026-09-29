@@ -25,10 +25,10 @@ type NodeInfo =
  *
  * @example
  * import Parser from "tree-sitter";
- * import Rdf12Ntriples from "tree-sitter-rdf12-ntriples";
+ * import Ntriples from "tree-sitter-ntriples";
  *
  * const parser = new Parser();
- * parser.setLanguage(Rdf12Ntriples);
+ * parser.setLanguage(Ntriples);
  */
 declare const binding: {
   /**
