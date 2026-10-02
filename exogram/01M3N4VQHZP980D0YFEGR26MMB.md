@@ -3,12 +3,9 @@ aliases:
   - Project Implement tree-sitter-rdf
 type:
   - "[Type Project](20251204171142.md)"
-  - "[Type Act](20260608023505.md)"
-  - "[Type Transition](20260608023504.md)"
-  - "[Type Activity](20260426153348.md)"
-  - "[Type Node](20260923150300.md)"
+  - "[Type Actable](01M3VXV8F3WKG2T8JN5NYGRYV5.md)"
 state: intended
-generated:
+hasOutput:
   - "[Software tree-sitter-rdf](20260115143001.md)"
 reviewLevel: unread
 ---
