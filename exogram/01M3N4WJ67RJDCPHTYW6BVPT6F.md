@@ -9,7 +9,7 @@ subject:
   - "[Software RDF Tree-sitter](20260115143001.md)"
 wasAttributedTo:
   - "[InfAI](60178bab-87e1-4425-943d-873d35f6c928.md)"
-reviewLevel: unread
+vetting: unread
 ---
 ## Indexes
 
